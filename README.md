@@ -1,11 +1,14 @@
 # 👋 Seja bem-vindo(a)
 
-Olá, Dev ou Tech Recruiter!  
+Olá, Dev ou Tech Recruiter!
+
 Sou o **Thiago (Cajá)**, me aventurando na área de **Tecnologia desde 2007**.
 
-Essa aqui é a minha rede social favorita de longe! Olha esse monte de código.
+Essa aqui é a minha rede social favorita de longe! Olha esse monte de código. 😀
 
 Meus valores? Humilde, trabalhador e dedicado.
+
+Ultimamente faço um `dump` dos pensamentos, escrevendo no meu [blog](https://thiagocaja.dev).
 
 ## 💼 Stack de Trabalho
 
