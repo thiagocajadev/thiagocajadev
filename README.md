@@ -1,4 +1,4 @@
-# 👋 Seja bem-vindo(a)
+# Seja bem-vindo(a)
 
 Olá, Dev ou Tech Recruiter!
 
@@ -10,15 +10,15 @@ Meus valores? Humilde, trabalhador e dedicado.
 
 Ultimamente faço um `dump` dos pensamentos, escrevendo no meu [blog](https://thiagocaja.dev).
 
-## 💼 Stack de Trabalho
+## Stack de Trabalho
 
 Atualmente trabalho com a stack **.NET**, explorando as seguintes frentes:
 
-### 🧠 Planejamento e Arquitetura
+### Planejamento e Arquitetura
 - **Modelagem de domínio**, organização em camadas e aplicação de boas práticas (SOLID, Clean Architecture)  
 - **Adoção de práticas de segurança**, com atenção à exposição de dados e validações  
 
-### 🔧 Backend e Integrações
+### Backend e Integrações
 - **Minimal APIs** para construção de APIs enxutas e performáticas  
 - **ASP.NET** em soluções web robustas com foco em APIs e rotas segmentadas  
 - **Banco de dados** com SQL Server, utilizando procedures, views e queries otimizadas  
@@ -26,23 +26,23 @@ Atualmente trabalho com a stack **.NET**, explorando as seguintes frentes:
 - **Migração e sustentação de sistemas existentes**, com foco em estabilidade e modernização  
 - **Windows Forms** para manutenção e evolução de sistemas desktop legados  
 
-### 🖼️ Frontend
+### Frontend
 - **Blazor** (WebAssembly e Server) para aplicações modernas e interativas  
 - **Razor Views** para construção de interfaces dinâmicas e integração com dados da API  
 
-### 🧪 Testes e Qualidade
+### Testes e Qualidade
 - **Testes automatizados** (unitários e integrados) para garantir confiabilidade  
 - **Atenção à performance e experiência do usuário**, evitando complexidade desnecessária  
 
-### 🚀 Publicação e Versionamento
+### Publicação e Versionamento
 - **Versionamento e automações de deploy** com Git e GitHub Actions
 
-## ⚖️ Filosofia
+## Filosofia
 
 Acredito que o equilíbrio é a chave para soluções eficazes.  
 O básico funciona — e tudo começa com **planejamento e arquitetura**.
 
-## ➡️ Fluxo de Desenvolvimento
+## Fluxo de Desenvolvimento
 
 ```mermaid
 flowchart LR
@@ -54,14 +54,14 @@ flowchart LR
  end
 ```
 
-🛠️ Encaro o desenvolvimento como um processo estruturado:
+Encaro o desenvolvimento como um processo estruturado:
 
 1. **Entendimento do contexto**: Qual problema estamos resolvendo?  
 2. **Modelagem das entradas (inputs)**: Organização e estruturação das informações  
 3. **Processamento e entrega das saídas (outputs)**: Clareza, eficiência e propósito
 
 
-## 🤖 Produtividade com Inteligência Artificial
+## Produtividade com Inteligência Artificial
 
 Utilizo IA como uma **ferramenta prática e estratégica** para acelerar meu fluxo de trabalho — com foco em produtividade, qualidade e organização.
 
@@ -69,11 +69,11 @@ Utilizo IA como uma **ferramenta prática e estratégica** para acelerar meu flu
 - Complemento com ferramentas como **NotebookLM / Gemini**, **DeepSeek** e outros recursos de IA para gerar insights, documentações visuais, esquemas e testes.  
 - Sempre com **curadoria humana, senso crítico e responsabilidade** — IA me ajuda a ganhar tempo, mas **não substitui a análise técnica nem a tomada de decisão**.
 
-## 🧹 Boas Práticas
+## Boas Práticas
 
 Procuro aplicar uma **modelagem limpa**, com **boas práticas** e nomes expressivos para classes, propriedades e métodos.
 
-## 📚 Aprendizado Contínuo
+## Aprendizado Contínuo
 
 Me mantenho atualizado com os conteúdos do [curso.dev](https://curso.dev) e [balta.io](https://balta.io).
 
