@@ -1,18 +1,27 @@
 # Seja bem-vindo(a)
 
-Olá, Dev ou Tech Recruiter!
+Olá Dev, Tech Recruiter e enstusiasta do código!
 
-Sou o **Thiago (Cajá)**, me aventurando na área de **Tecnologia desde 2007**.
+Sou o **Thiago Cajá**, me aventurando na área de **Tecnologia desde 2007**.
 
 Essa aqui é a minha rede social favorita de longe! Olha esse monte de código. 😀
 
-Meus valores? Humilde, trabalhador e dedicado.
+Se você me perguntar quais são meus valores, vou te contar no ato: Humilde, trabalhador, sincero e dedicado.
+
+Meu propósito de vida é ajudar. Percorro esse caminho via TI, consertando e construindo coisas.
+
+>[!NOTE]
+> Em tempos de **IA**, pratique a **IE (Inteligência Emocional)**.  
+> Use o **pensamento crítico** para tomar melhores decisões, tendo como base **dados** e **fatos** concretos.
 
 Ultimamente faço um `dump` dos pensamentos, escrevendo no meu [blog](https://thiagocaja.dev).
 
+<details>
+  <summary>TL;DR</summary>
+ 
 ## Stack de Trabalho
 
-Atualmente trabalho com a stack **.NET**, explorando as seguintes frentes:
+Meu foco atualmente está sobre a stack **.NET**. Em conjunto, tenho estudado Web Moderno com **React** e quero me tornar um **Arquiteto de Soluções**.
 
 ### Planejamento e Arquitetura
 - **Modelagem de domínio**, organização em camadas e aplicação de boas práticas (SOLID, Clean Architecture)  
@@ -72,6 +81,9 @@ Utilizo IA como uma **ferramenta prática e estratégica** para acelerar meu flu
 ## Boas Práticas
 
 Procuro aplicar uma **modelagem limpa**, com **boas práticas** e nomes expressivos para classes, propriedades e métodos.
+</details>
+
+
 
 ## Aprendizado Contínuo
 
