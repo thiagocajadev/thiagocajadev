@@ -1,6 +1,6 @@
 # Seja bem-vindo(a)
 
-Olá Dev, Tech Recruiter e enstusiasta do código!
+Olá **Dev**, **Tech Recruiter** e **entusiasta do código**!
 
 Sou o **Thiago Cajá**, me aventurando na área de **Tecnologia desde 2007**.
 
