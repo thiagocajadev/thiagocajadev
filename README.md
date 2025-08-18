@@ -48,7 +48,7 @@ Meu foco atualmente está sobre a stack **.NET**. Em conjunto, tenho estudado We
 
 ## Filosofia
 
-Acredito que o equilíbrio é a chave para soluções eficazes.  
+Acredito que o equilíbrio é a chave para soluções eficazes ⚖️.  
 O básico funciona — e tudo começa com **planejamento e arquitetura**.
 
 ## Fluxo de Desenvolvimento
