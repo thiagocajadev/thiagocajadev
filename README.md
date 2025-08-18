@@ -17,7 +17,7 @@ Meu propósito de vida é ajudar. Percorro esse caminho via TI, consertando e co
 Ultimamente faço um `dump` dos pensamentos, escrevendo no meu [blog](https://thiagocaja.dev).
 
 <details>
-  <summary>TL;DR</summary>
+  <summary>Você quer mais detalhes? Claro, é só clicar aqui ⬇️.</summary>
  
 ## Stack de Trabalho
 
