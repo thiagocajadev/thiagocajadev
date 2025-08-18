@@ -70,11 +70,11 @@ Encaro o desenvolvimento como um processo estruturado:
 3. **Processamento e entrega das saídas (outputs)**: Clareza, eficiência e propósito
 
 
-## Produtividade com Inteligência Artificial
+## Produtividade com Inteligência Artificial Generativa
 
 Utilizo IA como uma **ferramenta prática e estratégica** para acelerar meu fluxo de trabalho — com foco em produtividade, qualidade e organização.
 
-- Faço uso do **ChatGPT Plus (GPT-4-turbo)**, com **prompts otimizados** para documentação, revisão de código, análise de logs, estruturação de ideias e automação de tarefas repetitivas.  
+- Faço uso do **ChatGPT**, com **prompts otimizados** para documentação, revisão de código, análise de logs, estruturação de ideias e automação de tarefas repetitivas.  
 - Complemento com ferramentas como **NotebookLM / Gemini**, **DeepSeek** e outros recursos de IA para gerar insights, documentações visuais, esquemas e testes.  
 - Sempre com **curadoria humana, senso crítico e responsabilidade** — IA me ajuda a ganhar tempo, mas **não substitui a análise técnica nem a tomada de decisão**.
 
