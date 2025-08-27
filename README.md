@@ -6,7 +6,7 @@ Sou o **Thiago Cajá**, me aventurando na área de **Tecnologia desde 2007**.
 
 Essa aqui é a minha rede social favorita de longe! Olha esse monte de código 😀. 
 
-Se você me perguntar quais são meus valores, vou te contar no ato: Humilde, trabalhador, sincero e dedicado.
+Se você me perguntar quais são meus valores, vou te contar no ato: `humilde`, `trabalhador`, `sincero` e `dedicado`.
 
 Meu propósito de vida é ajudar. Percorro esse caminho via TI, consertando e construindo coisas.
 
