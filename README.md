@@ -11,7 +11,8 @@ Se você me perguntar quais são meus valores, vou te contar no ato: `humilde`, 
 Meu propósito de vida é ajudar. Percorro esse caminho via TI, consertando e construindo coisas.
 
 >[!NOTE]
-> Em tempos de **IA**, pratique a **IE (Inteligência Emocional)**.  
+> Em tempos de **IA**, pratique a **IE (Inteligência Emocional)**.
+>
 > Use o **pensamento crítico** para tomar melhores decisões, tendo como base **dados** e **fatos** concretos.
 
 Ultimamente faço um `dump` dos pensamentos, escrevendo no meu [blog](https://thiagocaja.dev).
