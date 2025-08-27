@@ -4,7 +4,7 @@ Olá **Dev**, **Tech Recruiter** e **entusiasta do código**!
 
 Sou o **Thiago Cajá**, me aventurando na área de **Tecnologia desde 2007**.
 
-Essa aqui é a minha rede social favorita de longe! Olha esse monte de código. 😀
+Essa aqui é a minha rede social favorita de longe! Olha esse monte de código 😀. 
 
 Se você me perguntar quais são meus valores, vou te contar no ato: Humilde, trabalhador, sincero e dedicado.
 
