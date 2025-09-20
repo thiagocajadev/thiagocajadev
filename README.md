@@ -129,7 +129,7 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azuredevops&logoColor=white)
+![Azure DevOps](https://img.shields.io/badge/Azure_DevOps-0078D7?style=for-the-badge&logo=azuredevops&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
 ![GitBook](https://img.shields.io/badge/GitBook-3884FF?style=for-the-badge&logo=gitbook&logoColor=white)
@@ -140,6 +140,7 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 ![SOLID](https://img.shields.io/badge/SOLID-008793?style=for-the-badge&logo=codefactor&logoColor=white)
 ![Dependency Injection](https://img.shields.io/badge/Dependency_Injection-00bf72?style=for-the-badge&logo=influxdb&logoColor=white)
 ![Rich Domains](https://img.shields.io/badge/Rich_Domains-a8eb12?style=for-the-badge&logo=googledomains&logoColor=black)
+
 
 # 🧠 Generative AI
 
