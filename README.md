@@ -99,7 +99,6 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 - [Estatísticas e cards personalizados](https://github.com/anuraghazra/github-readme-stats)
 - [Troféus, PacMan, Snake e outros](https://profile-readme-generator.com/)
 </details>
-<br>
 
 # 📫 Contact
 
