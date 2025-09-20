@@ -89,16 +89,16 @@ Me mantenho atualizado com os conteúdos do [curso.dev](https://curso.dev) e [ba
 
 Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 
-**Posso ajudar em algo?** É só chamar.
-
 <details>
-<summary>Personalize seu perfil! Links de apoio ⬇️.</summary>
-  <br>
+<summary>Eu compartilho mesmo 🙂! Veja aqui dicas pra personalizar seu perfil ⬇️.</summary>
   
 - [Escudos de tecnologia](https://shields.io/)
 - [Estatísticas e cards personalizados](https://github.com/anuraghazra/github-readme-stats)
 - [Troféus, PacMan, Snake e outros](https://profile-readme-generator.com/)
 </details>
+
+**Posso ajudar em algo?** É só chamar.
+<br><br>
 
 # 📫 Contact
 
@@ -183,7 +183,7 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 # 📈 Stats
 
 <div>
-  <img align="center" src="https://visitor-badge.laobi.icu/badge?page_id=thiagocajadev.thiagocajadev&left_color=cornflowerblue&right_color=dimgrey"  />
+  <img align="center" src="https://visitor-badge.laobi.icu/badge?page_id=thiagocajadev.thiagocajadev&left_color=slategray&right_color=dodgerblue" />
 </div>
 <br>
 
