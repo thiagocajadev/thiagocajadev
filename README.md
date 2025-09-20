@@ -179,8 +179,7 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
   <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=thiagocajadev&layout=compact&langs_count=8&card_width=370&theme=github_dark_dimmed" />
 </span>
 
-# 📌 Projetos Fixados
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats)](https://github.com/anuraghazra/github-readme-stats)
+# 📌 Projetos
+[![Clone Tabnews](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=clone-tabnews)](https://github.com/thiagocajadev/clone-tabnews)
 
 
