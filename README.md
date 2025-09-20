@@ -91,7 +91,8 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 
 <details>
 <summary>Eu compartilho mesmo 🙂! Veja aqui dicas pra personalizar seu perfil ⬇️.</summary>
-  
+<br>
+
 - [Escudos de tecnologia](https://shields.io/)
 - [Estatísticas e cards personalizados](https://github.com/anuraghazra/github-readme-stats)
 - [Troféus, PacMan, Snake e outros](https://profile-readme-generator.com/)
