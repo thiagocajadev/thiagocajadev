@@ -161,12 +161,12 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 
 # 📈 GitHub Stats
 
-<a>
+<span>
   <img height="200" src="https://github-readme-stats.vercel.app/api?username=thiagocajadev&show_icons=true&rank_icon=percentile&theme=github_dark_dimmed" />
-</a>
-<a>
-  <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=thiagocajadev&layout=compact&langs_count=8&card_width=467&theme=github_dark_dimmed" />
-</a>
+</span>
+<span>
+  <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=thiagocajadev&layout=compact&langs_count=8&theme=github_dark_dimmed" />
+</span>
 
 
 
