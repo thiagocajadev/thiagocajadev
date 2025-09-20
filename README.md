@@ -161,5 +161,12 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 
 # 📈 GitHub Stats
 
-![Thiago's GitHub Stats](https://github-readme-stats.vercel.app/api?username=thiagocajadev&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=thiagocajadev&layout=compact&theme=radical)
+<span>
+  <img height="200" src="https://github-readme-stats.vercel.app/api?username=thiagocajadev&show_icons=true&rank_icon=percentile&theme=github_dark_dimmed" />
+</span>
+<span>
+  <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=thiagocajadev&layout=compact&langs_count=8&card_width=467&theme=github_dark_dimmed" />
+</span>
+
+
+
