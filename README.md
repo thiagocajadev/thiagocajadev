@@ -90,7 +90,14 @@ Me mantenho atualizado com os conteúdos do [curso.dev](https://curso.dev) e [ba
 Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 
 **Posso ajudar em algo?** É só chamar.
-<br><br>
+
+<details>
+<summary>Personalize seu perfil! Veja esses links.</summary>
+  
+- [Crie escudos de tecnologia](https://shields.io/)
+- [Exiba estatísticas e cards personalizados](https://github.com/anuraghazra/github-readme-stats)
+- [Troféus, cobrinha, PacMan e outros](https://profile-readme-generator.com/)
+</details>
 
 # 📫 Contact
 
