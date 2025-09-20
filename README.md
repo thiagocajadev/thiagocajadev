@@ -141,7 +141,6 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 ![Dependency Injection](https://img.shields.io/badge/Dependency_Injection-00bf72?style=for-the-badge&logo=influxdb&logoColor=white)
 ![Rich Domains](https://img.shields.io/badge/Rich_Domains-a8eb12?style=for-the-badge&logo=googledomains&logoColor=black)
 
-
 # 🧠 Generative AI
 
 [![ChatGPT Plus](https://img.shields.io/badge/ChatGPT_Plus-10a37f?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com/chatgpt)
@@ -149,7 +148,6 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 [![DeepSeek](https://img.shields.io/badge/DeepSeek-000000?style=for-the-badge&logo=deepnote&logoColor=white)](https://www.deepseek.com/)
 [![Manus](https://img.shields.io/badge/Manus-6C63FF?style=for-the-badge&logo=readme&logoColor=white)](https://www.manus.ai/)
 [![Grok](https://img.shields.io/badge/Grok-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.ai/)
-
 
 # 🛠️ Tools
 
@@ -182,10 +180,10 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 <br>
 
 <span>
-  <img height="200" src="https://github-readme-stats.vercel.app/api?username=thiagocajadev&include_all_commits=true&show=prs_merged_percentage&hide=contribs&show_icons=true&rank_icon=percentile&theme=github_dark_dimmed" />
+  <img height="200" src="https://github-readme-stats.vercel.app/api?username=thiagocajadev&include_all_commits=true&show=prs_merged_percentage&hide=contribs&show_icons=true&rank_icon=percentile&hide_border=true&theme=github_dark_dimmed" />
 </span>
 <span>
-  <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=thiagocajadev&layout=compact&langs_count=8&card_width=370&theme=github_dark_dimmed" />
+  <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=thiagocajadev&layout=compact&langs_count=8&card_width=370&hide_border=true&theme=github_dark_dimmed" />
 </span>
 <br><br>
 
