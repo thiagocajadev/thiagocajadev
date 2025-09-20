@@ -184,7 +184,7 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 # 📈 Stats
 
 <div>
-  <img align="center" src="https://visitor-badge.laobi.icu/badge?page_id=thiagocajadev.thiagocajadev&left_color=slategray&right_color=dodgerblue" />
+  <img align="center" src="https://visitor-badge.laobi.icu/badge?page_id=thiagocajadev.thiagocajadev&left_color=dodgerblue&right_color=slategray" />
 </div>
 <br>
 
