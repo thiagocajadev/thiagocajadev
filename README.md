@@ -187,6 +187,7 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 <span>
   <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=thiagocajadev&layout=compact&langs_count=8&card_width=370&theme=github_dark_dimmed" />
 </span>
+<br><br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/thiagocajadev/thiagocajadev/output/pacman-contribution-graph-dark.svg">
