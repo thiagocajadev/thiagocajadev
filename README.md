@@ -4,7 +4,7 @@ Olá **Dev**, **Tech Recruiter** e **entusiasta do código**!
 
 Sou o **Thiago Cajá**, me aventurando na área de **Tecnologia desde 2007**.
 
-Essa aqui é a minha rede social favorita de longe! Olha esse monte de código 😀. 
+Essa aqui é a minha rede social favorita de longe! Olha esse monte de código da galera 😀. 
 
 Se você me perguntar quais são meus valores, vou te contar no ato: `humilde`, `trabalhador`, `sincero` e `dedicado`.
 
@@ -83,8 +83,7 @@ Utilizo IA como uma **ferramenta prática e estratégica** para acelerar meu flu
 
 Procuro aplicar uma **modelagem limpa**, com **boas práticas** e nomes expressivos para classes, propriedades e métodos.
 </details>
-
-
+<br>
 
 ## Aprendizado Contínuo
 
@@ -92,7 +91,8 @@ Me mantenho atualizado com os conteúdos do [curso.dev](https://curso.dev) e [ba
 
 Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 
-**Posso ajudar em algo?** É só chamar. 
+**Posso ajudar em algo?** É só chamar.
+<br>
 
 # 📫 Contact
 
@@ -181,5 +181,6 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 
 # 📌 Pinned
 
-[![Clone Tabnews](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=clone-tabnews&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/clone-tabnews)
+[![Code Conventions](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=code-conventions&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/code-conventions)
+[![Code Conventions](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=sql-conventions&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/sql-conventions)
 [![Clone Tabnews](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=clone-tabnews&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/clone-tabnews)
