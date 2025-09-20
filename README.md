@@ -135,7 +135,7 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 ![CleanCode](https://img.shields.io/badge/cleancode-051937.svg?style=for-the-badge&logo=cleancode&logoColor=%2361DAFB)
 ![KISS](https://img.shields.io/badge/kiss-004d7a?style=for-the-badge&logo=kiss&logoColor=white)
 ![SOLID](https://img.shields.io/badge/solid-008793.svg?style=for-the-badge&logo=solid&logoColor=white)
-![DI](https://img.shields.io/badge/di-00bf72.svg?style=for-the-badge&logo=di&logoColor=white)
+![Dependency Injection](https://img.shields.io/badge/di-00bf72.svg?style=for-the-badge&logo=di&logoColor=white)
 ![Rich Domains](https://img.shields.io/badge/rich%20domains-a8eb12.svg?style=for-the-badge&logo=rich%20domains&logoColor=white)
 
 # 🧠 AI Tools
@@ -143,6 +143,9 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 [![ChatGPT Plus](https://img.shields.io/badge/ChatGPT_Plus-10a37f?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com/chatgpt)
 [![NotebookLM / Gemini](https://img.shields.io/badge/NotebookLM_/_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://deepmind.google/technologies/gemini/)
 [![DeepSeek](https://img.shields.io/badge/DeepSeek-000000?style=for-the-badge&logo=deepnote&logoColor=white)](https://www.deepseek.com/)
+[![Manus](https://img.shields.io/badge/Manus-6C63FF?style=for-the-badge&logo=readme&logoColor=white)](https://www.manus.ai/)
+[![Grok](https://img.shields.io/badge/Grok-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.ai/)
+
 
 # 🛠️ Dev Tools  
 
