@@ -92,7 +92,7 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 **Posso ajudar em algo?** É só chamar.
 
 <details>
-<summary>Personalize seu perfil! Veja esses links.</summary>
+<summary>Personalize seu perfil! Links de apoio ⬇️.</summary>
   <br>
   
 - [Escudos de tecnologia](https://shields.io/)
