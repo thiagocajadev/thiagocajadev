@@ -70,7 +70,6 @@ Encaro o desenvolvimento como um processo estruturado:
 2. **Modelagem das entradas (inputs)**: Organização e estruturação das informações  
 3. **Processamento e entrega das saídas (outputs)**: Clareza, eficiência e propósito
 
-
 ## Produtividade com Inteligência Artificial Generativa
 
 Utilizo IA como uma **ferramenta prática e estratégica** para acelerar meu fluxo de trabalho — com foco em produtividade, qualidade e organização.
@@ -83,7 +82,6 @@ Utilizo IA como uma **ferramenta prática e estratégica** para acelerar meu flu
 
 Procuro aplicar uma **modelagem limpa**, com **boas práticas** e nomes expressivos para classes, propriedades e métodos.
 </details>
-<br>
 
 ## Aprendizado Contínuo
 
@@ -92,7 +90,7 @@ Me mantenho atualizado com os conteúdos do [curso.dev](https://curso.dev) e [ba
 Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 
 **Posso ajudar em algo?** É só chamar.
-<br>
+<br><br>
 
 # 📫 Contact
 
