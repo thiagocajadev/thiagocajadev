@@ -94,12 +94,12 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 
 **Posso ajudar em algo?** É só chamar. 
 
-# 📫 Contato
+# 📫 Contact
 
 [![Linkedin](https://img.shields.io/badge/-LinkedIn-blue?style=for-the-badge&logo=Linkedin&logoColor=white)](https://br.linkedin.com/in/thiagocajadev)
 [![Gmail](https://img.shields.io/badge/-gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:thiago.cajaiba@gmail.com)
 
-# 💻 Tecnologia
+# 💻 Stack
 
 ![.NET](https://img.shields.io/badge/.NET-7e2bb3?style=for-the-badge&logo=.net&logoColor=white)
 ![C#](https://img.shields.io/badge/c%23-7e2bb3.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
@@ -138,7 +138,7 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 ![Dependency Injection](https://img.shields.io/badge/di-00bf72.svg?style=for-the-badge&logo=di&logoColor=white)
 ![Rich Domains](https://img.shields.io/badge/rich%20domains-a8eb12.svg?style=for-the-badge&logo=rich%20domains&logoColor=white)
 
-# 🧠 IA Generativa
+# 🧠 Generative AI
 
 [![ChatGPT Plus](https://img.shields.io/badge/ChatGPT_Plus-10a37f?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com/chatgpt)
 [![NotebookLM / Gemini](https://img.shields.io/badge/NotebookLM_/_Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://deepmind.google/technologies/gemini/)
@@ -147,7 +147,7 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 [![Grok](https://img.shields.io/badge/Grok-1DA1F2?style=for-the-badge&logo=x&logoColor=white)](https://x.ai/)
 
 
-# 🛠️ Utilitários
+# 🛠️ Tools
 
 [![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
 [![Bash](https://img.shields.io/badge/Bash-2C8EBB?style=for-the-badge&logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
@@ -163,14 +163,14 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 [![Excalidraw](https://img.shields.io/badge/Excalidraw-5865F2?style=for-the-badge&logo=excalidraw&logoColor=white)](https://excalidraw.com/)
 [![Draw.io](https://img.shields.io/badge/Draw.io-F08705?style=for-the-badge&logo=diagramsdotnet&logoColor=white)](https://app.diagrams.net/)
 
-# 🎨 Temas 
+# 🎨 Themes 
 
 [![JetBrains Mono](https://img.shields.io/badge/JetBrains_Mono-333333?style=for-the-badge&logo=jetbrains&logoColor=white)](https://www.jetbrains.com/pt-br/lp/mono/)
 [![JetBrainsMono Nerd Font](https://img.shields.io/badge/Nerd_Font-444444?style=for-the-badge&logo=nerdfonts&logoColor=white)](https://www.nerdfonts.com/font-downloads)
 [![One Dark Pro](https://img.shields.io/badge/One_Dark_Pro-282C34?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://github.com/Binaryify/OneDark-Pro)
 [![Starship](https://img.shields.io/badge/Starship-FF4081?style=for-the-badge&logo=starship&logoColor=white)](https://starship.rs/)
 
-# 📈 Estatísticas GitHub
+# 📈 Stats
 
 <span>
   <img height="200" src="https://github-readme-stats.vercel.app/api?username=thiagocajadev&show=prs_merged_percentage&hide=contribs&show_icons=true&rank_icon=percentile&theme=github_dark_dimmed" />
@@ -179,8 +179,7 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
   <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=thiagocajadev&layout=compact&langs_count=8&card_width=370&theme=github_dark_dimmed" />
 </span>
 
-# 📌 Projetos
+# 📌 Pinned
 
-[![Clone Tabnews](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=clone-tabnews&theme=github_dark_dimmed)](https://github.com/thiagocajadev/clone-tabnews)
-
-
+[![Clone Tabnews](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=clone-tabnews&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/clone-tabnews)
+[![Clone Tabnews](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=clone-tabnews&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/clone-tabnews)
