@@ -176,12 +176,23 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 
 # 📈 Stats
 
+<div>
+  <img align="center" src="https://visitor-badge.laobi.icu/badge?page_id=thiagocajadev.thiagocajadev&left_color=cornflowerblue&right_color=dimgrey"  />
+</div>
+<br>
+
 <span>
   <img height="200" src="https://github-readme-stats.vercel.app/api?username=thiagocajadev&include_all_commits=true&show=prs_merged_percentage&hide=contribs&show_icons=true&rank_icon=percentile&theme=github_dark_dimmed" />
 </span>
 <span>
   <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=thiagocajadev&layout=compact&langs_count=8&card_width=370&theme=github_dark_dimmed" />
 </span>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/thiagocajadev/thiagocajadev/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/thiagocajadev/thiagocajadev/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/thiagocajadev/thiagocajadev/output/pacman-contribution-graph.svg">
+</picture>
 
 # 📌 Pinned
 
