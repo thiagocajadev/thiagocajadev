@@ -173,7 +173,7 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 # 📈 Stats
 
 <span>
-  <img height="200" src="https://github-readme-stats.vercel.app/api?username=thiagocajadev&show=prs_merged_percentage&hide=contribs&show_icons=true&rank_icon=percentile&theme=github_dark_dimmed" />
+  <img height="200" src="https://github-readme-stats.vercel.app/api?username=thiagocajadev&include_all_commits=true&show=prs_merged_percentage&hide=contribs&show_icons=true&rank_icon=percentile&theme=github_dark_dimmed" />
 </span>
 <span>
   <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=thiagocajadev&layout=compact&langs_count=8&card_width=370&theme=github_dark_dimmed" />
@@ -181,6 +181,7 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 
 # 📌 Pinned
 
-[![Code Conventions](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=code-conventions&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/code-conventions)
-[![Code Conventions](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=sql-conventions&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/sql-conventions)
-[![Clone Tabnews](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=clone-tabnews&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/clone-tabnews)
+[![Code Conventions](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=code-conventions&description_lines_count=2&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/code-conventions)
+[![SQL Conventions](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=sql-conventions&description_lines_count=2&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/sql-conventions)
+[![Clone Tabnews](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=clone-tabnews&description_lines_count=2&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/clone-tabnews)
+[![PayCheck BR](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=PayCheckBR&description_lines_count=2&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/PayCheckBR)
