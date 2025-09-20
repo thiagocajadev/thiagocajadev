@@ -83,7 +83,7 @@ Utilizo IA como uma **ferramenta prática e estratégica** para acelerar meu flu
 Procuro aplicar uma **modelagem limpa**, com **boas práticas** e nomes expressivos para classes, propriedades e métodos.
 </details>
 
-## Aprendizado Contínuo
+# Aprendizado Contínuo
 
 Me mantenho atualizado com os conteúdos do [curso.dev](https://curso.dev) e [balta.io](https://balta.io).
 
@@ -93,11 +93,13 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 
 <details>
 <summary>Personalize seu perfil! Veja esses links.</summary>
+  <br>
   
-- [Crie escudos de tecnologia](https://shields.io/)
-- [Exiba estatísticas e cards personalizados](https://github.com/anuraghazra/github-readme-stats)
-- [Troféus, cobrinha, PacMan e outros](https://profile-readme-generator.com/)
+- [Escudos de tecnologia](https://shields.io/)
+- [Estatísticas e cards personalizados](https://github.com/anuraghazra/github-readme-stats)
+- [Troféus, PacMan, Snake e outros](https://profile-readme-generator.com/)
 </details>
+<br>
 
 # 📫 Contact
 
