@@ -169,7 +169,7 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 [![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white)](https://visualstudio.microsoft.com/)
 [![Azure Data Studio](https://img.shields.io/badge/Azure_Data_Studio-0066B8?style=for-the-badge&logo=microsoftazure&logoColor=white)](https://learn.microsoft.com/en-us/sql/azure-data-studio/)
 [![SSMS](https://img.shields.io/badge/SQL_Server_Management_Studio-BB0A30?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)](https://learn.microsoft.com/en-us/sql/ssms/)
-[![Docker Desktop](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/products/docker-desktop/)
+[![Docker Desktop](https://img.shields.io/badge/Docker_Desktop-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/products/docker-desktop/)
 [![Notepad++](https://img.shields.io/badge/Notepad++-8BC34A?style=for-the-badge&logo=notepadplusplus&logoColor=black)](https://notepad-plus-plus.org/)
 [![Canva](https://img.shields.io/badge/Canva-00BFA6?style=for-the-badge&logo=canva&logoColor=white)](https://www.canva.com/)
 [![Excalidraw](https://img.shields.io/badge/Excalidraw-5865F2?style=for-the-badge&logo=excalidraw&logoColor=white)](https://excalidraw.com/)
