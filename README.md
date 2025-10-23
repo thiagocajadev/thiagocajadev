@@ -1,18 +1,18 @@
-![Header](thiagocajadev-github-header-banner-v7.png)
+![Thiago Caja Dev Header](img/thiagocajadev-header.png)
 
-# Seja bem-vindo(a)  <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" width="50px" />
+# Seja bem-vindo(a) <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" width="50px" />
 
 Olá **Dev**, **Tech Recruiter** e **entusiasta do código**!
 
 Sou o **Thiago Cajá**, me aventurando na área de **Tecnologia desde 2007**.
 
-Essa aqui é a minha rede social favorita de longe! Olha esse monte de código da galera 😀. 
+Essa aqui é a minha rede social favorita de longe! Olha esse monte de código da galera 😀.
 
 Se você me perguntar quais são meus valores, vou te contar no ato: `humilde`, `trabalhador`, `sincero` e `dedicado`.
 
 Meu propósito de vida é ajudar. Percorro esse caminho via TI, consertando e construindo coisas.
 
->[!NOTE]
+> [!NOTE]
 > Em tempos de **IA**, pratique a **IE (Inteligência Emocional)**.
 >
 > Use o **pensamento crítico** para tomar melhores decisões, tendo como base **dados** e **fatos** concretos.
@@ -27,26 +27,31 @@ Ultimamente faço um `dump` dos pensamentos, escrevendo no meu [blog](https://th
 Meu foco atualmente está sobre a stack **.NET**. Em conjunto, tenho estudado Web Moderno com **React** e quero me tornar um **Arquiteto de Soluções**.
 
 ### Planejamento e Arquitetura
-- **Modelagem de domínio**, organização em camadas e aplicação de boas práticas (SOLID, Clean Architecture)  
-- **Adoção de práticas de segurança**, com atenção à exposição de dados e validações  
+
+- **Modelagem de domínio**, organização em camadas e aplicação de boas práticas (SOLID, Clean Architecture)
+- **Adoção de práticas de segurança**, com atenção à exposição de dados e validações
 
 ### Backend e Integrações
-- **Minimal APIs** para construção de APIs enxutas e performáticas  
-- **ASP.NET** em soluções web robustas com foco em APIs e rotas segmentadas  
-- **Banco de dados** com SQL Server, utilizando procedures, views e queries otimizadas  
-- **Integração com APIs externas** e consumo de serviços REST  
-- **Migração e sustentação de sistemas existentes**, com foco em estabilidade e modernização  
-- **Windows Forms** para manutenção e evolução de sistemas desktop legados  
+
+- **Minimal APIs** para construção de APIs enxutas e performáticas
+- **ASP.NET** em soluções web robustas com foco em APIs e rotas segmentadas
+- **Banco de dados** com SQL Server, utilizando procedures, views e queries otimizadas
+- **Integração com APIs externas** e consumo de serviços REST
+- **Migração e sustentação de sistemas existentes**, com foco em estabilidade e modernização
+- **Windows Forms** para manutenção e evolução de sistemas desktop legados
 
 ### Frontend
-- **Blazor** (WebAssembly e Server) para aplicações modernas e interativas  
-- **Razor Views** para construção de interfaces dinâmicas e integração com dados da API  
+
+- **Blazor** (WebAssembly e Server) para aplicações modernas e interativas
+- **Razor Views** para construção de interfaces dinâmicas e integração com dados da API
 
 ### Testes e Qualidade
-- **Testes automatizados** (unitários e integrados) para garantir confiabilidade  
-- **Atenção à performance e experiência do usuário**, evitando complexidade desnecessária  
+
+- **Testes automatizados** (unitários e integrados) para garantir confiabilidade
+- **Atenção à performance e experiência do usuário**, evitando complexidade desnecessária
 
 ### Publicação e Versionamento
+
 - **Versionamento e automações de deploy** com Git e GitHub Actions
 
 ## Filosofia
@@ -69,21 +74,22 @@ flowchart LR
 
 Encaro o desenvolvimento como um processo estruturado:
 
-1. **Entendimento do contexto**: Qual problema estamos resolvendo?  
-2. **Modelagem das entradas (inputs)**: Organização e estruturação das informações  
+1. **Entendimento do contexto**: Qual problema estamos resolvendo?
+2. **Modelagem das entradas (inputs)**: Organização e estruturação das informações
 3. **Processamento e entrega das saídas (outputs)**: Clareza, eficiência e propósito
 
 ## Produtividade com Inteligência Artificial Generativa
 
 Utilizo IA como uma **ferramenta prática e estratégica** para acelerar meu fluxo de trabalho. Foco em produtividade, qualidade e organização.
 
-- Faço uso do **ChatGPT**, com **prompts otimizados** para documentação, revisão de código, análise de logs, estruturação de ideias e automação de tarefas repetitivas.  
-- Complemento com ferramentas como **NotebookLM / Gemini**, **DeepSeek** e outros recursos de IA para gerar insights, documentações visuais, esquemas e testes.  
+- Faço uso do **ChatGPT**, com **prompts otimizados** para documentação, revisão de código, análise de logs, estruturação de ideias e automação de tarefas repetitivas.
+- Complemento com ferramentas como **NotebookLM / Gemini**, **DeepSeek** e outros recursos de IA para gerar insights, documentações visuais, esquemas e testes.
 - Sempre com **curadoria humana, senso crítico e responsabilidade**. IA me ajuda a ganhar tempo, mas **não substitui a análise técnica nem a tomada de decisão**.
 
 ## Boas Práticas
 
 Procuro aplicar uma **modelagem limpa**, com **boas práticas** e nomes expressivos para classes, propriedades e métodos.
+
 </details>
 
 # Aprendizado Contínuo
@@ -109,8 +115,6 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMiA2YzAtMS4xLS45LTItMi0ySDRDMi45IDQgMiA0LjkgMiA2djEyYzAgMS4xLjkgMiAyIDJoMTZjMS4xIDAgMi0uOSAyLTJWNnptLTIgMC04IDUtOC01aDE2em0wIDEySDRWOGw4IDUgOC01djEweiIvPjwvc3ZnPg==&logoColor=white)](mailto:contato@thiagocaja.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMC40NDcgMjAuNDUySDE2Ljg5di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzktMS44NTItMy4wMzktMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2OWgtMy41NTRWOUgxMi4zNTRWMTBhLjA0OS4wNDkgMCAwIDAgLjA0OSAwYy40NzctLjkgMS42MzctMS44NTIgMy4zNy0xLjg1MiAzLjYwMSAwIDQuMjY4IDIuMzcgNC4yNjggNS40NTV2Ni4yODh6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjMuOTI1IDIuMDYzIDIuMDYzIDAgMS4xMzktLjkyMyAyLjA2NS0yLjA2MyAyLjA2NXpNNy4xMTkgMjAuNDUySDMuNTU0VjloMy41NjV2MTEuNDUyWiIvPjwvc3ZnPg==&logoColor=white)](https://linkedin.com/in/thiagocajadev)
-
-
 
 # 💻 Stack
 
@@ -180,7 +184,7 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 [![Excalidraw](https://img.shields.io/badge/Excalidraw-5865F2?style=for-the-badge&logo=excalidraw&logoColor=white)](https://excalidraw.com/)
 [![Draw.io](https://img.shields.io/badge/Draw.io-F08705?style=for-the-badge&logo=diagramsdotnet&logoColor=white)](https://app.diagrams.net/)
 
-# 🎨 Themes 
+# 🎨 Themes
 
 [![JetBrains Mono](https://img.shields.io/badge/JetBrains_Mono-333333?style=for-the-badge&logo=jetbrains&logoColor=white)](https://www.jetbrains.com/pt-br/lp/mono/)
 [![JetBrainsMono Nerd Font](https://img.shields.io/badge/Nerd_Font-444444?style=for-the-badge&logo=nerdfonts&logoColor=white)](https://www.nerdfonts.com/font-downloads)
