@@ -200,10 +200,10 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 <br>
 
 <span>
-  <img height="200" src="https://github-readme-stats.vercel.app/api?username=thiagocajadev&include_all_commits=true&show=prs_merged_percentage&hide=contribs&show_icons=true&hide_border=true&theme=github_dark_dimmed&rank_icon=github" />
+  <img height="200" src="https://github-readme-stats-v1-thiagocajadev.vercel.app/api?username=thiagocajadev&include_all_commits=true&show=prs_merged_percentage&hide=contribs&show_icons=true&hide_border=true&theme=github_dark_dimmed&rank_icon=github&cache_seconds=86400" />
 </span>
 <span>
-  <img height="200" src="https://github-readme-stats.vercel.app/api/top-langs?username=thiagocajadev&layout=compact&langs_count=8&card_width=370&hide_border=true&theme=github_dark_dimmed" />
+  <img height="200" src="https://github-readme-stats-v1-thiagocajadev.vercel.app/api/top-langs?username=thiagocajadev&layout=compact&langs_count=8&card_width=370&hide_border=true&theme=github_dark_dimmed&cache_seconds=86400" />
 </span>
 <br><br>
 
@@ -215,11 +215,18 @@ Sou um eterno aprendiz e gosto de compartilhar o que descubro.
 
 # 📌 Pinned
 
-[![Code Conventions](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=code-conventions&description_lines_count=2&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/code-conventions)
-[![SQL Conventions](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=sql-conventions&description_lines_count=2&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/sql-conventions)
-[![Clone Tabnews](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=clone-tabnews&description_lines_count=2&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/clone-tabnews)
-[![Starship Bash](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=terminal-bash-one-dark-starship-profile&description_lines_count=2&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/terminal-bash-one-dark-starship-profile)
-[![PayCheck BR](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=PayCheckBR&description_lines_count=2&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/PayCheckBR)
-[![Balta IO - BlazorIBGE](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=BlazorChallengeIBGEv2&description_lines_count=2&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/BlazorChallengeIBGEv2)
-[![Fleet MGMT](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=FleetMGMT&description_lines_count=2&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/FleetMGMT)
-[![LOL Configurações](https://github-readme-stats.vercel.app/api/pin/?username=thiagocajadev&repo=LeagueOfLegendsConfig&description_lines_count=2&hide_border=true&theme=discord_old_blurple)](https://github.com/thiagocajadev/LeagueOfLegendsConfig)
+[![Code Conventions](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=code-conventions&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=86400)](https://github.com/thiagocajadev/code-conventions)
+
+[![SQL Conventions](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=sql-conventions&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=86400)](https://github.com/thiagocajadev/sql-conventions)
+
+[![Clone Tabnews](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=clone-tabnews&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=86400)](https://github.com/thiagocajadev/clone-tabnews)
+
+[![Starship Bash](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=terminal-bash-one-dark-starship-profile&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=86400)](https://github.com/thiagocajadev/terminal-bash-one-dark-starship-profile)
+
+[![PayCheck BR](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=PayCheckBR&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=86400)](https://github.com/thiagocajadev/PayCheckBR)
+
+[![Balta IO - BlazorIBGE](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=BlazorChallengeIBGEv2&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=86400)](https://github.com/thiagocajadev/BlazorChallengeIBGEv2)
+
+[![Fleet MGMT](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=FleetMGMT&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=86400)](https://github.com/thiagocajadev/FleetMGMT)
+
+[![LOL Configurações](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=LeagueOfLegendsConfig&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=86400)](https://github.com/thiagocajadev/LeagueOfLegendsConfig)
