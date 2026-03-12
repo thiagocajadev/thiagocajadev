@@ -112,8 +112,8 @@ Encaro o desenvolvimento como um processo estruturado:
 Utilizo IA como uma **ferramenta prática e estratégica** para acelerar meu fluxo de trabalho. Foco em produtividade, qualidade e organização. Alguém ainda faz contas sem calculadora? Nem por isso deixamos de aprender matemática.
 Então, temos que usar as ferramentas a nosso favor. Saber a lógica e os fundamentos é o mais importante para poder delegar a criação de código.
 
-- Faço uso do **ChatGPT**, com **prompts otimizados** para documentação, revisão de código, análise de logs, estruturação de ideias e automação de tarefas repetitivas.
-- Complemento com ferramentas como **NotebookLM / Gemini**, **DeepSeek** e outros recursos de IA para gerar insights, documentações visuais, esquemas e testes.
+- Faço uso do **Claude Code**, com **prompts otimizados** para documentação, revisão de código, análise de logs, estruturação de ideias e automação de tarefas repetitivas.
+- Complemento com ferramentas como **ChatGPT**, **NotebookLM / Gemini**, **DeepSeek** e outros recursos de IA para gerar insights, documentações visuais, esquemas e testes.
 - Sempre com **curadoria humana, senso crítico e responsabilidade**. IA me ajuda a ganhar tempo, mas **não substitui a análise técnica nem a tomada de decisão**.
 
 ## Boas Práticas
