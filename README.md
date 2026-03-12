@@ -24,35 +24,64 @@ Ultimamente faço um `dump` dos pensamentos, escrevendo no meu [blog](https://th
  
 ## Stack de Trabalho
 
-Meu foco atualmente está sobre a stack **.NET**. Em conjunto, tenho estudado Web Moderno com **React** e quero me tornar um **Arquiteto de Soluções**.
+Meu foco atualmente está sobre a stack **.NET**. Em paralelo, tenho estudado **React** e evoluído na direção de **Arquitetura de Soluções**, buscando construir sistemas seguros, simples e sustentáveis.
 
-### Planejamento e Arquitetura
+## Fundação da Aplicação
 
-- **Modelagem de domínio**, organização em camadas e aplicação de boas práticas (SOLID, Clean Architecture)
-- **Adoção de práticas de segurança**, com atenção à exposição de dados e validações
+Antes de qualquer feature, priorizo a **base da aplicação**.
 
-### Backend e Integrações
+- **Hardening inicial da aplicação**, reduzindo superfície de ataque desde o início
+- **Setup do ambiente** com definição de variáveis e arquivos `.env`
+- **Configuração de CORS** e controle de exposição de endpoints
+- **Rate Limiting** para proteção contra abuso de API
+- **Validação de entradas** e sanitização de dados
+- **Tratamento seguro de dados de saída**, evitando exposição de informações sensíveis
+- **Padronização de respostas da API**, garantindo consistência entre endpoints
+
+## Planejamento e Arquitetura
+
+- **Modelagem de domínio** e organização clara em camadas
+- Aplicação de **princípios SOLID**
+- Estrutura inspirada em **Clean Architecture**
+- Separação clara entre **contratos, handlers, processamento e infraestrutura**
+- Código organizado para **manutenção, evolução e baixo acoplamento**
+
+## Backend e Integrações
 
 - **Minimal APIs** para construção de APIs enxutas e performáticas
-- **ASP.NET** em soluções web robustas com foco em APIs e rotas segmentadas
-- **Banco de dados** com SQL Server, utilizando procedures, views e queries otimizadas
+- **ASP.NET** para soluções web robustas
+- **SQL Server** com procedures, views e queries otimizadas
 - **Integração com APIs externas** e consumo de serviços REST
-- **Migração e sustentação de sistemas existentes**, com foco em estabilidade e modernização
-- **Windows Forms** para manutenção e evolução de sistemas desktop legados
+- **Migração e sustentação de sistemas existentes**
+- **Windows Forms** para manutenção de aplicações desktop legadas
 
-### Frontend
+## Frontend
 
-- **Blazor** (WebAssembly e Server) para aplicações modernas e interativas
-- **Razor Views** para construção de interfaces dinâmicas e integração com dados da API
+- **Blazor (WebAssembly e Server)** para aplicações interativas
+- **Razor Views** para interfaces integradas ao backend
+- Estudos e prática com **React** para aplicações web modernas
 
-### Testes e Qualidade
+## Estilo de Código
 
-- **Testes automatizados** (unitários e integrados) para garantir confiabilidade
-- **Atenção à performance e experiência do usuário**, evitando complexidade desnecessária
+Alguns padrões que sigo no dia a dia:
 
-### Publicação e Versionamento
+- **Vertical Slice Style** para organização de features
+- **Direct return** para reduzir complexidade e evitar aninhamentos
+- Condicionais com **muitas verificações são extraídas para métodos**
+- **Handlers focados no fluxo**, delegando regras e processamento para métodos específicos
+- Preferência por **métodos pequenos e bem definidos**
+- Separação entre **validação, fluxo e processamento**
 
-- **Versionamento e automações de deploy** com Git e GitHub Actions
+## Testes e Qualidade
+
+- **Testes automatizados** (unitários e integrados)
+- Atenção constante à **performance**
+- Foco em **simplicidade, previsibilidade e manutenção do código**
+
+## Publicação e Versionamento
+
+- **Git** para versionamento
+- **GitHub Actions** para automação de build e deploy
 
 ## Filosofia
 
