@@ -8,7 +8,7 @@ Sou o **Thiago Cajá**, Desenvolvedor de Software com atuação desde **2007**, 
 
 > 🟢 **Disponível para novos projetos** — pode me chamar!
 
-Essa aqui é a minha rede social favorita de longe! Olha esse monte de código da galera 😀.
+Essa aqui é a minha "rede social" favorita de longe! Mais códigos e menos papo furado 😄.
 
 > [!IMPORTANT]
 > **"Evite o complexo, prefira o simples e sofisticado"**
