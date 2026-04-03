@@ -117,9 +117,9 @@ For technical details and my **Best Practices Guide** for each phase, check the 
 
 I stay up to date with the content I believe in:
 
-- [curso.dev](https://curso.dev) (Node.js/TypeScript ecosystem)
-- [balta.io](https://balta.io) (.NET universe)
-- [Anthropic](https://anthropic.com) (AI courses)
+- [curso.dev](https://curso.dev) → Node.js/TypeScript ecosystem
+- [balta.io](https://balta.io) → .NET universe
+- [Anthropic](https://www.anthropic.com/learn) → AI courses
 
 I am an eternal researcher. I don't pretend to know everything; I am driven by a constant dedication to learning and mastering what I don't know yet. I love sharing everything I discover.
 

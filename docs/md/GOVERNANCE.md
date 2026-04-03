@@ -57,4 +57,4 @@ Adoto um fluxo de 5 fases obrigatórias que removem a incerteza e garantem a qua
 
 ---
 
-_Assinado: Thiago Caja - Desenvolvedor_
+_Assinado: Thiago Cajaíba - Desenvolvedor_

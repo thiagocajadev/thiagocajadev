@@ -100,4 +100,4 @@ Aqui, a minha tomada de decisão é fundamentada em **dados e fatos**, visando o
 
 ---
 
-_Documentação de Apoio à Engenharia por Thiago Caja - Desenvolvedor_
+_Documentação de Apoio à Engenharia. Assinado: Thiago Cajaíba - Desenvolvedor_

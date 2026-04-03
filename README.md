@@ -98,9 +98,9 @@ Minha entrega de valor é baseada em uma esteira de 8 fases de maturidade técni
 
 Me mantenho atualizado com os conteúdos em que acredito:
 
-- [curso.dev](https://curso.dev) (ecossistema Node.js/TypeScript)
-- [balta.io](https://balta.io) (universo .NET)
-- [Anthropic](https://anthropic.com) (cursos de IA)
+- [curso.dev](https://curso.dev) → ecossistema Node.js/TypeScript
+- [balta.io](https://balta.io) → universo .NET
+- [Anthropic](https://www.anthropic.com/learn) → cursos de IA
 
 Sou um eterno pesquisador. Não tenho a pretensão de saber tudo, mas sou movido pela dedicação constante em aprender e dominar aquilo que ainda desconheço. Gosto de compartilhar tudo o que descubro.
 

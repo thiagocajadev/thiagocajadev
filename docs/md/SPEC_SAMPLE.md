@@ -52,4 +52,4 @@ Os critérios de aceite para a **Phase 4 (TEST)** são binários:
 
 ---
 
-_Assinado: Thiago Caja - Desenvolvedor_
+_Assinado: Thiago Cajaíba - Desenvolvedor_
