@@ -1,70 +1,71 @@
-![Thiago Caja Dev Header](docs/assets/img/thiagocajadev-github-header-banner-v8.png)
+![Thiago Caja Dev Header](../assets/img/thiagocajadev-github-header-banner-v8.png)
 
-# Seja bem-vindo(a) <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" width="50px" alt="Hand Wave" />
+# Welcome <img src="https://user-images.githubusercontent.com/74038190/213844263-a8897a51-32f4-4b3b-b5c2-e1528b89f6f3.png" width="50px" alt="Hand Wave" />
 
-[**🇺🇸 English Version**](docs/md/README.en.md)
+[**🇧🇷 Versão em Português**](../../README.md)
 
-Olá **Dev**, **Tech Recruiter** e **entusiasta do código**!
+Hello **Dev**, **Tech Recruiter** and **code enthusiast**!
 
-Sou o **Thiago Cajá**, Desenvolvedor de Software com trajetória iniciada em **2007**. Minha jornada na tecnologia é marcada por uma evolução contínua: comecei na base da pirâmide com suporte técnico e configuração de servidores, onde a necessidade de automação me levou aos primeiros scripts `.bat`.
+I'm **Thiago Cajá**, a Software Developer working since **2007**, specializing in **.NET/C#** and full-stack ecosystems. I focus on secure architecture, sustainable code, and value delivery guided by high-level engineering principles.
 
-Ao longo dos anos, naveguei por diversos ecossistemas como Java Swing, VB/VB.NET e PHP, até me especializar na solidez do **.NET (C#)**, evoluindo de soluções Desktop para a Web. Essa bagagem técnica é complementada por uma experiência em **Gestão de Suporte (Helpdesk)**, o que me conferiu uma visão consultiva e estratégica sobre o ciclo de vida do software e a experiência do usuário.
+Values that guide my journey: **Humility**, **Hard Work**, **Sincerity**, and **Dedication**.
 
-Hoje, mantenho uma **stack flexível e moderna** (.NET, React, JS/TS, Docker, Postgres), estudando diariamente para garantir que minhas entregas unam a robustez da engenharia tradicional com a agilidade das tendências AI-Native.
+This is my favorite "social network" by far! More code and less small talk 😄.
+
+[![Status](https://img.shields.io/badge/Status-Available%20for%20Projects-success?style=for-the-badge&logo=github)](mailto:contato@thiagocaja.dev)
 
 > [!IMPORTANT]
-> **"Evite o complexo, prefira o simples e sofisticado"**
+> **"Avoid the complex, prefer the simple and sophisticated"**
 
-Valores que guiam minha jornada: **Humildade**, **Trabalho**, **Sinceridade** e **Dedicação**.
+### 📐 Governance and Principles (The 4 Laws)
 
-Essa aqui é a minha "rede social" favorita de longe! Mais códigos e menos papo furado 😄.
+I apply these laws as my **technical governance** foundation in every new project, ensuring that the bootstrap (the initial setup and base architecture definition) and the evolution of systems follow excellence standards from day one:
 
-Meu propósito de vida é ajudar. Percorro esse caminho via TI, consertando e construindo coisas.
+<p align="center">
+  <img src="https://img.shields.io/badge/%F0%9F%94%92_Hardening-Deny--by--Default-9c4a3f?style=for-the-badge" alt="Hardening - Deny-by-Default" />
+  <img src="https://img.shields.io/badge/%F0%9F%9A%A6_Resilience-Failure_as_Value-4a6b8c?style=for-the-badge" alt="Resilience - Failure as Value" />
+  <img src="https://img.shields.io/badge/%F0%9F%8C%8A_The_Cascade-Storytelling_Code-5b8c6a?style=for-the-badge" alt="The Cascade - Storytelling Code" />
+  <img src="https://img.shields.io/badge/%F0%9F%92%8E_Visual_Excellence-Design_as_Code-6d5d83?style=for-the-badge" alt="Visual Excellence - Design as Code" />
+</p>
 
-Ultimamente faço um `dump` dos pensamentos, escrevendo no meu [blog](https://thiagocaja.dev).
+| Law | Strategic Commentary |
+| :--- | :--- |
+| **Hardening** | **Deep Security**: Data shielding and a *Deny-by-Default* posture. Security is not an "add-on", it's the foundation of any serious architecture. |
+| **Resilience** | **Failure Management**: Implementation of the *Result Pattern* to treat errors as first-class values, avoiding generic exceptions and ensuring traceability. |
+| **The Cascade** | **Fluid Code**: Application of *Top-Down* and *SLAP* so that the code can be read like a book, reducing the cognitive load for those who maintain it. |
+| **Visual Excellence** | **Design as Code**: The aesthetics and precision of the interface are the final layer of trust. If the visual is neglected, the user projects that doubt onto security and performance. |
 
-[![Status](https://img.shields.io/badge/Status-Dispon%C3%ADvel%20para%20Projetos-success?style=for-the-badge&logo=github)](mailto:contato@thiagocaja.dev)
+# 🚀 SDD: Spec Driven Development
 
-### Governança e Princípios (The 4 Laws)
+> **"The specification drives the code, not the contrary."**
 
-Aplico estas leis como minha base de **governança técnica** em cada novo projeto, garantindo que o bootstrap (o setup inicial e a definição da arquitetura base) e a evolução de sistemas sigam padrões de excelência desde o primeiro dia:
+I seek to align my routine with an **AI-Native** flow based on **SDD**: the strategic specification (`SPEC.md`) precedes the first commit. Specialist in transforming business intent into dense specifications for **AI Agent** orchestration.
 
-<p align="left"><img src="https://img.shields.io/badge/%F0%9F%94%92_Hardening-Deny--by--Default-9c4a3f?style=for-the-badge" alt="Hardening - Deny-by-Default" /> <img src="https://img.shields.io/badge/%F0%9F%9A%A6_Resilience-Failure_as_Value-4a6b8c?style=for-the-badge" alt="Resilience - Failure as Value" /> <img src="https://img.shields.io/badge/%F0%9F%8C%8A_The_Cascade-Storytelling_Code-5b8c6a?style=for-the-badge" alt="The Cascade - Storytelling Code" /> <img src="https://img.shields.io/badge/%F0%9F%92%8E_Visual_Excellence-Design_as_Code-6d5d83?style=for-the-badge" alt="Visual Excellence - Design as Code" /></p>
+**The SDLC Cycle (5 Phases)**: My methodology follows a high-discipline cycle divided into 5 mandatory stages: **SPEC** (The Contract) → **PLAN** (The Strategy) → **CODE** (The Execution) → **TEST** (The Verification) → **END** (The Delivery).
 
-| Lei                   | Comentário Estratégico                                                                                                                                                        |
-| :-------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Hardening**         | **Segurança Profunda**: Blindagem de dados e postura _Deny-by-Default_. A segurança não é um "anexo", é o alicerce de qualquer arquitetura séria.                             |
-| **Resilience**        | **Gestão de Falhas**: Implementação de _Result Pattern_ para tratar erros como valores de primeira classe, evitando exceções genéricas e garantindo rastreabilidade.          |
-| **The Cascade**       | **Código Fluido**: Aplicação de _Top-Down_ e _SLAP_ para que o código possa ser lido como um livro, reduzindo a carga cognitiva de quem o mantém.                             |
-| **Visual Excellence** | **Design as Code**: A estética e a precisão da interface são a camada de confiança final. Se o visual é descuidado, o usuário projeta essa dúvida na segurança e performance. |
+- **Governance**: See how I apply this cycle in the [Governance of this Profile (GOVERNANCE.md)](GOVERNANCE.md).
+- **Evidence**: Explore a [Spec Sample (SPEC_SAMPLE.md)](SPEC_SAMPLE.md) of a real background service.
 
-# SDD: Spec Driven Development
+**Vision of the Future**: I believe the modern developer's role is evolving towards writing precise specifications and technical curation. The future of development tends to be the art of defining, analyzing, and approving what **AI Agents** write, ensuring that every line of code faithfully reflects the business rules and project goals.
 
-> **"A especificação guia o código, não o contrário."**
+**Maturity and Adaptability**: I constantly monitor and study new methodologies and trends (such as spec-driven and AI-powered engineering), adapting them to my workflow to gain efficiency, while never discarding the traditional engineering foundations and processes that ensure the long-term solidity of a project.
 
-Procuro alinhar minha rotina com um fluxo **AI-Native** baseado em **SDD**: a especificação estratégica (`SPEC.md`) precede o primeiro commit. Especialista em transformar intenções de negócio em especificações densas para orquestração de **Agentes IA**.
+- **Thought Flow**: Short methods, direct return, and narrative clarity.
+- **GenAI Orchestration**: **AntiGravity**, **Claude Code**, and **Gemini** as hardening co-pilots.
+- **Responsibility**: Human curation and critical sense in 100% of deliveries.
 
-**O Ciclo SDLC (5 Fases)**: Minha metodologia segue um ciclo de alta disciplina dividido em 5 etapas obrigatórias:
+My life purpose is to help. I follow this path through IT, fixing and building things.
 
-`SPEC` (O Contrato) → `PLAN` (A Estratégia) → `CODE` (A Execução) → `TEST` (A Verificação) → `END` (A Entrega).
-
-- **Governança**: Veja como aplico este ciclo na [Governança deste Perfil (GOVERNANCE.md)](docs/md/GOVERNANCE.md).
-- **Evidência**: Explore uma [Spec de Exemplo (SPEC_SAMPLE.md)](docs/md/SPEC_SAMPLE.md) de um serviço de background real.
-
-**Visão de Futuro**: Acredito que o papel do desenvolvedor moderno está evoluindo para a escrita de especificações precisas e a curadoria técnica. O futuro do desenvolvimento tende a ser a arte de definir, analisar e aprovar o que os **Agentes de IA** escrevem, garantindo que cada linha de código reflita fielmente as regras de negócio e os objetivos do projeto.
-
-**Maturidade e Adaptabilidade**: Acompanho e estudo constantemente novas metodologias e tendências, adaptando-as ao meu fluxo de trabalho para ganhar eficiência, mas sem abrir mão dos processos e fundamentos tradicionais de engenharia que garantem a solidez de um projeto a longo prazo.
-
-- **Fluxo do Pensamento**: Métodos curtos, retorno direto e clareza narrativa.
-- **Orquestração GenAI**: **AntiGravity**, **Claude Code** e **Gemini** como copilotos de hardening.
-- **Responsabilidade**: Curadoria humana e senso crítico em 100% das entregas.
+Recently I've been doing a "dump" of thoughts, writing on my [blog](https://thiagocaja.dev).
 
 <details>
-  <summary>Conheça mais detalhes da minha metodologia de trabalho (SDD & Pipeline) ⬇️</summary>
+  <summary>Learn more about my work methodology (SDD & Pipeline) ⬇️</summary>
 
-## O Conceito Raiz (Input → Process → Output)
+## 💡 The Root Concept (Input → Process → Output)
 
-Encaro o desenvolvimento como um processo estruturado de transformação de dados e contextos:
+<br>
+
+I view development as a structured process of transforming data and contexts:
 
 ```mermaid
 flowchart LR
@@ -76,52 +77,72 @@ flowchart LR
  end
 ```
 
-1. **Entendimento do contexto**: Qual problema estamos resolvendo?
-2. **Modelagem das entradas (inputs)**: Organização e estruturação das informações.
-3. **Processamento e entrega das saídas (outputs)**: Clareza, eficiência e propósito.
+1. **Context Understanding**: What problem are we solving?
+
+2. **Input Modeling**: Organization and structuring of information.
+
+3. **Processing and Output Delivery**: Clarity, efficiency, and purpose.
+
+<br>
 
 ---
 
-## A Esteira de Engenharia (Pipeline 01 a 08)
+## The Engineering Pipeline (01 to 08)
 
-Minha entrega de valor é baseada em uma esteira de 8 fases de maturidade técnica que garantem que um projeto nasça e cresça com padrões de **Staff Engineering**.
+My value delivery is **guided** by a pipeline of 8 technical maturity phases:
 
 **01. Foundation → 02. Security → 03. CI/CD → 04. RBAC → 05. UI/UX → 06. Domain → 07. Readiness → 08. Ops**
 
-> Para o detalhamento técnico e o meu **Guia de Boas Práticas** de cada fase, consulte o arquivo oficial de Governança:
->
-> 📂 **[Manual de Governança (PIPELINE.md)](docs/md/PIPELINE.md)**
+For technical details and my **Best Practices Guide** for each phase, check the [Governance Manual (PIPELINE.md)](PIPELINE.md)
+
+<br>
+
+### Maturity Summary
+
+- **Foundation & Security**: Solid base, Orchestrated Startup, Observability, continuous review, and living documentation (README + onboarding from the first commit).
+
+- **Automation & DX**: Predilection for single-entry utility scripts (`npm run dev`, `dev.sh`, etc.) that compose commands and work on both Linux and Windows, regardless of the project language. Centralized configuration via `.env`.
+
+- **Identity & Design**: Focus on the end user with Visual Excellence and identity security.
+
+- **Domain & Quality**: **SRP** (Single Responsibility Principle), Extension Methods, **SOLID**, **KISS** (Keep It Simple, Stupid), **YAGNI** (You Aren't Gonna Need It), **TDD** (Test-Driven Development) and **BDD** (Behavior-Driven Development).
+
+- **Governance & Ops**: Performance (Cache, Pagination), data-driven action plans, and evolution traceability via **CHANGELOG** and **Release Notes**.
+
+<br>
 
 </details>
 
-# Aprendizado Contínuo
+# Continuous Learning
 
-Me mantenho atualizado com os conteúdos em que acredito:
+I stay up to date with the content I believe in:
 
-- [curso.dev](https://curso.dev) (ecossistema Node.js/TypeScript)
-- [balta.io](https://balta.io) (universo .NET)
-- [Anthropic](https://anthropic.com) (cursos de IA)
+- [curso.dev](https://curso.dev) (Node.js/TypeScript ecosystem)
+- [balta.io](https://balta.io) (.NET universe)
+- [Anthropic](https://anthropic.com) (AI courses)
 
-Sou um eterno pesquisador aprendiz. Gosto de compartilhar tudo o que descubro.
+I am an eternal researcher-apprentice. I like to share everything I discover.
 
 <details>
-<summary>Eu compartilho mesmo 🙂! Veja aqui dicas pra personalizar seu perfil ⬇️.</summary>
+<summary>I really do share 🙂! See tips to customize your profile ⬇️.</summary>
 <br>
 
-- [Header do perfil](https://leviarista.github.io/github-profile-header-generator/)
-- [Escudos de tecnologia](https://shields.io/)
-- [Estatísticas e cards personalizados](https://github.com/anuraghazra/github-readme-stats)
-- [Troféus, PacMan, Snake e outros](https://profile-readme-generator.com/)
+- [Profile Header](https://leviarista.github.io/github-profile-header-generator/)
+- [Tech Shields](https://shields.io/)
+- [Stats and custom cards](https://github.com/anuraghazra/github-readme-stats)
+- [Trophies, PacMan, Snake and others](https://profile-readme-generator.com/)
 <br>
 </details>
 
-**Posso ajudar em algo?** É só chamar.
+**Can I help with something?** Just call.
 <br>
 
 # 📫 Contact
 
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMiA2YzAtMS4xLS45LTItMi0ySDRDMi45IDQgMiA0LjkgMiA2djEyYzAgMS4xLjkgMiAyIDJoMTZjMS4xIDAgMi0uOSAyLTJWNnptLTIgMC04IDUtOC01aDE2em0wIDEySDRWOGw4IDUgOC01djEweiIvPjwvc3ZnPg==&logoColor=white)](mailto:contato@thiagocaja.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMC40NDcgMjAuNDUySDE2Ljg5di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzktMS44NTItMy4wMzktMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2OUgxMC4zNTRWOUgxMi4zNTRWMTBhLjA0OS4wNDkgMCAwIDAgLjA0OSAwYy40NzctLjkgMS42MzctMS44NTIgMy4zNy0xLjg1MiAzLjYwMSAwIDQuMjY4IDIuMzcgNC4yNjggNS40NTV2Ni4yODh6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjMuOTI1IDIuMDYzIDIuMDYzIDAgMS4xMzktLjkyMyAyLjA2NS0yLjA2MyAyLjA2NXpNNy4xMTkgMjAuNDUySDMuNTU0VjloMy41NjV2MTEuNDUyWiIvPjwvc3ZnPg==&logoColor=white)](https://linkedin.com/in/thiagocajadev)
+
+<br>
 
 # 💻 Stack
 
@@ -137,6 +158,8 @@ Sou um eterno pesquisador aprendiz. Gosto de compartilhar tudo o que descubro.
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Hono](https://img.shields.io/badge/Hono-E36002?style=for-the-badge&logo=hono&logoColor=white)
 
+<br>
+
 ### 🖥️ Frontend
 
 ![Blazor](https://img.shields.io/badge/Blazor-5C2D91?style=for-the-badge&logo=blazor&logoColor=white)
@@ -149,6 +172,8 @@ Sou um eterno pesquisador aprendiz. Gosto de compartilhar tudo o que descubro.
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 
+<br>
+
 ### 🗄️ Database
 
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
@@ -156,6 +181,8 @@ Sou um eterno pesquisador aprendiz. Gosto de compartilhar tudo o que descubro.
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Postgres](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+
+<br>
 
 ### ☁️ DevOps & Cloud
 
@@ -168,6 +195,8 @@ Sou um eterno pesquisador aprendiz. Gosto de compartilhar tudo o que descubro.
 ![Cloudflare Pages](https://img.shields.io/badge/Pages-F38020?style=for-the-badge&logo=cloudflarepages&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
 
+<br>
+
 ### 🔬 Quality & Testing
 
 ![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white)
@@ -179,7 +208,9 @@ Sou um eterno pesquisador aprendiz. Gosto de compartilhar tudo o que descubro.
 ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
 ![Confluence](https://img.shields.io/badge/Confluence-172B4D?style=for-the-badge&logo=confluence&logoColor=white)
 
-### 📐 Princípios & Padrões
+<br>
+
+### 📐 Principles & Patterns
 
 ![Clean Code](https://img.shields.io/badge/Clean_Code-051937?style=for-the-badge&logo=readthedocs&logoColor=61DAFB)
 ![SOLID](https://img.shields.io/badge/SOLID-008793?style=for-the-badge&logo=codefactor&logoColor=white)
@@ -193,7 +224,9 @@ Sou um eterno pesquisador aprendiz. Gosto de compartilhar tudo o que descubro.
 ![Rich Domains](https://img.shields.io/badge/Rich_Domains-a8eb12?style=for-the-badge&logo=googledomains&logoColor=black)
 ![DDD](https://img.shields.io/badge/DDD-f5a623?style=for-the-badge&logo=diagram&logoColor=black)
 
-# 🤖 Inteligência Artificial Generativa
+<br>
+
+# 🧠 Generative AI
 
 [![AntiGravity](https://img.shields.io/badge/AntiGravity-000000?style=for-the-badge&logo=google&logoColor=white)](https://deepmind.google/technologies/gemini/)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white)](https://anthropic.com/claude)
@@ -204,9 +237,9 @@ Sou um eterno pesquisador aprendiz. Gosto de compartilhar tudo o que descubro.
 
 <br>
 
-# 🛠️ Ferramentas & Ambiente
+# 🛠️ Tools & Environment
 
-### Ferramentas
+### Tools
 
 [![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
 [![JetBrains Rider](https://img.shields.io/badge/JetBrains_Rider-000000?style=for-the-badge&logo=jetbrains&logoColor=white)](https://www.jetbrains.com/rider/)
@@ -222,14 +255,18 @@ Sou um eterno pesquisador aprendiz. Gosto de compartilhar tudo o que descubro.
 [![Excalidraw](https://img.shields.io/badge/Excalidraw-5865F2?style=for-the-badge&logo=excalidraw&logoColor=white)](https://excalidraw.com/)
 [![Draw.io](https://img.shields.io/badge/Draw.io-F08705?style=for-the-badge&logo=diagramsdotnet&logoColor=white)](https://app.diagrams.net/)
 
-### Ambiente & Setup
+<br>
+
+### Environment & Setup
 
 [![JetBrains Mono](https://img.shields.io/badge/JetBrains_Mono-333333?style=for-the-badge&logo=jetbrains&logoColor=white)](https://www.jetbrains.com/pt-br/lp/mono/)
 [![JetBrainsMono Nerd Font](https://img.shields.io/badge/Nerd_Font-444444?style=for-the-badge&logo=nerdfonts&logoColor=white)](https://www.nerdfonts.com/font-downloads)
 [![One Dark Pro](https://img.shields.io/badge/One_Dark_Pro-282C34?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://github.com/Binaryify/OneDark-Pro)
 [![Starship](https://img.shields.io/badge/Starship-FF4081?style=for-the-badge&logo=starship&logoColor=white)](https://starship.rs/)
 
-# 📈 Estatísticas
+<br>
+
+# 📈 Stats
 
 <div>
   <img align="center" src="https://visitor-badge.laobi.icu/badge?page_id=thiagocajadev.thiagocajadev&left_color=dodgerblue&right_color=slategray" alt="Visitor Counter" />
@@ -249,6 +286,8 @@ Sou um eterno pesquisador aprendiz. Gosto de compartilhar tudo o que descubro.
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/thiagocajadev/thiagocajadev/output/pacman-contribution-graph.svg">
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/thiagocajadev/thiagocajadev/output/pacman-contribution-graph.svg">
 </picture>
+
+<br>
 
 # 📌 Pinned
 

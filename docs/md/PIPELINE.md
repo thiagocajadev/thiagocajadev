@@ -16,6 +16,8 @@ Aqui, a minha tomada de decisão é fundamentada em **dados e fatos**, visando o
 
 - **Contracts**: Recomendo a definição de Interfaces/Contratos antes da implementação (Contract First).
 
+- **Agent-Ready Architecture**: Desenvolvo pensando na navegabilidade por humanos e **Agentes de IA**. Isso inclui uma estrutura de pastas autoexplicativa e o uso de especificações claras (`SPEC.md`) que servem como "mapas" para copilotos e agentes autônomos.
+
 - **Environment**: Centralizo as configurações em arquivos `.env` para facilitar a gestão.
 
 - **Smoke Test**: Valido a saúde inicial via rota `/health` desde o primeiro commit.
@@ -68,7 +70,7 @@ Aqui, a minha tomada de decisão é fundamentada em **dados e fatos**, visando o
 
 **Objetivo**: Evolução sustentável e harmonia do negócio.
 
-- **DDD (Domain-Driven Design) Mindset**: Domínios ricos que contam a história do negócio de forma clara.
+- **SDD (Spec-Driven Development)**: A evolução de qualquer domínio começa no "Design do Pensamento". Nenhuma lógica complexa é codificada sem uma especificação prévia que valide as regras de negócio.
 
 - **Higiene de Código**: Aplicação cuidadosa de **SRP (Single Responsibility Principle)** e **DRY (Don't Repeat Yourself)** para evitar retrabalho e facilitar a manutenção por outros colegas.
 
