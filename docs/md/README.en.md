@@ -17,7 +17,7 @@ This is my favorite "social network" by far! More code and less small talk 😄.
 > [!IMPORTANT]
 > **"Avoid the complex, prefer the simple and sophisticated"**
 
-### 📐 Governance and Principles (The 4 Laws)
+### The 4 Laws (Technical Governance)
 
 I apply these laws as my **technical governance** foundation in every new project, ensuring that the bootstrap (the initial setup and base architecture definition) and the evolution of systems follow excellence standards from day one:
 
@@ -73,7 +73,7 @@ flowchart LR
     Context -.-> Modeling
  end
  subgraph Output
-    Modeling -.-> Processing -.-> Output
+    Modeling -.-> Processing -.-> Result
  end
 ```
 
@@ -239,8 +239,6 @@ I am an eternal researcher and learner. I don't pretend to know everything; I am
 
 # 🛠️ Tools & Environment
 
-### Tools
-
 [![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
 [![JetBrains Rider](https://img.shields.io/badge/JetBrains_Rider-000000?style=for-the-badge&logo=jetbrains&logoColor=white)](https://www.jetbrains.com/rider/)
 [![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white)](https://visualstudio.microsoft.com/)
@@ -257,7 +255,7 @@ I am an eternal researcher and learner. I don't pretend to know everything; I am
 
 <br>
 
-### Environment & Setup
+### Customization & Setup
 
 [![JetBrains Mono](https://img.shields.io/badge/JetBrains_Mono-333333?style=for-the-badge&logo=jetbrains&logoColor=white)](https://www.jetbrains.com/pt-br/lp/mono/)
 [![JetBrainsMono Nerd Font](https://img.shields.io/badge/Nerd_Font-444444?style=for-the-badge&logo=nerdfonts&logoColor=white)](https://www.nerdfonts.com/font-downloads)

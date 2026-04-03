@@ -25,7 +25,7 @@ Ultimamente faço um `dump` dos pensamentos, escrevendo no meu [blog](https://th
 
 [![Status](https://img.shields.io/badge/Status-Dispon%C3%ADvel%20para%20Projetos-success?style=for-the-badge&logo=github)](mailto:contato@thiagocaja.dev)
 
-### Governança e Princípios (The 4 Laws)
+### As 4 Leis (Technical Governance)
 
 Aplico estas leis como minha base de **governança técnica** em cada novo projeto, garantindo que o bootstrap (o setup inicial e a definição da arquitetura base) e a evolução de sistemas sigam padrões de excelência desde o primeiro dia:
 
@@ -72,7 +72,7 @@ flowchart LR
     Context -.-> Modeling
  end
  subgraph Output
-    Modeling -.-> Processing -.-> Output
+    Modeling -.-> Processing -.-> Result
  end
 ```
 
@@ -202,11 +202,7 @@ Sou um eterno pesquisador aprendiz. Não tenho a pretensão de saber tudo, mas s
 [![ChatGPT Plus](https://img.shields.io/badge/ChatGPT_Plus-10a37f?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com/chatgpt)
 [![DeepSeek](https://img.shields.io/badge/DeepSeek-000000?style=for-the-badge&logo=deepnote&logoColor=white)](https://www.deepseek.com/)
 
-<br>
-
 # 🛠️ Ferramentas & Ambiente
-
-### Ferramentas
 
 [![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
 [![JetBrains Rider](https://img.shields.io/badge/JetBrains_Rider-000000?style=for-the-badge&logo=jetbrains&logoColor=white)](https://www.jetbrains.com/rider/)
@@ -222,7 +218,7 @@ Sou um eterno pesquisador aprendiz. Não tenho a pretensão de saber tudo, mas s
 [![Excalidraw](https://img.shields.io/badge/Excalidraw-5865F2?style=for-the-badge&logo=excalidraw&logoColor=white)](https://excalidraw.com/)
 [![Draw.io](https://img.shields.io/badge/Draw.io-F08705?style=for-the-badge&logo=diagramsdotnet&logoColor=white)](https://app.diagrams.net/)
 
-### Ambiente & Setup
+### Customização & Setup
 
 [![JetBrains Mono](https://img.shields.io/badge/JetBrains_Mono-333333?style=for-the-badge&logo=jetbrains&logoColor=white)](https://www.jetbrains.com/pt-br/lp/mono/)
 [![JetBrainsMono Nerd Font](https://img.shields.io/badge/Nerd_Font-444444?style=for-the-badge&logo=nerdfonts&logoColor=white)](https://www.nerdfonts.com/font-downloads)
