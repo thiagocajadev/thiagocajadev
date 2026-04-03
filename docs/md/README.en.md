@@ -237,7 +237,9 @@ I am an eternal researcher. I don't pretend to know everything; I am driven by a
 
 <br>
 
-# 🛠️ Tools & Environment
+# 🛠️ Tools
+
+### Apps & Productivity
 
 [![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
 [![JetBrains Rider](https://img.shields.io/badge/JetBrains_Rider-000000?style=for-the-badge&logo=jetbrains&logoColor=white)](https://www.jetbrains.com/rider/)
@@ -255,7 +257,7 @@ I am an eternal researcher. I don't pretend to know everything; I am driven by a
 
 <br>
 
-### Customization & Setup
+### Terminal & Customization
 
 [![JetBrains Mono](https://img.shields.io/badge/JetBrains_Mono-333333?style=for-the-badge&logo=jetbrains&logoColor=white)](https://www.jetbrains.com/pt-br/lp/mono/)
 [![JetBrainsMono Nerd Font](https://img.shields.io/badge/Nerd_Font-444444?style=for-the-badge&logo=nerdfonts&logoColor=white)](https://www.nerdfonts.com/font-downloads)
