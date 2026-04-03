@@ -42,7 +42,7 @@ Aplico estas leis como minha base de **governança técnica** em cada novo proje
 
 > **"A especificação guia o código, não o contrário."**
 
-Procuro alinhar minha rotina com um fluxo **AI-Native** baseado em **SDD**: a especificação estratégica (`SPEC.md`) precede o primeiro commit. Especialista em transformar intenções de negócio em especificações densas para orquestração de **Agentes IA**.
+Procuro alinhar minha rotina com um fluxo **AI-Native** baseado em **SDD**: a especificação estratégica (`SPEC.md`) precede o primeiro commit. Atuo como o arquiteto que traduz necessidades de negócio em especificações precisas, orquestrando Agentes de IA para uma entrega de alta fidelidade.
 
 **O Ciclo SDLC (5 Fases)**: Minha metodologia segue um ciclo de alta disciplina dividido em 5 etapas obrigatórias:
 
@@ -102,7 +102,7 @@ Me mantenho atualizado com os conteúdos em que acredito:
 - [balta.io](https://balta.io) (universo .NET)
 - [Anthropic](https://anthropic.com) (cursos de IA)
 
-Sou um eterno pesquisador aprendiz. Gosto de compartilhar tudo o que descubro.
+Sou um eterno pesquisador aprendiz. Não tenho a pretensão de saber tudo, mas sou movido pela dedicação constante em aprender e dominar aquilo que ainda desconheço. Gosto de compartilhar tudo o que descubro.
 
 <details>
 <summary>Eu compartilho mesmo 🙂! Veja aqui dicas pra personalizar seu perfil ⬇️.</summary>

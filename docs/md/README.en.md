@@ -39,7 +39,7 @@ I apply these laws as my **technical governance** foundation in every new projec
 
 > **"The specification drives the code, not the contrary."**
 
-I seek to align my routine with an **AI-Native** flow based on **SDD**: the strategic specification (`SPEC.md`) precedes the first commit. Specialist in transforming business intent into dense specifications for **AI Agent** orchestration.
+I seek to align my routine with an **AI-Native** flow based on **SDD**: the strategic specification (`SPEC.md`) precedes the first commit. I act as the architect who translates business needs into precise specifications, orchestrating **AI Agents** for high-fidelity delivery.
 
 **The SDLC Cycle (5 Phases)**: My methodology follows a high-discipline cycle divided into 5 mandatory stages: **SPEC** (The Contract) → **PLAN** (The Strategy) → **CODE** (The Execution) → **TEST** (The Verification) → **END** (The Delivery).
 
@@ -121,7 +121,7 @@ I stay up to date with the content I believe in:
 - [balta.io](https://balta.io) (.NET universe)
 - [Anthropic](https://anthropic.com) (AI courses)
 
-I am an eternal researcher-apprentice. I like to share everything I discover.
+I am an eternal researcher and learner. I don't pretend to know everything; I am driven by a constant dedication to learning and mastering what I don't know yet. I love sharing everything I discover.
 
 <details>
 <summary>I really do share 🙂! See tips to customize your profile ⬇️.</summary>
