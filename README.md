@@ -102,7 +102,7 @@ Me mantenho atualizado com os conteúdos em que acredito:
 - [balta.io](https://balta.io) (universo .NET)
 - [Anthropic](https://anthropic.com) (cursos de IA)
 
-Sou um eterno pesquisador aprendiz. Não tenho a pretensão de saber tudo, mas sou movido pela dedicação constante em aprender e dominar aquilo que ainda desconheço. Gosto de compartilhar tudo o que descubro.
+Sou um eterno pesquisador. Não tenho a pretensão de saber tudo, mas sou movido pela dedicação constante em aprender e dominar aquilo que ainda desconheço. Gosto de compartilhar tudo o que descubro.
 
 <details>
 <summary>Eu compartilho mesmo 🙂! Veja aqui dicas pra personalizar seu perfil ⬇️.</summary>

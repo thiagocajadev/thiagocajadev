@@ -121,7 +121,7 @@ I stay up to date with the content I believe in:
 - [balta.io](https://balta.io) (.NET universe)
 - [Anthropic](https://anthropic.com) (AI courses)
 
-I am an eternal researcher and learner. I don't pretend to know everything; I am driven by a constant dedication to learning and mastering what I don't know yet. I love sharing everything I discover.
+I am an eternal researcher. I don't pretend to know everything; I am driven by a constant dedication to learning and mastering what I don't know yet. I love sharing everything I discover.
 
 <details>
 <summary>I really do share 🙂! See tips to customize your profile ⬇️.</summary>
