@@ -109,7 +109,7 @@ For technical details and my **Best Practices Guide** for each phase, check the 
 
 - **Governance & Ops**: Performance (Cache, Pagination), data-driven action plans, and evolution traceability via **CHANGELOG** and **Release Notes**.
 
-<br>
+
 
 </details>
 
@@ -125,24 +125,24 @@ I am an eternal researcher. I don't pretend to know everything; I am driven by a
 
 <details>
 <summary>I really do share 🙂! See tips to customize your profile ⬇️.</summary>
-<br>
+
 
 - [Profile Header](https://leviarista.github.io/github-profile-header-generator/)
 - [Tech Shields](https://shields.io/)
 - [Stats and custom cards](https://github.com/anuraghazra/github-readme-stats)
 - [Trophies, PacMan, Snake and others](https://profile-readme-generator.com/)
-<br>
+
 </details>
 
 **Can I help with something?** Just call.
-<br>
+
 
 # 📫 Contact
 
 [![Email](https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMiA2YzAtMS4xLS45LTItMi0ySDRDMi45IDQgMiA0LjkgMiA2djEyYzAgMS4xLjkgMiAyIDJoMTZjMS4xIDAgMi0uOSAyLTJWNnptLTIgMC04IDUtOC01aDE2em0wIDEySDRWOGw4IDUgOC01djEweiIvPjwvc3ZnPg==&logoColor=white)](mailto:contato@thiagocaja.dev)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMC40NDcgMjAuNDUySDE2Ljg5di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzktMS44NTItMy4wMzktMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2OUgxMC4zNTRWOUgxMi4zNTRWMTBhLjA0OS4wNDkgMCAwIDAgLjA0OSAwYy40NzctLjkgMS42MzctMS44NTIgMy4zNy0xLjg1MiAzLjYwMSAwIDQuMjY4IDIuMzcgNC4yNjggNS40NTV2Ni4yODh6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjMuOTI1IDIuMDYzIDIuMDYzIDAgMS4xMzktLjkyMyAyLjA2NS0yLjA2MyAyLjA2NXpNNy4xMTkgMjAuNDUySDMuNTU0VjloMy41NjV2MTEuNDUyWiIvPjwvc3ZnPg==&logoColor=white)](https://linkedin.com/in/thiagocajadev)
 
-<br>
+
 
 # 💻 Stack
 
@@ -158,7 +158,7 @@ I am an eternal researcher. I don't pretend to know everything; I am driven by a
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Hono](https://img.shields.io/badge/Hono-E36002?style=for-the-badge&logo=hono&logoColor=white)
 
-<br>
+
 
 ### 🖥️ Frontend
 
@@ -172,7 +172,7 @@ I am an eternal researcher. I don't pretend to know everything; I am driven by a
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 
-<br>
+
 
 ### 🗄️ Database
 
@@ -182,7 +182,7 @@ I am an eternal researcher. I don't pretend to know everything; I am driven by a
 ![Postgres](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
 
-<br>
+
 
 ### ☁️ DevOps & Cloud
 
@@ -195,7 +195,7 @@ I am an eternal researcher. I don't pretend to know everything; I am driven by a
 ![Cloudflare Pages](https://img.shields.io/badge/Pages-F38020?style=for-the-badge&logo=cloudflarepages&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
 
-<br>
+
 
 ### 🔬 Quality & Testing
 
@@ -208,7 +208,7 @@ I am an eternal researcher. I don't pretend to know everything; I am driven by a
 ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
 ![Confluence](https://img.shields.io/badge/Confluence-172B4D?style=for-the-badge&logo=confluence&logoColor=white)
 
-<br>
+
 
 ### 📐 Principles & Patterns
 
@@ -224,7 +224,7 @@ I am an eternal researcher. I don't pretend to know everything; I am driven by a
 ![Rich Domains](https://img.shields.io/badge/Rich_Domains-a8eb12?style=for-the-badge&logo=googledomains&logoColor=black)
 ![DDD](https://img.shields.io/badge/DDD-f5a623?style=for-the-badge&logo=diagram&logoColor=black)
 
-<br>
+
 
 # 🧠 Generative AI
 
@@ -235,7 +235,7 @@ I am an eternal researcher. I don't pretend to know everything; I am driven by a
 [![ChatGPT Plus](https://img.shields.io/badge/ChatGPT_Plus-10a37f?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com/chatgpt)
 [![DeepSeek](https://img.shields.io/badge/DeepSeek-000000?style=for-the-badge&logo=deepnote&logoColor=white)](https://www.deepseek.com/)
 
-<br>
+
 
 # 🛠️ Tools
 
@@ -255,7 +255,7 @@ I am an eternal researcher. I don't pretend to know everything; I am driven by a
 [![Excalidraw](https://img.shields.io/badge/Excalidraw-5865F2?style=for-the-badge&logo=excalidraw&logoColor=white)](https://excalidraw.com/)
 [![Draw.io](https://img.shields.io/badge/Draw.io-F08705?style=for-the-badge&logo=diagramsdotnet&logoColor=white)](https://app.diagrams.net/)
 
-<br>
+
 
 ### Terminal & Customization
 
@@ -264,14 +264,14 @@ I am an eternal researcher. I don't pretend to know everything; I am driven by a
 [![One Dark Pro](https://img.shields.io/badge/One_Dark_Pro-282C34?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://github.com/Binaryify/OneDark-Pro)
 [![Starship](https://img.shields.io/badge/Starship-FF4081?style=for-the-badge&logo=starship&logoColor=white)](https://starship.rs/)
 
-<br>
+
 
 # 📈 Stats
 
 <div>
   <img align="center" src="https://visitor-badge.laobi.icu/badge?page_id=thiagocajadev.thiagocajadev&left_color=dodgerblue&right_color=slategray" alt="Visitor Counter" />
 </div>
-<br>
+
 
 <span>
   <img height="200" src="https://github-readme-stats-v1-thiagocajadev.vercel.app/api?username=thiagocajadev&include_all_commits=true&show=prs_merged_percentage&hide=contribs&show_icons=true&hide_border=true&theme=github_dark_dimmed&rank_icon=github&cache_seconds=604800" />
@@ -279,7 +279,7 @@ I am an eternal researcher. I don't pretend to know everything; I am driven by a
 <span>
   <img height="200" src="https://github-readme-stats-v1-thiagocajadev.vercel.app/api/top-langs?username=thiagocajadev&layout=compact&langs_count=8&card_width=370&hide_border=true&theme=github_dark_dimmed&cache_seconds=604800" />
 </span>
-<br><br>
+<br>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/thiagocajadev/thiagocajadev/output/pacman-contribution-graph-dark.svg">
@@ -287,7 +287,7 @@ I am an eternal researcher. I don't pretend to know everything; I am driven by a
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/thiagocajadev/thiagocajadev/output/pacman-contribution-graph.svg">
 </picture>
 
-<br>
+
 
 # 📌 Featured Projects
 
