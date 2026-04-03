@@ -246,7 +246,7 @@ Sou um eterno pesquisador aprendiz. Não tenho a pretensão de saber tudo, mas s
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/thiagocajadev/thiagocajadev/output/pacman-contribution-graph.svg">
 </picture>
 
-# 📌 Pinned
+# 📌 Projetos em Destaque
 
 [![MVP Portfolio Finance Dash](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=mvp-finance-dashboard&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/mvp-finance-dashboard)
 [![Code Conventions](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=code-conventions&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/code-conventions)
