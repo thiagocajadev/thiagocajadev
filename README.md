@@ -125,7 +125,7 @@ Sou um eterno pesquisador. Não tenho a pretensão de saber tudo, mas sou movido
 
 # 💻 Stack
 
-### ⚙️ Backend
+### Backend
 
 ![.NET](https://img.shields.io/badge/.NET-7e2bb3?style=for-the-badge&logo=dotnet&logoColor=white)
 ![C#](https://img.shields.io/badge/C%23-68217A?style=for-the-badge&logo=csharp&logoColor=white)
@@ -137,7 +137,7 @@ Sou um eterno pesquisador. Não tenho a pretensão de saber tudo, mas sou movido
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Hono](https://img.shields.io/badge/Hono-E36002?style=for-the-badge&logo=hono&logoColor=white)
 
-### 🖥️ Frontend
+### Frontend
 
 ![Blazor](https://img.shields.io/badge/Blazor-5C2D91?style=for-the-badge&logo=blazor&logoColor=white)
 ![Razor Views](https://img.shields.io/badge/Razor_Views-68217A?style=for-the-badge&logo=dotnet&logoColor=white)
@@ -149,7 +149,7 @@ Sou um eterno pesquisador. Não tenho a pretensão de saber tudo, mas sou movido
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)
 
-### 🗄️ Database
+### Database
 
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
@@ -157,7 +157,7 @@ Sou um eterno pesquisador. Não tenho a pretensão de saber tudo, mas sou movido
 ![Postgres](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
 
-### ☁️ DevOps & Cloud
+### DevOps & Cloud
 
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
@@ -168,7 +168,7 @@ Sou um eterno pesquisador. Não tenho a pretensão de saber tudo, mas sou movido
 ![Cloudflare Pages](https://img.shields.io/badge/Pages-F38020?style=for-the-badge&logo=cloudflarepages&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
 
-### 🔬 Quality & Testing
+### Quality & Testing
 
 ![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
@@ -179,7 +179,7 @@ Sou um eterno pesquisador. Não tenho a pretensão de saber tudo, mas sou movido
 ![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
 ![Confluence](https://img.shields.io/badge/Confluence-172B4D?style=for-the-badge&logo=confluence&logoColor=white)
 
-### 📐 Princípios & Padrões
+### Princípios & Padrões
 
 ![Clean Code](https://img.shields.io/badge/Clean_Code-051937?style=for-the-badge&logo=readthedocs&logoColor=61DAFB)
 ![SOLID](https://img.shields.io/badge/SOLID-008793?style=for-the-badge&logo=codefactor&logoColor=white)
