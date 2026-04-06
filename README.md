@@ -27,7 +27,7 @@ Ultimamente faço um `dump` dos pensamentos, escrevendo no meu [blog](https://th
 
 ### As 4 Leis (Technical Governance)
 
-Aplico estas leis como minha base de **governança técnica** em cada novo projeto, garantindo que o bootstrap (o setup inicial e a definição da arquitetura base) e a evolução de sistemas sigam padrões de excelência desde o primeiro dia:
+Aplico estas leis como minha base de **governança técnica** em cada novo projeto, garantindo que o **bootstrap** (setup inicial com definição da arquitetura base) e a evolução de sistemas sigam padrões de excelência desde o primeiro dia:
 
 <p align="left"><img src="https://img.shields.io/badge/%F0%9F%94%92_Hardening-Deny--by--Default-9c4a3f?style=for-the-badge" alt="Hardening - Deny-by-Default" /> <img src="https://img.shields.io/badge/%F0%9F%9A%A6_Resilience-Failure_as_Value-4a6b8c?style=for-the-badge" alt="Resilience - Failure as Value" /> <img src="https://img.shields.io/badge/%F0%9F%8C%8A_The_Cascade-Storytelling_Code-5b8c6a?style=for-the-badge" alt="The Cascade - Storytelling Code" /> <img src="https://img.shields.io/badge/%F0%9F%92%8E_Visual_Excellence-Design_as_Code-6d5d83?style=for-the-badge" alt="Visual Excellence - Design as Code" /></p>
 
