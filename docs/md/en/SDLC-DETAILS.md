@@ -1,10 +1,10 @@
-# My Development Pipeline (8 Steps)
+# Development Journey (8 Steps)
 
-This guide documents how I organize a software project from its inception to continuous operation. It's not a rigid formula, it's the pattern that helps me remember what truly matters.
+This guide shows how I typically organize a software project, from that first empty file to the system running and being cared for day-to-day. It's not an absolute truth, but it's the path that helps me keep my focus on what truly matters.
 
-The order follows a logic. Each step creates the foundation for the next to function securely. However, every project has its context: a CLI tool might not need access control, while a SaaS needs the full pipeline. Use what makes sense, in the order that makes sense.
+The order follows a logic. Each step creates the foundation for the next to function securely. However, every project has its context: a CLI tool might not need access control; a SaaS needs the full pipeline. Use what makes sense, in the order that makes sense.
 
-`FOUNDATION` → `SECURITY` → `CONTINUOUS INTEGRATION` → `ACCESS CONTROL` → `APP INTERFACE` → `DOMAIN` → `PRODUCTION` → `OPERATIONS`
+`FOUNDATION` → `SECURITY` → `CI/CD` → `ACCESS CONTROL` → `DESIGN SYSTEM` → `DOMAIN` → `PRODUCTION` → `OPERATIONS`
 
 > Note: The order may vary depending on the type of project, scope, and team division. The important thing is to have clarity on each stage and ensure that all are executed.
 
@@ -50,14 +50,14 @@ The objective is simple: broken code does not reach production. Human review is 
 
 - Defined environments: local, staging, production. Documented differences between them.
 - Secrets managed in the right place (CI secrets, vault). Nothing hardcoded.
-- CI active on every PR: linter + tests + build. PR blocked if any gate fails.
+- CI active on every PR: linter + tests + build. PR blocked if any barrier (gate) fails.
 - CD defined: how the code goes from PR to staging and then to production. Automated staging, production with approval when necessary.
 
-**Done when:** A PR cannot be merged without passing all gates. Deployment to staging is a single action.
+**Done when:** A PR cannot be merged without passing all barriers (gates). Deployment to staging is a single action.
 
 ---
 
-## 04 — Access Control (When applicable)
+## 04 — Access Control (when applicable)
 
 Authentication and authorization define who sees what. This isn't an implementation detail—it's an architectural decision that affects everything that follows.
 
@@ -72,11 +72,11 @@ Before building any feature that depends on permissions, I need to know: who can
 
 ---
 
-## 05 — Design System and Interface (When applicable)
+## 05 — Design System and Interface (when applicable)
 
 An inconsistent interface sends a clear message to the user: nobody reviewed this carefully.
 
-A Design System is not just frontend "fluff", it's what prevents every developer from inventing a different button.
+Design System is not just frontend "fluff", it's what prevents every developer from inventing a different button.
 
 - Design tokens defined: colors, spacing (4/8px system), typography, borders.
 - Light and dark themes. CSS variables or a utility system (e.g., Tailwind).

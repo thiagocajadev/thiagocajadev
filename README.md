@@ -12,7 +12,7 @@ Explorei diferentes linguagens, como Java, VB e PHP, até me encontrar no ecossi
 
 Hoje, utilizo uma **stack moderna** (**.NET**, **React**, **Docker**, **Postgres**) unindo a solidez da engenharia de software com a agilidade do mundo **AI-Native**. Minha meta é construir sistemas robustos e seguros, sempre buscando simplificar e facilitar a rotina de desenvolvedores e usuários.
 
-Eu nunca vou saber todas as respostas, mas sei pesquisar e buscar alternativas. Dificilmente me consideraria Senior ou Especialista. Prefiro ser ser um **Resolvedor de Problemas**.
+Eu nunca vou saber todas as respostas, mas sei pesquisar e buscar alternativas. Dificilmente me consideraria Senior ou Especialista. Prefiro ser um **Resolvedor de Problemas**.
 
 > [!IMPORTANT]
 > **"Evite o complexo, prefira o simples e sofisticado"**
@@ -37,8 +37,7 @@ Meu propósito de vida é ajudar. Percorro esse caminho via TI, consertando e co
 >
 > Decisões devem ser tomadas com base em dados e não achismos.
 
-Está começando a utilizar a metodologia SDD (Spec-Driven Development) nos projetos?
-Esse guia pode te ajudar [specdrivenguide.org](https://specdrivenguide.org). Venha fazer parte!
+Está começando a utilizar a metodologia SDD (Spec-Driven Development) nos projetos? Esse guia pode te ajudar [specdrivenguide.org](https://specdrivenguide.org). Venha fazer parte!
 <br>
 
 Ultimamente faço um `dump` de pensamentos, escrevendo no meu [blog](https://thiagocaja.dev).
@@ -431,16 +430,16 @@ Governar significa ter o controle sobre o projeto e garantir seu ciclo de vida. 
 
 Se eu tenho a visão de que algo começou a degradar e precisa de mais recursos, consigo ajustar antes que haja impacto.
 
-Pra ter governança, aplicamos leis. As que considero fundamentais e procuro aplicar:
+Pra ter governança, aplicamos leis. As leis que considero fundamentais e procuro aplicar:
 
 <p align="left"><img src="https://img.shields.io/badge/%F0%9F%94%92_Blindagem-Bloqueio_por_Padrão-9c4a3f?style=for-the-badge" alt="Blindagem - Bloqueio por padrão" /> <img src="https://img.shields.io/badge/%F0%9F%9A%A6_Resiliência-Falha_como_Valor-4a6b8c?style=for-the-badge" alt="Resiliência - Falha como valor" /> <img src="https://img.shields.io/badge/%F0%9F%8C%8A_A_Cascata-Código_Narrativo-5b8c6a?style=for-the-badge" alt="A Cascata - Código Narrativo" /> <img src="https://img.shields.io/badge/%F0%9F%92%8E_Excelência_Visual-Design_como_Código-6d5d83?style=for-the-badge" alt="Excelência Visual - Design como Código" /></p>
 
-| Lei                   | Comentário Estratégico                                                         |
-| :-------------------- | :----------------------------------------------------------------------------- |
-| **Blindagem**         | **Segurança Profunda**: Blindagem de dados e postura _Bloqueio por Padrão_.    |
-| **Resiliência**       | **Gestão de Falhas**: Centraliza e padroniza o tratamento de erros.            |
-| **A Cascata**         | **Código Narrativo**: Código executa o processo passo a passo de forma linear. |
-| **Excelência Visual** | **Design Intuitivo**: Interfaces bonitas e fáceis de usar.                     |
+| Lei                   | Comentário Estratégico                                                          |
+| :-------------------- | :------------------------------------------------------------------------------ |
+| **Blindagem**         | **Segurança Profunda**: Blindagem de dados e postura _Bloqueio por Padrão_.     |
+| **Resiliência**       | **Gestão de Falhas**: Centraliza e padroniza o tratamento de erros.             |
+| **Narrativa**         | **Código Documentativo**: O processo codificado de forma linear, passo a passo. |
+| **Excelência Visual** | **Design Intuitivo**: Interfaces bonitas e fáceis de usar.                      |
 
 Com entendimento de governança, seguimos para o gerenciamento do **Ciclo de Vida do Desenvolvimento de Software (SDLC)**.
 

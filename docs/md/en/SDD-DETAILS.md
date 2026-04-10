@@ -1,14 +1,16 @@
-# SDD Deep-Flow: Inside the Cycle
+# SDD Deep-Flow: Inside the Work Cycle
 
-This guide provides a detailed visual and technical breakdown of the internal sub-steps that an **SDG-compliant AI Agent** executes during each phase of the task cycle.
+This guide explains how an AI assistant configured to work with SDD (Spec-Driven Development) organizes its thinking at each phase of the project. The goal is to ensure that the work is transparent, secure, and easy to follow.
 
-*Note: The development team can also follow this flow without agents; it is a strategic choice.*
+Note\*: The development team can also follow this flow without agents; it is a strategic choice.
 
 I invite you to explore the web guide for more content and visual representations at [specdrivenguide.org](https://specdrivenguide.org)
 
+---
+
 ## Visualizing the Deep-Flow
 
-The following diagram illustrates the transitions, decision barriers, and loops that ensure architectural integrity.
+The following diagram illustrates the transitions between phases, the key decision points, and how we ensure architectural integrity.
 
 <details>
 <summary>Click to visualize the internal Deep-Flow</summary>
@@ -20,7 +22,7 @@ graph TD
     subgraph SPEC [1. SPEC: The Contract]
         S1[Intent Classification] --> S2[Goal Definition]
         S2 --> S3[Domain & Contracts]
-        S3 --> S4[Verification Checklist]
+        S3 --> S4[Checklist Verification]
         S4 --> S5{Approval Barrier}
     end
 
@@ -28,7 +30,7 @@ graph TD
     S5 -- Denied --> SPEC
 
     subgraph PLAN [2. PLAN: The Strategy]
-        P1[Task Decomposition] --> P2[Logical Sequencing]
+        P1[Decomposition of Tasks] --> P2[Logical Sequencing]
         P2 --> P3[Effort Tagging]
         P3 --> P4[Sub-task Split]
         P4 --> P5[Backlog Sync]
@@ -39,7 +41,7 @@ graph TD
     P6 -- Denied --> PLAN
 
     subgraph CODE [3. CODE: The Execution]
-        C1[Context Load] --> C2[Narrative Gate]
+        C1[Context Load] --> C2[Narrative Barrier]
         C2 --> C3[Plan Adherence]
         C3 --> C4[Blocker Surface]
     end
@@ -63,7 +65,7 @@ graph TD
         E1[Task Summary] --> E2[CHANGELOG]
         E2 --> E3[Backlog Sync]
         E3 --> E4[Context & Insights]
-        E4 --> E5[Final Lint]
+        E4 --> E5[Final Verification (Lint)]
         E5 --> E6[Commit Suggestion]
         E6 --> E7[Next Steps]
     end
@@ -81,63 +83,59 @@ graph TD
 
 ---
 
-## Detailed Phase Breakdown
+## What happens in each phase?
 
-### 1. Phase: SPEC
+### 1- Phase: SPEC (The Contract)
 
 > **Role: Planning**
 
-The agent defines **what** to build before thinking about **how**.
+The agent defines **what** to build before thinking about **how**. It is the moment to align expectations.
 
 - **Intent Identification**: Classification as `feat:`, `fix:`, or `docs:`.
 - **Goal**: A technical "North Star" sentence.
 - **Verification Checklist**: Up to 5 binary criteria used to validate the final delivery.
-- **Approval Gate**: Execution **must stop** here for **Developer verification**.
+- **Approval Barrier (Gate)**: Execution **must stop** here for **Developer verification**.
 
-### 2. Phase: PLAN
+### 2- Phase: PLAN (Planning)
 
 > **Role: Planning**
 
 The agent transforms the spec into smaller tasks with effort estimates.
 
-- **Tasks**: Pattern: `Action Verb + Object`.
-- **Effort Tagging**: Tasks classified by size — `[S]` (small), `[M]` (medium), `[L]` (large).
-- **Sub-task Split**: Any `[L]` task is decomposed into smaller steps (`1.1`, `1.2`).
-- **Approval Gate**: Execution **must stop** here to ensure the strategy is sound.
+- **Tasks**: Decomposition into tasks (Action Verb + Object).
+- **Effort Tagging**: Tasks classified by size — `[S]` (small), `[M]` (medium), or `[L]` (large).
+- **Sub-task Split**: Any `[L]` task is decomposed into smaller steps.
+- **Approval Barrier**: Execution stops again here for strategy approval.
 
-### 3. Phase: CODE
+### 3- Phase: CODE (The Execution)
 
-> **Role: Coder**
+It is time to get hands-on with the code, following organizational best practices.
 
-Execution following architectural standards.
-
-- **Narrative Barrier**: Self-check for **Stepdown Rule**, **SLA**, and **Lexical Scoping**.
-- **Plan Adherence**: No features or refactors outside of scope (YAGNI).
+- **Narrative Code**: Self-check for architectural standards like the **Linear Writing Rule (Stepdown Rule)**.
+- **Plan Adherence**: No features or refactors outside of scope (YAGNI: "You Ain't Gonna Need It").
 - **Blocker Surface**: The agent flags issues immediately instead of working around them.
-- **Circuit Breaker**: If the same error repeats 3 times, or no physical progress (file writes, commands) is made in 3 consecutive turns, the agent **stops and reports** instead of continuing in a loop.
+- **Circuit Breaker**: If the same error repeats 3 times, or no progress is made, the agent **stops and reports** instead of continuing in a loop.
 
-### 4. Phase: TEST
+### 4- Phase: TEST (The Verification)
 
-> **Role: Coder**
-
-Verification comparing against the original Spec checklist.
+The agent checks if everything built matches the original Spec checklist.
 
 - **Regression Proof**: For bugs, the agent must prove the fix works without breaking existing logic.
-- **Fix Loop**: A resilience mechanism that allows up to **3 refactor attempts** if tests fail. On the third failure, the Circuit Breaker is triggered — the agent stops and reports.
+- **Fix Loop**: A resilience mechanism that allows up to **3 refactor attempts** if tests fail. After that, it requests human intervention.
 - **Lint Fix**: Automated resolution of style problems in the code before reporting success.
 
-### 5. Phase: END
+### 5- Phase: END
 
 > **Role: Planning**
 
-Closing the loop and ensuring project observability.
+Closing the cycle and ensuring project observability.
 
 - **Artifact Sync**: Updates to `tasks.md` (status DONE) and `context.md` (next objective).
-- **Engineering Insights**: The agent records research findings, rework patterns, and lessons learned in `context.md ## Engineering Insights`. Obsolete entries are removed, keeping the file lean between sessions.
+- **Engineering Insights**: The agent records research findings, rework patterns, and lessons learned in `context.md ## Engineering Insights`.
 - **Changelog**: Consistent history following the [Keep a Changelog](https://keepachangelog.com/) standard.
 - **Semantic Commit**: Proposed commit message that reflects the actual intent and scope of the change.
 
 ---
 
 > [!TIP]
-> This deep-flow is an internal reference model for the agent. Use it to understand the **whys**, **what for**, and **where to** the agent checks at each barrier.
+> This internal flow is the map that guides the agent. Knowing these steps helps you understand **why** it asks certain questions and **where** it checks the quality of the work.

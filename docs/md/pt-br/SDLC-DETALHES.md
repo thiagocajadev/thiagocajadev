@@ -1,6 +1,6 @@
-# Minha Esteira de Desenvolvimento (8 Passos)
+# Jornada de Desenvolvimento (8 Passos)
 
-Esse guia documenta como organizo um projeto de software do início à operação contínua. Não é receita de bolo, é o padrão que me ajuda a não esquecer o que importa.
+Este guia mostra como eu costumo organizar um projeto de software, desde aquele primeiro arquivo vazio até o sistema rodando e sendo cuidado no dia a dia. Não é uma verdade absoluta, mas é o caminho que me ajuda a manter o foco no que realmente importa.
 
 A ordem tem lógica. Cada passo cria a base para o próximo funcionar com segurança. Mas todo projeto tem contexto: uma CLI não precisa de controle de acesso; um SaaS precisa do pipeline completo. Use o que faz sentido, na ordem que faz sentido.
 
@@ -102,9 +102,9 @@ Nenhuma lógica complexa é codificada sem uma especificação prévia que valid
 
 ---
 
-## 07 — Prontidão para Produção
+## 07 — Pronto para Produção
 
-Antes de ir ao ar, tem uma checklist que precisa ser verificada. Sempre.
+Antes de ir ao ar, tem um checklist que precisa ser verificado. Sempre.
 
 Deploy na sexta à noite sem plano de rollback não é coragem, é imprudência.
 

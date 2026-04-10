@@ -1,17 +1,17 @@
-# SDD Deep-Flow: Por Dentro do Ciclo
+# SDD Deep-Flow: Por Dentro do Ciclo de Trabalho
 
-Este guia detalha os sub-passos internos que um **Agente de IA compatível com SDD** executa em cada fase do ciclo de trabalho.
+Este guia explica como um assistente de IA configurado para trabalhar com SDD (Desenvolvimento Guiado por Especificação) organiza o pensamento em cada fase do projeto. O objetivo é garantir que o trabalho seja transparente, seguro e fácil de acompanhar.
 
 Obs\*: Nada impede que o time de desenvolvimento apenas siga o fluxo sem agents, é uma escolha estratégica.
 
 Deixo aqui um convite para você conhecer o guia web, com mais conteúdo e representações visuais [specdrivenguide.org](https://specdrivenguide.org)
 
-## Visualizando o Deep-Flow
+## Visualizando o Fluxo (Deep-Flow)
 
-O diagrama abaixo mostra as transições, as barreiras de decisão e os loops que garantem a integridade arquitetural.
+O diagrama abaixo mostra as transições entre as fases, onde estão as decisões mais importantes e como garantimos que o sistema continue íntegro.
 
 <details>
-<summary>Clique para visualizar o Deep-Flow interno</summary>
+<summary>Clique para ver o fluxo interno detalhado</summary>
 
 ```mermaid
 graph TD
@@ -39,7 +39,7 @@ graph TD
     P6 -- Negado --> PLAN
 
     subgraph CODE [3. CODE: A Execução]
-        C1[Carga de Contexto] --> C2[Portão Narrativo]
+        C1[Carga de Contexto] --> C2[Barreira Narrativo]
         C2 --> C3[Aderência ao Plano]
         C3 --> C4[Superfície de Bloqueios]
     end
@@ -54,17 +54,17 @@ graph TD
         T4 --> T5[Report de Status]
     end
 
-    T3 -- Falha (Máx 3x) --> CODE
+    T3 -- Falha (Máx 3 tentativas) --> CODE
     T3 -- Bloqueado --> Stop((PARAR e Reportar))
 
     T5 --> END
 
     subgraph END [5. END: A Entrega]
-        E1[Resumo da Tarefa] --> E2[CHANGELOG]
-        E2 --> E3[Sync com Backlog]
-        E3 --> E4[Contexto e Aprendizados]
-        E4 --> E5[Lint Final]
-        E5 --> E6[Sugestão de Commit]
+        E1[Resumo da Entrega] --> E2[Registro de Mudanças]
+        E2 --> E3[Ajustar Backlog]
+        E3 --> E4[Lições Aprendidas]
+        E4 --> E5[Verificação Final (Lint)]
+        E5 --> E6[Sugerir Commit]
         E6 --> E7[Próximos Passos]
     end
 
@@ -81,50 +81,46 @@ graph TD
 
 ---
 
-## Detalhamento de Cada Fase
+## O que acontece em cada fase?
 
-### 1. Fase: SPEC
+### 1. Fase: SPEC (O Contrato)
 
 > **Papel: Planejamento**
 
-O agente define **o que** construir antes de pensar em **como**.
+O agente define **o que** deve ser construído antes de se preocupar com o código. É o momento de alinhar as expectativas.
 
-- **Identificação da Intenção**: Classificação como `feat:`, `fix:` ou `docs:`.
-- **Objetivo**: Uma frase técnica de "Norte Verdadeiro".
-- **Checklist de Verificação**: Até 5 critérios binários usados para validar a entrega final.
-- **Portão de Aprovação**: A execução **deve parar** aqui para **verificação do Desenvolvedor**.
+- **Entender a Intenção**: Identificamos se é uma nova função (`feat`), uma correção (`fix`) ou melhoria de documentação (`docs`).
+- **Objetivo**: Criamos uma frase simples que serve como o nosso "Norte".
+- **Lista de Verificação**: Criamos até 5 pontos claros para confirmar se a entrega foi bem-feita.
+- **Barreira de Aprovação (Gate)**: O trabalho **para aqui** e só continua depois que você revisar e der o "ok".
 
-### 2. Fase: PLAN
+### 2. Fase: PLAN (Planejamento)
 
 > **Papel: Planejamento**
 
 O agente transforma a spec em tarefas menores, com estimativas de esforço.
 
-- **Tarefas**: Padrão: `Verbo de Ação + Objeto`.
-- **Tagging de Esforço**: Tarefas classificadas por tamanho — `[P]` (pequena), `[M]` (média), `[G]` (grande).
-- **Divisão de Sub-tarefas**: Qualquer tarefa `[G]` é decomposta em passos menores (`1.1`, `1.2`).
-- **Portão de Aprovação**: A execução **deve parar** aqui para garantir que a estratégia está sólida.
+- **Divisão**: Quebramos o trabalho em tarefas curtas (Ação + Objeto).
+- **Esforço**: Classificamos cada passo pelo tamanho (Pequeno, Médio ou Grande).
+- **Detalhamento**: Se uma tarefa for muito grande, ela é dividida em subpassos menores.
+- **Barreira de Aprovação**: Paramos novamente para garantir que a estratégia faz sentido para você.
 
-### 3. Fase: CODE
+### 3. Fase: CODE (A Execução)
 
-> **Papel: Codificador**
+É a hora de colocar a mão no código, seguindo boas práticas de organização.
 
-Execução seguindo os padrões arquiteturais.
+- **Código Narrativor**: Seguimos regras de escrita que tornam o código fácil de ler, como a **Regra de escrita linear (Stepdown Rule)**.
+- **Foco no Plano**: Não criamos nada que não tenha sido planejado (seguindo o princípio YAGNI: "você não vai precisar disso agora").
+- **Sinalização de Problemas**: Se algo travar, o agente avisa na hora em vez de tentar "dar um jeitinho".
+- **Disjuntor de Segurança (Circuit Breaker)**: Se o mesmo erro acontecer 3 vezes seguidas ou se não houver progresso real, o agente **para e pede ajuda** para não gastar recursos à toa.
 
-- **Barreira Narrativa**: Auto-verificação de **Stepdown Rule**, **SLA** e **Lexical Scoping**.
-- **Aderência ao Plano**: Nenhuma feature ou refatoração fora do escopo (YAGNI).
-- **Superfície de Bloqueios**: O agente sinaliza problemas imediatamente em vez de contorná-los.
-- **Circuit Breaker**: Se o mesmo erro se repetir 3 vezes, ou nenhum progresso físico (escrita de arquivos, comandos) for feito em 3 turnos consecutivos, o agente **para e reporta** em vez de continuar em loop.
+### 4. Fase: TEST (A Verificação)
 
-### 4. Fase: TEST
+O agente confere se tudo o que foi feito bate com a lista que criamos lá na fase SPEC.
 
-> **Papel: Codificador**
-
-Verificação comparando com o checklist original da Spec.
-
-- **Prova de Regressão**: Para bugs, o agente deve provar que a correção funciona sem quebrar a lógica existente.
-- **Loop de Correção**: Mecanismo de resiliência que permite até **3 tentativas de refatoração** se os testes falharem. Na terceira falha, o Circuit Breaker é acionado — o agente para e reporta.
-- **Lint Fix**: Resolução automática de problemas na estilização do código antes de reportar sucesso.
+- **Prova de Segurança**: Para cada correção, provamos que o erro sumiu sem criar problemas novos.
+- **Ciclo de Ajustes**: O sistema permite até 3 tentativas de melhoria se os testes falharem. Depois disso, ele pede uma intervenção humana.
+- **Limpeza**: Antes de terminar, o código passa por uma revisão automática de estilo e formatação.
 
 ### 5. Fase: END
 
@@ -140,4 +136,4 @@ Fechando o ciclo e garantindo o acompanhamento do projeto.
 ---
 
 > [!TIP]
-> Esse deep-flow é um modelo interno de referência para o agente. Use-o para entender os **por ques**, **pra que** e **pra onde** o agente verifica em cada barreia.
+> Esse fluxo interno é o mapa que guia o agente. Conhecer esses passos ajuda você a entender **por que** ele faz certas perguntas e **onde** ele verifica a qualidade do trabalho.
