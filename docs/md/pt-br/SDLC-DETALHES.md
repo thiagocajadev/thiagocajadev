@@ -1,6 +1,6 @@
 # Minha Esteira de Desenvolvimento (8 Passos)
 
-Esse guia documenta como organizo um projeto de software do início à operação contínua. Não é receita de bolo — é o padrão que me ajuda a não esquecer o que importa.
+Esse guia documenta como organizo um projeto de software do início à operação contínua. Não é receita de bolo, é o padrão que me ajuda a não esquecer o que importa.
 
 A ordem tem lógica. Cada passo cria a base para o próximo funcionar com segurança. Mas todo projeto tem contexto: uma CLI não precisa de controle de acesso; um SaaS precisa do pipeline completo. Use o que faz sentido, na ordem que faz sentido.
 
@@ -76,11 +76,11 @@ Antes de construir qualquer feature que dependa de permissões, preciso saber: q
 
 Interface inconsistente passa uma mensagem clara para o usuário: ninguém revisou isso com cuidado.
 
-Design System não é frescura de frontend — é o que evita que cada desenvolvedor invente um botão diferente.
+Design System não é frescura de frontend, é o que evita que cada desenvolvedor invente um botão diferente.
 
 - Tokens de design definidos: cores, espaçamento (sistema de 4/8px), tipografia, bordas.
 - Tema claro e escuro. Variáveis CSS ou sistema utilitário (ex: Tailwind).
-- Contraste WCAG garantido. Acessibilidade não é opcional — é respeito ao usuário.
+- Contraste WCAG garantido. Acessibilidade não é opcional, é respeito ao usuário.
 - Componentes base (Button, Input, Card, Modal) construídos antes das telas específicas.
 
 **Pronto quando:** uma nova tela pode ser construída com tokens e componentes existentes, sem estilização ad-hoc.
@@ -106,7 +106,7 @@ Nenhuma lógica complexa é codificada sem uma especificação prévia que valid
 
 Antes de ir ao ar, tem uma checklist que precisa ser verificada. Sempre.
 
-Deploy na sexta à noite sem plano de rollback não é coragem — é imprudência.
+Deploy na sexta à noite sem plano de rollback não é coragem, é imprudência.
 
 - Checklist pré-deploy: variáveis de ambiente configuradas, secrets rotacionados, dependências atualizadas, flags de debug removidas.
 - Migrations testadas no staging com plano de rollback documentado. Integridade dos dados validada.
@@ -121,7 +121,7 @@ Deploy na sexta à noite sem plano de rollback não é coragem — é imprudênc
 
 O sistema foi para produção. Agora começa a parte que dura para sempre.
 
-Monitoramento não é opcional — é o que diferencia um sistema profissional de um que "a gente descobre quando cai".
+Monitoramento não é opcional, é o que diferencia um sistema profissional de um que "a gente descobre quando cai".
 
 - Monitoramento ativo nas primeiras 24-48h após o deploy: taxa de erro, latência, uso de recursos.
 - Protocolo de incidente definido: quem é acionado, como é a triagem, onde comunicar.
@@ -133,4 +133,4 @@ Monitoramento não é opcional — é o que diferencia um sistema profissional d
 
 ---
 
-_Documentação de Apoio à Engenharia. Thiago Cajaíba_
+_Assinado por: Thiago Cajaíba - Desenvolvedor_

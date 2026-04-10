@@ -12,6 +12,8 @@ Explorei diferentes linguagens, como Java, VB e PHP, até me encontrar no ecossi
 
 Hoje, utilizo uma **stack moderna** (**.NET**, **React**, **Docker**, **Postgres**) unindo a solidez da engenharia de software com a agilidade do mundo **AI-Native**. Minha meta é construir sistemas robustos e seguros, sempre buscando simplificar e facilitar a rotina de desenvolvedores e usuários.
 
+Eu nunca vou saber todas as respostas, mas sei pesquisar e buscar alternativas. Dificilmente me consideraria Senior ou Especialista. Prefiro ser ser um **Resolvedor de Problemas**.
+
 > [!IMPORTANT]
 > **"Evite o complexo, prefira o simples e sofisticado"**
 
@@ -31,13 +33,12 @@ Essa aqui é a minha "rede social" favorita de longe! Mais códigos e menos papo
 Meu propósito de vida é ajudar. Percorro esse caminho via TI, consertando e construindo coisas.
 <br>
 
-> [!NOTE]
 > **"Em tempos de IA, pratique a IE (Inteligência Emocional)."**
 >
 > Decisões devem ser tomadas com base em dados e não achismos.
 
 Está começando a utilizar a metodologia SDD (Spec-Driven Development) nos projetos?
-Conheça o guia que pode te ajudar passo a passo em [specdrivenguide.org](https://specdrivenguide.org)
+Esse guia pode te ajudar [specdrivenguide.org](https://specdrivenguide.org). Venha fazer parte!
 <br>
 
 Ultimamente faço um `dump` de pensamentos, escrevendo no meu [blog](https://thiagocaja.dev).
@@ -48,28 +49,26 @@ Ultimamente faço um `dump` de pensamentos, escrevendo no meu [blog](https://thi
 </details>
 
 <details>
-<summary><b> 📖 Vamos falar de código</b></summary>
+<summary><b> 👨🏻‍💻 Vamos falar de código</b></summary>
 
 <br>
 
-> [!NOTE]
 > "Código bom é aquele que conta a história de forma linear."
 
 Tem que seguir a narrativa, mostrando passo a passo o que está acontecendo. Aplicações são feitas para resolver problemas, então o código deve refletir isso.
 
-Programar é a última etapa. Primeiro, definimos o processo. Depois o planejamento e quais as tarefas a serem executadas, reduzindo a chance de falhas.
+Programar é a última etapa. Primeiro, é definido o processo. Depois o planejamento e quais as tarefas a serem executadas, reduzindo a chance de falhas.
 
-> [!TIP]
 > **"Alinhamento de processo é fundamental para o sucesso do projeto."**
->
-> `PROCESSO` → `PLANEJAMENTO` → `TAREFAS` → `PROGRAMAÇÃO` → `TESTES` → `ENTREGA`
 
-Se estou atuando em um projeto, preciso pensar em como ele será executado, mantido e evoluído. O próximo desenvolvedor que for atuar deve entender o código sem dificuldade e contar com uma documentação que esclarece as decisões técnicas. Os melhores profissionais são os que geram valor para o negócio e pessoas.
+`PROCESSO` → `PLANEJAMENTO` → `TAREFAS` → `PROGRAMAÇÃO` → `TESTES` → `ENTREGA`
+
+Se estou atuando em um projeto, preciso pensar em como ele será executado, mantido e evoluído. O próximo desenvolvedor que for atuar deve entender o código sem dificuldade e contar com uma documentação que esclarece as decisões técnicas. Os melhores profissionais são os que **geram valor para o negócio e pessoas**.
 <br>
 
 ```js
 // ✅ Código Narrativo
-// Orquestrador no topo, detalhes agrupados (Lexical Scoping) e nomes expressivos.
+// Orquestrador no topo, detalhes agrupados (Lexical Scoping), densidade visual e nomes expressivos.
 
 // Exemplo simplificado. O código conta a história, sem precisar de comentários.
 
@@ -87,8 +86,10 @@ async function realizaVenda(codigoDoPedido) {
   function pedidoInvalido(detalhesDoPedido) {
     if (detalhesDoPedido === null || detalhesDoPedido.itens.length === 0)
       return true;
+
     if (detalhesDoPedido.cliente.inadimplente)
       return notificaInadimplencia(detalhesDoPedido);
+
     return false;
   }
 
@@ -99,6 +100,323 @@ async function realizaVenda(codigoDoPedido) {
   }
 }
 ```
+
+O foco do código acima não é aplicação em si, mas sim demonstrar o código narrativo. Vou falar no próximo tópico sobre **anti-padrões** e **padrões** que procuro aplicar nos projetos.
+
+---
+
+</details>
+
+<details>
+<summary><b>⚠️ Anti-Padrões e Padrões</b></summary>
+
+## Anti-Padrão: Código Espaguete
+
+Acredito que ninguem saiba ou conheça tudo. Somos seres humanos e isso é uma caracteristica normal. Porém, uma coisa que certa é evitar aquilo que pode dar problema.
+
+```js
+// ❌ Versão espaguete do exemplo anterior, com o código todo misturado e sem conceitos.
+
+realizaVenda(123);
+
+function realizaVenda(x) {
+  let resultado;
+  // nomes ruins
+  let p = buscaPedido(x);
+
+  if (p != null) {
+    if (p.itens && p.itens.length > 0) {
+      if (!p.c.inadimplente) {
+        // começa a fazer um monte de coisa no meio
+        if (p.total > 100) {
+          p.desconto = 10;
+        } else {
+          p.desconto = 0;
+        }
+
+        apply(p);
+
+        function apply(p) {
+          if (p.desconto) {
+            p.total = p.total - p.desconto;
+          }
+        }
+
+        let salvo = salvaPedido(p);
+
+        if (salvo) {
+          resultado = salvo;
+
+          // lógica aleatória no meio
+          if (Math.random() > 0.5) {
+            console.log("Log qualquer");
+          } else {
+            console.warn("Outro log");
+          }
+        } else {
+          resultado = null;
+        }
+      } else {
+        // mais lógica aninhada com função no meio
+        notify(detalhesDoPedido);
+        resultado = false;
+
+        // nomes ruins e mistura do português com inglês
+        function notify(p) {
+          console.log("cliente inadimplente", p?.cliente?.nome);
+          return true;
+        }
+      }
+    } else {
+      resultado = undefined;
+    }
+  } else {
+    resultado = null;
+  }
+
+  // código morto/confuso
+  if (false) {
+    console.log("nunca executa");
+  }
+
+  return resultado;
+
+  function salva(p) {
+    if (!p) return;
+    if (p.total < 0) return null;
+    return { ...p, salvo: true };
+  }
+}
+```
+
+Bom, sem condições de ver essa tortura. Por isso é bom evitar ao máximo esse tipo de código. Sei que em épocas passadas todos nós já escrevemos códigos ruins, mas hoje com o conhecimento disponível, é possível fazer melhor.
+
+### 🚫 ANTI-PATTERNS
+
+Os principais pontos:
+
+1. Controle de fluxo caótico
+2. Mistura de responsabilidades
+3. Falta de contrato claro de dados e retorno
+
+#### Nomes e legibilidade
+
+- Nomes sem significado (`x`, `p`, `c`, `apply`)
+- Mistura de idiomas (português + inglês)
+- Falta de intenção explícita nos identificadores
+
+#### Controle de fluxo
+
+- Aninhamento excessivo (`if` dentro de `if`)
+- Falta de early return
+- Lógica condicional espalhada e difícil de seguir
+- Uso de `!=` (coerção implícita)
+
+#### Retorno e contrato
+
+- Múltiplos tipos de retorno (`null`, `undefined`, `false`, objeto)
+- Falta de contrato claro de retorno
+- Fluxo baseado em `null`/`undefined`
+
+#### Estrutura e design
+
+- Função com múltiplas responsabilidades
+- Regra de negócio misturada com persistência e log
+- Funções declaradas dentro de outras sem necessidade (`apply`, `notify`, `salva`)
+- Função não utilizada (dead code)
+- Código inalcançável (`if (false)`)
+
+#### Estado e mutabilidade
+
+- Variável mutável compartilhada (`resultado`)
+- Mutação direta de objeto (`p.total`, `p.desconto`)
+- Acoplamento estrutural forte (`p.c.inadimplente`)
+
+#### Side effects e imprevisibilidade
+
+- Side effects no meio da lógica (`console.log`, `console.warn`)
+- Comportamento não determinístico (`Math.random()`)
+
+---
+
+Abaixo mais alguns anti padrões comuns em projetos reais:
+
+#### Modelagem e contrato de dados
+
+- Boolean puro (`true/false`) em vez de Result estruturado
+- Múltiplos tipos de retorno (null / undefined / false / objeto)
+- “MegaResult” inflado com meta/status
+- Campos vazios no envelope (`meta: {}`, `data: {}`)
+- Misturar domínio com transporte (ex: Result + statusCode)
+- `meta` como dump genérico
+- Retorno com objeto anônimo sem contrato claro
+
+#### UI / Frontend acoplado errado
+
+- Fetch direto no componente
+- API espalhada (sem `apiClient`)
+- Lógica dentro de `useEffect`
+- Transformação de dados dentro da UI
+- `try/catch` espalhado na UI
+- Result no state da UI
+- Retorno inline complexo (JSX direto sem composição)
+- Múltiplas fontes de verdade no state
+
+#### Design de código
+
+- Funções genéricas demais (`handle`, `process`, etc.)
+- Funções com múltiplas responsabilidades
+- ViewModel pesado / camada desnecessária
+- Action redundante (CRUD simples sem valor)
+- Duplicação de estrutura entre camadas
+- Cache acoplado ao core
+- Overengineering (abstração sem necessidade)
+
+#### Fluxo e controle
+
+- Exceptions como fluxo normal
+- Lógica condicional caótica
+- Falta de early return
+- Código morto / inalcançável
+
+#### Consistência e clareza
+
+- Nomes sem intenção
+- Mistura de idiomas
+- Estruturas internas expostas (alto acoplamento)
+- Side effects misturados com regra de negócio
+
+---
+
+## ✅ Padrões: Código limpo
+
+As convenções, padrões e princípios são sempre melhores a longo prazo. Se foram inventados é porque faz sentido e resolvem problemas reais.
+
+```js
+// ✅ Código Narrativo
+// Orquestrador no topo, detalhes agrupados (Lexical Scoping), densidade visual e nomes expressivos.
+
+await realizaVenda(123);
+
+async function realizaVenda(codigoDoPedido) {
+  const detalhesDoPedido = buscaPedido(codigoDoPedido);
+  if (pedidoInvalido(detalhesDoPedido)) return;
+
+  const notaFiscalEmitida = emiteNotaFiscal(detalhesDoPedido);
+  return notaFiscalEmitida;
+
+  function pedidoInvalido(detalhesDoPedido) {
+    if (detalhesDoPedido === null || detalhesDoPedido.itens.length === 0)
+      return true;
+
+    if (detalhesDoPedido.cliente.inadimplente)
+      return notificaInadimplencia(detalhesDoPedido);
+
+    return false;
+  }
+
+  function emiteNotaFiscal(detalhesDoPedido) {
+    aplicaDescontos(detalhesDoPedido);
+    const notaFiscal = salvaPedido(detalhesDoPedido);
+    return notaFiscal;
+  }
+}
+```
+
+O mesmo código praticamente, mais facil de entender e manter. Seguir metodologias e sopa de letrinhas como DDD, TDD, BDD, SOLID, SRP, SOLID, YAGNI, etc... é importante, mas não é o foco principal. O foco principal é escrever código limpo e legível.
+
+### ☑️ Patterns
+
+Os principais pontos:
+
+1. Fluxo simples e previsível
+2. Separação de responsabilidades
+3. Contratos claros e consistentes
+
+#### Nomes e legibilidade
+
+- Nomes descritivos e com intenção clara (`pedido`, `cliente`, `calcularDesconto`)
+- Consistência de idioma no código
+- Funções e variáveis autoexplicativas
+
+#### Controle de fluxo
+
+- Uso de early return para simplificar leitura
+- Redução de aninhamento (flat code)
+- Condições explícitas e previsíveis (`===`, `!==`)
+- Fluxo linear e fácil de seguir
+
+#### Retorno e contrato
+
+- Retorno consistente (sempre o mesmo formato)
+- Uso de Result/DTO bem definido
+- Evitar `null`/`undefined` como controle de fluxo
+- Contratos explícitos entre funções
+
+#### Estrutura e design
+
+- Funções com responsabilidade única (SRP)
+- Separação clara de responsabilidades (domínio, persistência, side effects)
+- Funções pequenas, reutilizáveis e testáveis
+- Remoção de código morto
+- Declaração de funções no nível adequado (fora quando possível)
+
+#### Estado e mutabilidade
+
+- Preferência por imutabilidade
+- Evitar mutação direta de objetos compartilhados
+- Variáveis com escopo mínimo e preferencialmente `const`
+- Acesso via interfaces claras (baixo acoplamento)
+
+#### Side effects e previsibilidade
+
+- Side effects isolados (log, IO, etc.)
+- Funções puras sempre que possível
+- Comportamento determinístico (sem aleatoriedade no core)
+
+#### Modelagem e contrato de dados
+
+- Result estruturado e tipado
+- Retorno consistente e previsível
+- Separação entre domínio e transporte (ex: DTO ≠ HTTP)
+- Contratos claros entre camadas
+- Estruturas enxutas (sem campos vazios)
+- Dados com significado (sem `meta` genérico)
+
+#### UI / Frontend bem estruturado
+
+- Uso de `apiClient` centralizado
+- Fetch fora do componente (services/hooks)
+- `useEffect` apenas para efeitos reais (não regra de negócio)
+- UI focada em renderização
+- Tratamento de erro centralizado
+- State com única fonte de verdade
+- Componentes pequenos e compostos
+
+#### Design de código
+
+- Funções específicas e nomeadas por intenção
+- Separação clara de camadas
+- Simplicidade antes de abstração
+- Reutilização sem acoplamento
+- Estrutura consistente entre camadas
+- Cache desacoplado do core
+
+#### Fluxo e controle
+
+- Uso de guard clauses (early return)
+- Fluxo previsível e linear
+- Tratamento explícito de erros
+- Eliminação de código morto
+
+#### Consistência e clareza
+
+- Padrão de nomenclatura definido
+- Código coeso e legível
+- Baixo acoplamento entre estruturas
+- Side effects isolados e explícitos
+
+Bom é isso! Agora com uma visão maior e com o foco em gestão de projetos e pessoas, vamos falar de governança no próximo tópico.
 
 ---
 
@@ -163,7 +481,7 @@ O Spec-Driven é um tipo de **Harness** (Aproveitamento de conhecimento), que ut
 </details>
 
 <details>
-<summary>💻 Minha Stack</summary>
+<summary><b>💻 Minha Stack</b></summary>
 
 ### Backend & Core
 
@@ -206,7 +524,7 @@ O Spec-Driven é um tipo de **Harness** (Aproveitamento de conhecimento), que ut
 </details>
 
 <details>
-<summary>🤖 IAs & Ferramentas</summary>
+<summary><b>🤖 IAs & Ferramentas</b></summary>
 
 ### Generative AI
 
@@ -225,7 +543,7 @@ O Spec-Driven é um tipo de **Harness** (Aproveitamento de conhecimento), que ut
 </details>
 
 <details>
-<summary>📚 Aprendizado & Dicas</summary>
+<summary><b>📚 Aprendizado & Dicas</b></summary>
 
 ### Aprendizado Contínuo
 
@@ -247,12 +565,8 @@ O Spec-Driven é um tipo de **Harness** (Aproveitamento de conhecimento), que ut
 # 📫 Contato
 
 <p align="left">
-  <a href="mailto:contato@thiagocaja.dev">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMiA2YzAtMS4xLS45LTItMi0ySDRDMi45IDQgMiA0LjkgMiA2djEyYzAgMS4xLjkgMiAyIDJoMTZjMS4xIDAgMi0uOSAyLTJWNnptLTIgMC04IDUtOC01aDE2em0wIDEySDRWOGw4IDUgOC01djEweiIvPjwvc3ZnPg==&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://linkedin.com/in/thiagocajadev">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMC40NDcgMjAuNDUySDE2Ljg5di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzktMS44NTItMy4wMzktMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2OUgxMC4zNTRWOUgxMi4zNTRWMTBhLjA0OS4wNDkgMCAwIDAgLjA0OSAwYy40NzctLjkgMS42MzctMS44NTIgMy4zNy0xLjg1MiAzLjYwMSAwIDQuMjY4IDIuMzcgNC4yNjggNS40NTV2Ni4yODh6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjMuOTI1IDIuMDYzIDIuMDYzIDAgMS4xMzktLjkyMyAyLjA2NS0yLjA2MyAyLjA2NXpNNy4xMTkgMjAuNDUySDMuNTU0VjloMy41NjV2MTEuNDUyWiIvPjwvc3ZnPg==&logoColor=white" alt="LinkedIn" />
-  </a>
+  <a href="mailto:contato@thiagocaja.dev"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMiA2YzAtMS4xLS45LTItMi0ySDRDMi45IDQgMiA0LjkgMiA2djEyYzAgMS4xLjkgMiAyIDJoMTZjMS4xIDAgMi0uOSAyLTJWNnptLTIgMC04IDUtOC01aDE2em0wIDEySDRWOGw4IDUgOC01djEweiIvPjwvc3ZnPg==&logoColor=white" alt="Email" /></a>
+  <a href="https://linkedin.com/in/thiagocajadev"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMC40NDcgMjAuNDUySDE2Ljg5di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzktMS44NTItMy4wMzktMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2OUgxMC4zNTRWOUgxMi4zNTRWMTBhLjA0OS4wNDkgMCAwIDAgLjA0OSAwYy40NzctLjkgMS42MzctMS44NTIgMy4zNy0xLjg1MiAzLjYwMSAwIDQuMjY4IDIuMzcgNC4yNjggNS40NTV2Ni4yODh6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjMuOTI1IDIuMDYzIDIuMDYzIDAgMS4xMzktLjkyMyAyLjA2NS0yLjA2MyAyLjA2NXpNNy4xMTkgMjAuNDUySDMuNTU0VjloMy41NjV2MTEuNDUyWiIvPjwvc3ZnPg==&logoColor=white" alt="LinkedIn" /></a>
 </p>
 
 # 📈 Estatísticas

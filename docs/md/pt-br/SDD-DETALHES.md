@@ -140,4 +140,4 @@ Fechando o ciclo e garantindo o acompanhamento do projeto.
 ---
 
 > [!TIP]
-> Esse deep-flow é um modelo interno de referência para o agente. Use-o para entender por que o agente para onde para e o que ele verifica em cada barreia.
+> Esse deep-flow é um modelo interno de referência para o agente. Use-o para entender os **por ques**, **pra que** e **pra onde** o agente verifica em cada barreia.
