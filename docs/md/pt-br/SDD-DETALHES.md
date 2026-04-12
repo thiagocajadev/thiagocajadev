@@ -63,12 +63,12 @@ graph TD
         E1[Resumo da Entrega] --> E2[Registro de Mudanças]
         E2 --> E3[Ajustar Backlog]
         E3 --> E4[Lições Aprendidas]
-        E4 --> E5[Verificação Final (Lint)]
+        E4 --> E5["Verificação Final (Lint)"]
         E5 --> E6[Sugerir Commit]
         E6 --> E7[Próximos Passos]
     end
 
-    E7 --> Done((Concluído))
+    E7 --> Done(("Concluído"))
 
     style S5 fill:#f96,stroke:#333
     style P6 fill:#f96,stroke:#333

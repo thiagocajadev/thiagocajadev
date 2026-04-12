@@ -64,8 +64,8 @@ graph TD
     subgraph END [5. END: The Delivery]
         E1[Task Summary] --> E2[CHANGELOG]
         E2 --> E3[Backlog Sync]
-        E3 --> E4[Context & Insights]
-        E4 --> E5[Final Verification (Lint)]
+        E3 --> E4["Context & Insights"]
+        E4 --> E5["Final Verification (Lint)"]
         E5 --> E6[Commit Suggestion]
         E6 --> E7[Next Steps]
     end
