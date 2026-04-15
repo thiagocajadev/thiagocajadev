@@ -22,7 +22,7 @@ I will never know all the answers, but I know how to research and search for alt
 <details>
 <summary><b> 📖 A bit more about me</b></summary>
 
-<br>
+### My values
 
 Values that guide my journey: **Humility**, **Hard Work**, **Sincerity**, and **Dedication**.
 <br>
@@ -42,7 +42,57 @@ This guide can help you [specdrivenguide.org](https://specdrivenguide.org). Come
 <br>
 
 Lately, I've been doing a "thought dump" on my [blog](https://thiagocaja.dev).
-<br>
+
+---
+
+</details>
+
+<details>
+<summary><b> 🎨 UI/UX Design Thinking</b></summary>
+
+### Visual architecture
+
+> "Design the solution. It has to be easy to use."
+
+Before any line of code, I think about the interface with **technical empathy**: focusing on productivity for those developing the frontend and real usability for those using the product.
+
+I use **Design Thinking** to define what matters. I maintain the scope under a clear and functional hierarchy:
+
+| Category        | Tokens and elements                                                       |
+| :-------------- | :------------------------------------------------------------------------ |
+| **Foundations** | Mobile/Desktop first · Colors · Typography · Spacings · Shadows · Borders |
+| **Assets**      | Icons · Images · Videos · Audio · Documents                               |
+| **Interface**   | Links · Buttons · Forms · Tables · Charts · Maps                          |
+
+### Theme systems (Light & Dark)
+
+Alternating between themes requires rigorous contrast control to avoid visual fatigue. I apply the concept of <b>surface + luminance</b> to ensure depth.
+
+> Each element lives at a specific depth. Components that stay "inside" others move up a level and gain more <b>luminance</b> (perceived brightness), preserving the base color. This maintains natural depth in both light and dark modes.
+
+<img src="../../assets/img/theme-light-dark.gif" alt="Light and Dark theme example" />
+
+### Styling
+
+Attention to detail defines retention. I use modern tools (Tailwind CSS, Shadcn UI, Lucide) to create interfaces that look current and professional. Updated aesthetics are not just "eye candy"; they facilitate system adoption.
+
+- Fluxes that guide the user intuitively toward the objective.
+- Balance between visual density and whitespace.
+- Standardized grid and spacings.
+- Logical content division (steps, tabs, modals).
+
+### Anti-patterns (UI/UX)
+
+A bad experience is a cost for support and churn. Some points I treat as red flags:
+
+- <b>Information overload</b>: Overloaded screens that confuse the focus.
+- <b>Dense tables</b>: Long lists without pagination, filters, or search.
+- <b>Visual pollution</b>: Excessively vibrant colors or lack of contrast.
+- <b>Decorative animations</b>: Movements that do not communicate state or feedback.
+- <b>Rigidity</b>: Use of fixed pixels where the layout should be fluid.
+- <b>Platform bias</b>: Designing thinking only of one ecosystem (Apple/Android).
+
+These are some details I consider important, I won't extend too much to avoid being tiring. If you want to talk about code, just continue to the next topic.
 
 ---
 
@@ -51,7 +101,7 @@ Lately, I've been doing a "thought dump" on my [blog](https://thiagocaja.dev).
 <details>
 <summary><b> 👨🏻‍💻 Let's talk about code</b></summary>
 
-<br>
+### Narrative code
 
 > "Good code is code that tells a story linearly."
 
@@ -68,7 +118,7 @@ When I'm working on a project, I need to think about how it will be executed, ma
 
 ```js
 // ✅ Narrative Code
-// Orchestrator at the top, grouped details (Lexical Scoping), visual density, and expressive names.
+// Orchestrator at the top, details below (Step-down Rule), visual density, and expressive names.
 
 // Simplified example. The code tells the story without needing comments.
 
@@ -80,23 +130,23 @@ async function completeSale(orderId) {
 
   const invoiceIssued = issueInvoice(orderDetails);
   return invoiceIssued;
+}
 
-  // Function details always below the main flow
+// Function details always below the main flow
 
-  function invalidOrder(orderDetails) {
-    if (orderDetails === null || orderDetails.items.length === 0) return true;
+function invalidOrder(orderDetails) {
+  if (orderDetails === null || orderDetails.items.length === 0) return true;
 
-    if (orderDetails.customer.delinquent)
-      return notifyDelinquency(orderDetails);
+  if (orderDetails.customer.delinquent) return notifyDelinquency(orderDetails);
 
-    return false;
-  }
+  return false;
+}
 
-  function issueInvoice(orderDetails) {
-    applyDiscounts(orderDetails);
-    const invoice = saveOrder(orderDetails);
-    return invoice;
-  }
+function issueInvoice(orderDetails) {
+  applyDiscounts(orderDetails);
+
+  const invoice = saveOrder(orderDetails);
+  return invoice;
 }
 ```
 
@@ -109,7 +159,7 @@ The focus of the code above is not the application itself, but rather to demonst
 <details>
 <summary><b>⚠️ Anti-Patterns and Patterns</b></summary>
 
-## Anti-Pattern: Spaghetti Code
+### Anti-Pattern: Spaghetti Code
 
 I believe that no one knows or knows everything. We are human beings and this is a normal characteristic. However, one thing is certain: avoid what can cause problems.
 
@@ -287,13 +337,13 @@ Below are some more common anti-patterns in real projects:
 
 ---
 
-## ✅ Patterns: Clean Code
+### ✅ Patterns: Clean Code
 
 Conventions, patterns, and principles are always better in the long run. If they were invented, it's because they make sense and solve real problems.
 
 ```js
 // ✅ Narrative Code
-// Orchestrator at the top, grouped details (Lexical Scoping), visual density, and expressive names.
+// Orchestrator at the top, details below (Step-down Rule), visual density, and expressive names.
 
 await completeSale(123);
 
@@ -303,21 +353,20 @@ async function completeSale(orderId) {
 
   const invoiceIssued = issueInvoice(orderDetails);
   return invoiceIssued;
+}
 
-  function invalidOrder(orderDetails) {
-    if (orderDetails === null || orderDetails.items.length === 0) return true;
+function invalidOrder(orderDetails) {
+  if (orderDetails === null || orderDetails.items.length === 0) return true;
 
-    if (orderDetails.customer.delinquent)
-      return notifyDelinquency(orderDetails);
+  if (orderDetails.customer.delinquent) return notifyDelinquency(orderDetails);
 
-    return false;
-  }
+  return false;
+}
 
-  function issueInvoice(orderDetails) {
-    applyDiscounts(orderDetails);
-    const invoice = saveOrder(orderDetails);
-    return invoice;
-  }
+function issueInvoice(orderDetails) {
+  applyDiscounts(orderDetails);
+  const invoice = saveOrder(orderDetails);
+  return invoice;
 }
 ```
 
@@ -520,6 +569,8 @@ Spec-Driven is a type of **Harnessing**, which uses specification concepts for A
 ![Result Pattern](https://img.shields.io/badge/Result_Pattern-e94560?style=for-the-badge&logo=codefactor&logoColor=white)
 ![DDD](https://img.shields.io/badge/DDD-f5a623?style=for-the-badge&logo=diagram&logoColor=black)
 
+---
+
 </details>
 
 <details>
@@ -539,6 +590,8 @@ Spec-Driven is a type of **Harnessing**, which uses specification concepts for A
 [![Starship](https://img.shields.io/badge/Starship-FF4081?style=for-the-badge&logo=starship&logoColor=white)](https://starship.rs/)
 [![Docker Desktop](https://img.shields.io/badge/Docker_Desktop-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/products/docker-desktop/)
 
+---
+
 </details>
 
 <details>
@@ -546,7 +599,7 @@ Spec-Driven is a type of **Harnessing**, which uses specification concepts for A
 
 ### Continuous Learning
 
-- [curso.dev](https://curso.dev) → Node.js/TypeScript
+- [curso.dev](https://curso.dev) → JavaScript, Next.js, Postgres, React
 - [balta.io](https://balta.io) → .NET Universe
 - [Anthropic](https://www.anthropic.com/learn) → AI Courses
 

@@ -22,7 +22,7 @@ Eu nunca vou saber todas as respostas, mas sei pesquisar e buscar alternativas. 
 <details>
 <summary><b> 📖 Um pouco mais sobre mim</b></summary>
 
-<br>
+### Meus valores
 
 Valores que guiam minha jornada: **Humildade**, **Trabalho**, **Sinceridade** e **Dedicação**.
 <br>
@@ -41,7 +41,57 @@ Está começando a utilizar a metodologia SDD (Spec-Driven Development) nos proj
 <br>
 
 Ultimamente faço um `dump` de pensamentos, escrevendo no meu [blog](https://thiagocaja.dev).
-<br>
+
+---
+
+</details>
+
+<details>
+<summary><b> 🎨 Pensamento de Design UI/UX</b></summary>
+
+### Arquitetura visual
+
+> "Desenhe a solução. Tem que ser fácil de usar."
+
+Antes de qualquer linha de código, penso na interface com **empatia técnica**: foco em produtividade para quem desenvolve o frontend e usabilidade real para quem usa o produto.
+
+Uso o **Design Thinking** para definir o que importa. Mantenho o escopo sob uma hierarquia clara e funcional:
+
+| Categoria       | Tokens e elementos                                                          |
+| :-------------- | :-------------------------------------------------------------------------- |
+| **Fundamentos** | Mobile/Desktop first · Cores · Tipografia · Espaçamentos · Sombras · Bordas |
+| **Assets**      | Ícones · Imagens · Vídeos · Áudio · Documentos                              |
+| **Interface**   | Links · Botões · Formulários · Tabelas · Gráficos · Mapas                   |
+
+### Sistema de temas (Light & Dark)
+
+A alternância de temas exige controle rigoroso de contraste para evitar fadiga visual. Aplico o conceito de <b>superfície + luminância</b> para garantir profundidade.
+
+> Cada elemento vive em uma profundidade. Componentes que ficam "dentro" de outros sobem de nível e ganham mais <b>luminância</b> (brilho percebido), preservando a cor base. Isso mantém a naturalidade tanto no modo claro quanto no escuro.
+
+<img src="docs/assets/img/theme-light-dark.gif" alt="Exemplo de temas claro e escuro" />
+
+### Estilização
+
+O cuidado com os detalhes define a retenção. Uso ferramentas modernas (Tailwind CSS, Shadcn UI, Lucide) para criar interfaces que pareçam atuais e profissionais. Estética atualizada não é apenas "perfumaria"; ela facilita a adoção do sistema.
+
+- Fluxos que guiam o usuário de forma intuitiva até o objetivo.
+- Equilíbrio entre densidade visual e respiro (whitespace).
+- Grid e espaçamentos padronizados.
+- Divisão lógica de conteúdo (steps, tabs, modais).
+
+### Anti-padrões (UI/UX)
+
+Experiência ruim é custo de suporte e churn. Alguns pontos que trato como red flags:
+
+- <b>Excesso de informação</b>: Telas sobrecarregadas que confundem o foco.
+- <b>Tabelas densas</b>: Listas longas sem paginação, filtros ou busca.
+- <b>Poluição visual</b>: Cores vibrantes em excesso ou falta de contraste.
+- <b>Animações decorativas</b>: Movimentos que não comunicam estado ou feedback.
+- <b>Rigidez</b>: Uso de pixels fixos onde o layout deveria ser fluído.
+- <b>Viés de plataforma</b>: Projetar pensando apenas em um ecossistema (Apple/Android).
+
+Esses são alguns detalhes que considero importantes, não vou estender muito para não ficar cansativo. Se quiser falar de código, só continuar para o próximo tópico.
 
 ---
 
@@ -50,7 +100,7 @@ Ultimamente faço um `dump` de pensamentos, escrevendo no meu [blog](https://thi
 <details>
 <summary><b> 👨🏻‍💻 Vamos falar de código</b></summary>
 
-<br>
+### Código narrativo
 
 > "Código bom é aquele que conta a história de forma linear."
 
@@ -67,7 +117,7 @@ Se estou atuando em um projeto, preciso pensar em como ele será executado, mant
 
 ```js
 // ✅ Código Narrativo
-// Orquestrador no topo, detalhes agrupados (Lexical Scoping), densidade visual e nomes expressivos.
+// Orquestrador no topo, detalhes abaixo (Step-down Rule), densidade visual e nomes expressivos.
 
 // Exemplo simplificado. O código conta a história, sem precisar de comentários.
 
@@ -79,24 +129,25 @@ async function realizaVenda(codigoDoPedido) {
 
   const notaFiscalEmitida = emiteNotaFiscal(detalhesDoPedido);
   return notaFiscalEmitida;
+}
 
-  // Detalhes das funções sempre abaixo do fluxo principal
+// Detalhes das funções sempre abaixo do fluxo principal
 
-  function pedidoInvalido(detalhesDoPedido) {
-    if (detalhesDoPedido === null || detalhesDoPedido.itens.length === 0)
-      return true;
+function pedidoInvalido(detalhesDoPedido) {
+  if (detalhesDoPedido === null || detalhesDoPedido.itens.length === 0)
+    return true;
 
-    if (detalhesDoPedido.cliente.inadimplente)
-      return notificaInadimplencia(detalhesDoPedido);
+  if (detalhesDoPedido.cliente.inadimplente)
+    return notificaInadimplencia(detalhesDoPedido);
 
-    return false;
-  }
+  return false;
+}
 
-  function emiteNotaFiscal(detalhesDoPedido) {
-    aplicaDescontos(detalhesDoPedido);
-    const notaFiscal = salvaPedido(detalhesDoPedido);
-    return notaFiscal;
-  }
+function emiteNotaFiscal(detalhesDoPedido) {
+  aplicaDescontos(detalhesDoPedido);
+
+  const notaFiscal = salvaPedido(detalhesDoPedido);
+  return notaFiscal;
 }
 ```
 
@@ -109,7 +160,7 @@ O foco do código acima não é aplicação em si, mas sim demonstrar o código 
 <details>
 <summary><b>⚠️ Anti-Padrões e Padrões</b></summary>
 
-## Anti-Padrão: Código Espaguete
+### Anti-Padrão: Código Espaguete
 
 Acredito que ninguem saiba ou conheça tudo. Somos seres humanos e isso é uma caracteristica normal. Porém, uma coisa que certa é evitar aquilo que pode dar problema.
 
@@ -287,13 +338,13 @@ Abaixo mais alguns anti padrões comuns em projetos reais:
 
 ---
 
-## ✅ Padrões: Código limpo
+### ✅ Padrões: Código limpo
 
 As convenções, padrões e princípios são sempre melhores a longo prazo. Se foram inventados é porque faz sentido e resolvem problemas reais.
 
 ```js
 // ✅ Código Narrativo
-// Orquestrador no topo, detalhes agrupados (Lexical Scoping), densidade visual e nomes expressivos.
+// Orquestrador no topo, detalhes abaixo (Step-down Rule), densidade visual e nomes expressivos.
 
 await realizaVenda(123);
 
@@ -303,22 +354,23 @@ async function realizaVenda(codigoDoPedido) {
 
   const notaFiscalEmitida = emiteNotaFiscal(detalhesDoPedido);
   return notaFiscalEmitida;
+}
 
-  function pedidoInvalido(detalhesDoPedido) {
-    if (detalhesDoPedido === null || detalhesDoPedido.itens.length === 0)
-      return true;
+function pedidoInvalido(detalhesDoPedido) {
+  if (detalhesDoPedido === null || detalhesDoPedido.itens.length === 0)
+    return true;
 
-    if (detalhesDoPedido.cliente.inadimplente)
-      return notificaInadimplencia(detalhesDoPedido);
+  if (detalhesDoPedido.cliente.inadimplente)
+    return notificaInadimplencia(detalhesDoPedido);
 
-    return false;
-  }
+  return false;
+}
 
-  function emiteNotaFiscal(detalhesDoPedido) {
-    aplicaDescontos(detalhesDoPedido);
-    const notaFiscal = salvaPedido(detalhesDoPedido);
-    return notaFiscal;
-  }
+function emiteNotaFiscal(detalhesDoPedido) {
+  aplicaDescontos(detalhesDoPedido);
+
+  const notaFiscal = salvaPedido(detalhesDoPedido);
+  return notaFiscal;
 }
 ```
 
@@ -520,6 +572,8 @@ O Spec-Driven é um tipo de **Harness** (Aproveitamento de conhecimento), que ut
 ![Result Pattern](https://img.shields.io/badge/Result_Pattern-e94560?style=for-the-badge&logo=codefactor&logoColor=white)
 ![DDD](https://img.shields.io/badge/DDD-f5a623?style=for-the-badge&logo=diagram&logoColor=black)
 
+---
+
 </details>
 
 <details>
@@ -539,6 +593,8 @@ O Spec-Driven é um tipo de **Harness** (Aproveitamento de conhecimento), que ut
 [![Starship](https://img.shields.io/badge/Starship-FF4081?style=for-the-badge&logo=starship&logoColor=white)](https://starship.rs/)
 [![Docker Desktop](https://img.shields.io/badge/Docker_Desktop-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/products/docker-desktop/)
 
+---
+
 </details>
 
 <details>
@@ -546,7 +602,7 @@ O Spec-Driven é um tipo de **Harness** (Aproveitamento de conhecimento), que ut
 
 ### Aprendizado Contínuo
 
-- [curso.dev](https://curso.dev) → Node.js/TypeScript
+- [curso.dev](https://curso.dev) → JavaScript, Next.js, Postgres, React
 - [balta.io](https://balta.io) → Universo .NET
 - [Anthropic](https://www.anthropic.com/learn) → Cursos de IA
 
