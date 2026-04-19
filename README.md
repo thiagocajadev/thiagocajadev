@@ -153,6 +153,8 @@ function emiteNotaFiscal(detalhesDoPedido) {
 
 O foco do código acima não é aplicação em si, mas sim demonstrar o código narrativo. Vou falar no próximo tópico sobre **anti-padrões** e **padrões** que procuro aplicar nos projetos.
 
+> 👨🏻‍💻 Reuni minhas melhores práticas de estilização de códigos em um repositório dedicado. Caso queira conhecer, acesse [code-style](https://github.com/thiagocajadev/code-style)
+
 ---
 
 </details>
@@ -647,9 +649,9 @@ O Spec-Driven é um tipo de **Harness** (Aproveitamento de conhecimento), que ut
 
 # 📌 Projetos em Destaque
 
+[![Code Style](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=code-style&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/code-style)
 [![SDG Agents CLI](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=sdg-agents-cli&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/sdg-agents-cli)
-[![Code Conventions](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=code-conventions&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/code-conventions)
-[![SQL Conventions](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=sql-conventions&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/sql-conventions)
+[![Match Themes](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=match-themes&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/match-themes)
 [![PayCheck BR](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=PayCheckBR&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/PayCheckBR)
 [![Clone Tabnews](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=clone-tabnews&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/clone-tabnews)
 [![Starship Bash](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=terminal-bash-one-dark-starship-profile&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/terminal-bash-one-dark-starship-profile)
