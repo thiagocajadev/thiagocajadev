@@ -35,7 +35,7 @@ Meu propósito de vida é ajudar. Percorro esse caminho via TI, consertando e co
 
 > **"Em tempos de IA, pratique a IE (Inteligência Emocional)."**
 >
-> Decisões devem ser tomadas com base em dados e não achismos.
+> A Inteligência Artificial é uma ferramenta incrível e te amplifica, mas as decisões devem ser tomadas com base em dados e não achismos.
 
 Está começando a utilizar a metodologia SDD (Spec-Driven Development) nos projetos? Esse guia pode te ajudar [specdrivenguide.org](https://specdrivenguide.org). Venha fazer parte!
 <br>
@@ -132,6 +132,11 @@ async function realizaVenda(codigoDoPedido) {
 }
 
 // Detalhes das funções sempre abaixo do fluxo principal
+
+function buscaPedido(codigoDoPedido) {
+  const detalhesDoPedido = bancoDeDados.procuraPorCodigo(codigoDoPedido);
+  return detalhesDoPedido;
+}
 
 function pedidoInvalido(detalhesDoPedido) {
   if (detalhesDoPedido === null || detalhesDoPedido.itens.length === 0)
@@ -358,6 +363,11 @@ async function realizaVenda(codigoDoPedido) {
   return notaFiscalEmitida;
 }
 
+function buscaPedido(codigoDoPedido) {
+  const detalhesDoPedido = bancoDeDados.procuraPorCodigo(codigoDoPedido);
+  return detalhesDoPedido;
+}
+
 function pedidoInvalido(detalhesDoPedido) {
   if (detalhesDoPedido === null || detalhesDoPedido.itens.length === 0)
     return true;
@@ -476,7 +486,7 @@ Bom é isso! Agora com uma visão maior e com o foco em gestão de projetos e pe
 </details>
 
 <details>
-<summary><b>🏗️ Governança</b></summary>
+<summary><b>🏛️ Governança</b></summary>
 
 ### Governança Técnica
 
@@ -494,6 +504,8 @@ Pra ter governança, aplicamos leis. As leis que considero fundamentais e procur
 | **Resiliência**       | **Gestão de Falhas**: Centraliza e padroniza o tratamento de erros.             |
 | **Narrativa**         | **Código Documentativo**: O processo codificado de forma linear, passo a passo. |
 | **Excelência Visual** | **Design Intuitivo**: Interfaces bonitas e fáceis de usar.                      |
+
+**Aprofundando em filosofia, convicções e normas (RFC/ISO) que embasam a tomada de decisão**: [Detalhes de Governança](docs/md/pt-br/GOVERNANCA-DETALHES.md)
 
 Com entendimento de governança, seguimos para o gerenciamento do **Ciclo de Vida do Desenvolvimento de Software (SDLC)**.
 

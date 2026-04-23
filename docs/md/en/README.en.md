@@ -35,7 +35,7 @@ My life purpose is to help. I follow this path through IT, fixing and building t
 
 > **"In times of AI, practice EI (Emotional Intelligence)."**
 >
-> Decisions should be made based on data, not guesswork.
+> Artificial Intelligence is an incredible tool and amplifies you, but decisions should be made based on data, not guesswork.
 
 Are you starting to use the SDD (Spec-Driven Development) methodology in your projects?
 This guide can help you [specdrivenguide.org](https://specdrivenguide.org). Come join us!
@@ -134,10 +134,15 @@ async function completeSale(orderId) {
 
 // Function details always below the main flow
 
+function findOrder(orderId) {
+  const orderDetails = database.findByCode(orderId);
+  return orderDetails;
+}
+
 function invalidOrder(orderDetails) {
   if (orderDetails === null || orderDetails.items.length === 0) return true;
 
-  if (orderDetails.customer.delinquent) return notifyDelinquency(orderDetails);
+  if (orderDetails.customer.overdue) return notifyOverdue(orderDetails);
 
   return false;
 }
@@ -177,7 +182,7 @@ function completeSale(x) {
 
   if (p != null) {
     if (p.items && p.items.length > 0) {
-      if (!p.c.delinquent) {
+      if (!p.c.overdue) {
         // starts doing a bunch of things in the middle
         if (p.total > 100) {
           p.discount = 10;
@@ -214,7 +219,7 @@ function completeSale(x) {
 
         // bad names and mixed language
         function notify(p) {
-          console.log("delinquent customer", p?.customer?.name);
+          console.log("overdue customer", p?.customer?.name);
           return true;
         }
       }
@@ -281,7 +286,7 @@ Key points:
 
 - Shared mutable variable (`result`)
 - Direct object mutation (`p.total`, `p.discount`)
-- Strong structural coupling (`p.c.delinquent`)
+- Strong structural coupling (`p.c.overdue`)
 
 #### Side effects and unpredictability
 
@@ -357,16 +362,21 @@ async function completeSale(orderId) {
   return invoiceIssued;
 }
 
+function findOrder(orderId) {
+  const orderDetails = database.findByCode(orderId);
+  return orderDetails;
+}
+
 function invalidOrder(orderDetails) {
   if (orderDetails === null || orderDetails.items.length === 0) return true;
-
-  if (orderDetails.customer.delinquent) return notifyDelinquency(orderDetails);
+  if (orderDetails.customer.overdue) return notifyOverdue(orderDetails);
 
   return false;
 }
 
 function issueInvoice(orderDetails) {
   applyDiscounts(orderDetails);
+
   const invoice = saveOrder(orderDetails);
   return invoice;
 }
@@ -447,10 +457,9 @@ Key points:
 - Specific functions named by intention
 - Clear separation of layers
 - Simplicity before abstraction
-
-* Reuse without coupling
-* Consistent structure between layers
-* Cache decoupled from core
+- Reuse without coupling
+- Consistent structure between layers
+- Cache decoupled from core
 
 #### Flow and control
 
@@ -473,7 +482,7 @@ That's it! Now with a broader perspective and a focus on project and people mana
 </details>
 
 <details>
-<summary><b>🏗️ Governance</b></summary>
+<summary><b>🏛️ Governance</b></summary>
 
 ### Technical Governance
 
@@ -491,6 +500,8 @@ To have governance, we apply laws. The ones I consider fundamental and strive to
 | **Resilience**        | **Failure Management**: Centralizes and standardizes error handling. |
 | **The Cascade**       | **Narrative Code**: Code executes the process step-by-step linearly. |
 | **Visual Excellence** | **Intuitive Design**: Beautiful and easy-to-use interfaces.          |
+
+**Going deeper into philosophy, convictions, and standards (RFC/ISO) that underpin decision-making**: [Governance Details](GOVERNANCE-DETAILS.md)
 
 With an understanding of governance, we move on to managing the **Software Development Life Cycle (SDLC)**.
 
@@ -609,7 +620,7 @@ Spec-Driven is a type of **Harnessing**, which uses specification concepts for A
 
 - [Profile Header](https://leviarista.github.io/github-profile-header-generator/)
 - [Technology Shields](https://shields.io/)
-- [Estatistics and cards](https://github.com/anuraghazra/github-readme-stats)
+- [Statistics and cards](https://github.com/anuraghazra/github-readme-stats)
 - [Trophies & Games](https://profile-readme-generator.com/)
 
 </details>
