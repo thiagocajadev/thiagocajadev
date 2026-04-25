@@ -627,6 +627,33 @@ O Spec-Driven é um tipo de **Harness** (Aproveitamento de conhecimento), que ut
 - [Estatísticas e cards](https://github.com/anuraghazra/github-readme-stats)
 - [Troféus & Games](https://profile-readme-generator.com/)
 
+### Recomendações de conteúdo
+
+#### Pedagógico
+
+- [Filipe Deschamps](https://www.youtube.com/@FilipeDeschamps) → Ensina JS e web dev com narrativa cinematográfica e didática impecável
+- [Andre Balta](https://www.youtube.com/@baltaio) → Referência em .NET, C# e integração com LLMs
+- [CFTV](https://www.youtube.com/@codigofontetv) → Gabriel Fróes e Vanessa Weber cobrem notícias e conceitos de tecnologia de forma acessível
+
+#### Pensamento de Design UI/UX
+
+- [Ryan Dutra](https://www.youtube.com/designfromhuman) → Filosofia, psicologia e tomadas de decisão aplicadas ao design
+- [Maiane Gabriele](https://www.youtube.com/@maianegabrielle) → Cursos gratuitos de Figma, revisões de UI/UX e análise de erros de design na prática
+- [Andrey Knabbenn](https://www.youtube.com/@andreyknabbenn) → Tutoriais práticos de UI/UX, Figma e design de produto
+- [Kole Jain](https://www.youtube.com/@KoleJain) → Dicas avançadas de UI/UX e web design com foco em SaaS e freelancing
+
+#### Raíz e ácidos
+
+- [Fábio Akita](https://www.youtube.com/@Akitando) → Fala e prova por A + B, direto e sem filtro
+- [Mano Deyvin](https://www.youtube.com/@manodeyvin) → Dicas, comentários ácidos e cotidiano de programação
+- [Lucas Montano](https://www.youtube.com/@lucasmontano) → Comenta assuntos atuais da programação com viés raiz
+
+#### Inteligência Artificial e LLM
+
+- [Igor Oliveira](https://www.youtube.com/channel/UCVttJS9LLVAN6cdApvXJnZQ) → Testa e compara modelos de IA: local, open source e integrado em projetos
+- [Pasquadev](https://www.youtube.com/@pasquadev) → Desenvolvimento orientado a specs (SDD) e agentes de IA no fluxo real de trabalho
+- [Deborah Folloni](https://www.youtube.com/@deborahfolloni) → Construção de produtos com IA por uma founder com exit, incluindo vibe coding responsável
+
 </details>
 
 ---

@@ -623,6 +623,33 @@ Spec-Driven is a type of **Harnessing**, which uses specification concepts for A
 - [Statistics and cards](https://github.com/anuraghazra/github-readme-stats)
 - [Trophies & Games](https://profile-readme-generator.com/)
 
+### Content Recommendations
+
+#### Educational
+
+- [Filipe Deschamps](https://www.youtube.com/@FilipeDeschamps) → Teaches JS and web dev with cinematic narrative and impeccable didactics
+- [Andre Balta](https://www.youtube.com/@baltaio) → Reference for .NET, C# and LLM integration
+- [CFTV](https://www.youtube.com/@codigofontetv) → Gabriel Fróes and Vanessa Weber cover tech news and concepts in an accessible way
+
+#### UI/UX Design Thinking
+
+- [Ryan Dutra](https://www.youtube.com/designfromhuman) → Philosophy, psychology and decision-making applied to design
+- [Maiane Gabriele](https://www.youtube.com/@maianegabrielle) → Free Figma courses, UI/UX reviews and design error analysis in practice
+- [Andrey Knabbenn](https://www.youtube.com/@andreyknabbenn) → Practical UI/UX, Figma and product design tutorials
+- [Kole Jain](https://www.youtube.com/@KoleJain) → Advanced UI/UX and web design tips focused on SaaS and freelancing
+
+#### Raw & Unfiltered
+
+- [Fábio Akita](https://www.youtube.com/@Akitando) → Proves points A to Z, straight and unfiltered
+- [Mano Deyvin](https://www.youtube.com/@manodeyvin) → Tips, acid commentary and the day-to-day of programming
+- [Lucas Montano](https://www.youtube.com/@lucasmontano) → Covers current programming topics with a roots-first mindset
+
+#### Artificial Intelligence & LLM
+
+- [Igor Oliveira](https://www.youtube.com/channel/UCVttJS9LLVAN6cdApvXJnZQ) → Tests and compares AI models: local, open source and project-integrated
+- [Pasquadev](https://www.youtube.com/@pasquadev) → Spec-driven development (SDD) and AI agents in real-world workflows
+- [Deborah Folloni](https://www.youtube.com/@deborahfolloni) → Building products with AI by a founder with an exit, including responsible vibe coding
+
 </details>
 
 ---
