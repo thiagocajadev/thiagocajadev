@@ -630,6 +630,7 @@ Spec-Driven is a type of **Harnessing**, which uses specification concepts for A
 - [Filipe Deschamps](https://www.youtube.com/@FilipeDeschamps) → Teaches JS and web dev with cinematic narrative and impeccable didactics
 - [Andre Balta](https://www.youtube.com/@baltaio) → Reference for .NET, C# and LLM integration
 - [CFTV](https://www.youtube.com/@codigofontetv) → Gabriel Fróes and Vanessa Weber cover tech news and concepts in an accessible way
+- [Renato Augusto](https://www.youtube.com/@RenatoAugustoTech) → Reference for System Architecture
 
 #### UI/UX Design Thinking
 

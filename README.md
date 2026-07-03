@@ -634,6 +634,7 @@ O Spec-Driven é um tipo de **Harness** (Aproveitamento de conhecimento), que ut
 - [Filipe Deschamps](https://www.youtube.com/@FilipeDeschamps) → Ensina JS e web dev com narrativa cinematográfica e didática impecável
 - [Andre Balta](https://www.youtube.com/@baltaio) → Referência em .NET, C# e integração com LLMs
 - [CFTV](https://www.youtube.com/@codigofontetv) → Gabriel Fróes e Vanessa Weber cobrem notícias e conceitos de tecnologia de forma acessível
+- [Renato Augusto](https://www.youtube.com/@RenatoAugustoTech) → Referência em Arquitetura de Sistemas
 
 #### Pensamento de Design UI/UX
 
