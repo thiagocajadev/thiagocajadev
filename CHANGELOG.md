@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 - Added governance philosophy document (`docs/md/pt-br/GOVERNANCA-DETALHES.md` and `docs/md/en/GOVERNANCE-DETAILS.md`) covering convictions, staff engineer mindset, landing/onboarding, ADRs, auditable process, and standards (RFC/ISO/OWASP/SemVer/Conventional Commits) as a basis for decision-making.
 - Linked the new governance details document from both READMEs (pt-br and en) under the Governance section.
+- Added the "Conheça meu trabalho" / "Get to know my work" section to both READMEs (pt-br and en), linking the Frontend Showcase (`fs.thiagocaja.dev`) and the Backend Showcase (`bs.thiagocaja.dev`) as portfolio evidence of fullstack delivery.
 
 ### Fixed
 

@@ -20,6 +20,27 @@ I will never know all the answers, but I know how to research and search for alt
 [![Status](https://img.shields.io/badge/Status-Available%20for%20Projects-success?style=for-the-badge&logo=github)](mailto:contato@thiagocaja.dev)
 
 <details>
+<summary><b>💼 Get to know my work</b></summary>
+
+### Portfolio projects
+
+See how I build complete applications, applying **security and compliance checklists**:
+
+- [Frontend Showcase](https://fs.thiagocaja.dev) → Modern, clean, and responsive screens, aiming for the best possible user experience.
+
+- [Backend Showcase](https://bs.thiagocaja.dev) → Best practices in APIs, serving data securely to both frontend and mobile.
+
+- [Meu time joga](https://meutimejoga.org) → AI Chat specialized in football, as well as data and statistics of clubs and national teams.
+
+- [Spec-Driven Guide](https://specdrivenguide.org) → Guide to Development guided by specifications to work with AI.
+
+- [Thiago Cajá Desenvolvedor](https://thiagocaja.dev) → Personal website, presenting my portfolio and blog.
+
+---
+
+</details>
+
+<details>
 <summary><b> 📖 A bit more about me</b></summary>
 
 ### My values

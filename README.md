@@ -20,6 +20,27 @@ Eu nunca vou saber todas as respostas, mas sei pesquisar e buscar alternativas. 
 [![Status](https://img.shields.io/badge/Status-Dispon%C3%ADvel%20para%20Projetos-success?style=for-the-badge&logo=github)](mailto:contato@thiagocaja.dev)
 
 <details>
+<summary><b>💼 Conheça meu trabalho</b></summary>
+
+### Projetos de portfólio
+
+Confira como desenvolvo aplicações completas, aplicando **checklists de segurança e compliance**:
+
+- [Frontend Showcase](https://fs.thiagocaja.dev) → Telas modernas, limpas e responsivas, buscando a melhor experiência para o usuário.
+
+- [Backend Showcase](https://bs.thiagocaja.dev) → Melhores práticas em APIs, servindo dados de forma segura para o frontend e mobile.
+
+- [Meu time joga](https://meutimejoga.org) → Chat IA especialista em futebol, além de dados e estatísticas de clubes e seleções.
+
+- [Spec-Driven Guide](https://specdrivenguide.org) → Guia de Desenvolvimento Orientado por Especificações para trabalhar com IA.
+
+- [Thiago Cajá Desenvolvedor](https://thiagocaja.dev) → Site pessoal, apresentando meu portfólio e blog.
+
+---
+
+</details>
+
+<details>
 <summary><b> 📖 Um pouco mais sobre mim</b></summary>
 
 ### Meus valores
