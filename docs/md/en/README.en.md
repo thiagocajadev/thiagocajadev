@@ -34,7 +34,9 @@ See how I build complete applications, applying **security and compliance checkl
 
 - [Spec-Driven Guide](https://specdrivenguide.org) → Guide to Development guided by specifications to work with AI.
 
-- [Thiago Cajá Desenvolvedor](https://thiagocaja.dev) → Personal website, presenting my portfolio and blog.
+- [Code Style](https://thiagocajadev.github.io/code-style) → My style of writing and maintaining code.
+
+- [Thiago Cajá Developer](https://thiagocaja.dev) → Personal website, presenting my portfolio and blog.
 
 ---
 

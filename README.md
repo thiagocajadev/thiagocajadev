@@ -34,6 +34,8 @@ Confira como desenvolvo aplicações completas, aplicando **checklists de segura
 
 - [Spec-Driven Guide](https://specdrivenguide.org) → Guia de Desenvolvimento Orientado por Especificações para trabalhar com IA.
 
+- [Code Style](https://thiagocajadev.github.io/code-style) → Meu estilo de escrever e manter códigos.
+
 - [Thiago Cajá Desenvolvedor](https://thiagocaja.dev) → Site pessoal, apresentando meu portfólio e blog.
 
 ---
