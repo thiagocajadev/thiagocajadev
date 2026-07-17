@@ -189,9 +189,11 @@ The focus of the code above is not the application itself, but rather to demonst
 <details>
 <summary><b>⚠️ Anti-Patterns and Patterns</b></summary>
 
-### Anti-Pattern: Spaghetti Code
+### Anti-patterns: avoid known problems
 
-I believe that no one knows or knows everything. We are human beings and this is a normal characteristic. However, one thing is certain: avoid what can cause problems.
+**Anti-patterns** are solutions that look reasonable while you write them and create work later, when you read, change, or trust what's there. Many come from the solution and tooling limits of each era, and when the same problem reappears across different teams and languages, someone gives it a name.
+
+Below is a spaghetti example, followed by the swaps I make to solve each point.
 
 ```js
 // ❌ Spaghetti version of the previous example, with code all mixed up and without concepts.
@@ -268,235 +270,179 @@ function completeSale(x) {
 }
 ```
 
-Well, there's no way to watch this torture. That's why it's good to avoid this kind of code as much as possible. I know that in times past we have all written bad code, but today with the knowledge available, it's possible to do better.
+### 🚫 Anti-patterns in the example, by category
 
-### 🚫 ANTI-PATTERNS
-
-Key points:
-
-1. Chaotic flow control
-2. Mixed responsibilities
-3. Lack of clear data and return contract
+In the code above, to reach the discount rule you go down four levels of `if`. To know what the function returns, you trace the five assignments to `result`. The `save` function at the bottom is never called, and `Math.random()` swaps the log on each run. Below, each row links what's in this code to what I use instead.
 
 #### Naming and readability
 
-- Names without meaning (`x`, `p`, `c`, `apply`)
-- Mixed languages
-- Lack of explicit intention in identifiers
+| In the code above                                           | What I use instead                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| `x`, `p`, `c`: a single letter doesn't say what it holds     | `orderId`, `orderDetails`: the name carries the intent      |
+| `apply`, `notify`, `save`: verbs too vague to say what they touch | A verb that names the action: `applyDiscounts`, `notifyOverdue` |
+| The name doesn't explain, so a comment above has to          | An expressive name, and the comment loses its purpose      |
 
 #### Flow control
 
-- Excessive nesting (`if` inside `if`)
-- Lack of early return
-- Scattered conditional logic that is hard to follow
-- Use of `!=` (implicit coercion)
+| In the code above                                           | What I use instead                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| Three nested `if`s hide the rule at the fourth level         | A guard clause at the entry, with success on the first level |
+| `p != null` compares with coercion, treating `null` and `undefined` as equal | `order?.items ?? []` normalizes the missing case, no fragile `null` comparison |
+| The sale decision split across distant blocks                | One guard per decision, in the order they happen           |
 
 #### Return and contract
 
-- Multiple return types (`null`, `undefined`, `false`, object)
-- Lack of clear return contract
-- Flow based on `null`/`undefined`
+| In the code above                                           | What I use instead                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| Returns `null`, `undefined`, `false`, or an object, depending on the path | One format, the same across every path                     |
+| The caller tests null step by step to deduce what happened   | A `Result` with `status` and `reason` answers it           |
+| `false` doesn't tell why the sale didn't go through          | The reason travels with the outcome: `CUSTOMER_OVERDUE`    |
 
 #### Structure and design
 
-- Function with multiple responsibilities
-- Business rules mixed with persistence and logging
-- Functions declared inside others unnecessarily (`apply`, `notify`, `save`)
-- Unused function (dead code)
-- Unreachable code (`if (false)`)
+| In the code above                                           | What I use instead                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| One function finds, validates, computes discount, saves, and logs | One responsibility per function, one abstraction level at a time |
+| Rule, persistence, and log in the same block                 | Domain separated from saving and from the side effect      |
+| `apply`, `notify`, `save` loose in the middle of the flow    | Helpers right below their caller, in call order            |
+| `save` with no caller and `if (false)` unreachable           | I delete it in the commit where I find it. Git keeps the history. |
 
 #### State and mutability
 
-- Shared mutable variable (`result`)
-- Direct object mutation (`p.total`, `p.discount`)
-- Strong structural coupling (`p.c.overdue`)
+| In the code above                                           | What I use instead                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| `let result` reassigned at five points                       | `const` by default: one value, assigned once               |
+| `p.total` and `p.discount` changed on a `p` that came from outside | The function returns the discounted order, without touching the original |
+| `p.c.overdue`: to know what `c` is, I open `findOrder`       | `orderDetails.customer.overdue` reads without leaving the file |
 
-#### Side effects and unpredictability
+#### Side effects and predictability
 
-- Side effects in the middle of logic (`console.log`, `console.warn`)
-- Non-deterministic behavior (`Math.random()`)
+| In the code above                                           | What I use instead                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| `console.log` and `console.warn` in the middle of the calculation | An effect with its own name and place: `notifyOverdue`     |
+| `Math.random()` decides the log: same sale, different outputs | A deterministic rule: same input, same output              |
+| Testing requires running what the function saves and prints  | Calculation isolated from the effect, and the test calls only the calculation |
 
----
+### 🚫 Other common anti-patterns
 
-Below are some more common anti-patterns in real projects:
+Outside spaghetti, these show up often. Each one, alone, looks harmless, and that's why they pass review.
 
 #### Data modeling and contract
 
-- Pure boolean (`true/false`) instead of structured Result
-- Multiple return types (null / undefined / false / object)
-- Inflated “MegaResult” with meta/status
-- Empty fields in the envelope (`meta: {}`, `data: {}`)
-- Mixing domain with transport (ex: Result + statusCode)
-- `meta` as generic dump
-- Return with anonymous object without clear contract
+| The bad pattern                                             | What I use instead                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| `true`/`false` as the answer to a business operation         | A structured `Result`: the outcome plus the reason         |
+| Different return types in the same function                  | One format                                                 |
+| Result object with empty fields to keep the shape (`meta: {}`, `data: {}`) | Only the fields that outcome fills                         |
+| `Result` carrying an HTTP `statusCode`                       | The rule returns the outcome, and the edge translates it into an HTTP status |
+| Anonymous object return, built differently on each call      | One named format, the same in all                          |
 
-#### Incorrectly coupled UI / Frontend
+#### UI doing what isn't its job
 
-- Direct fetch in the component
-- Scattered API (without `apiClient`)
-- Logic inside `useEffect`
-- Data transformation inside the UI
-- `try/catch` scattered in the UI
-- Result in the UI state
-- Complex inline return (direct JSX without composition)
-- Multiple sources of truth in state
+| The bad pattern                                             | What I use instead                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| `fetch` written inside the component                         | The call lives in an `apiClient`, the single point that talks to the server |
+| API calls scattered, each with its own config                | One `apiClient`, with base URL, headers, and error handling |
+| Business rule inside `useEffect`                             | The rule stays on the server or in its own module. The component displays. |
+| Raw data reaching the screen and being transformed there     | The data arrives in the shape the screen draws             |
+| `try/catch` repeated on every screen                         | Error handled at the edge, once                            |
+| Several sources of truth for the same data in state          | One source of truth, and the rest derives from it          |
 
 #### Code design
 
-- Overly generic functions (`handle`, `process`, etc.)
-- Functions with multiple responsibilities
-- Heavy ViewModel / unnecessary layer
-- Redundant Action (simple CRUD without value)
-- Structure duplication between layers
-- Cache coupled to the core
-- Overengineering (abstraction without necessity)
+| The bad pattern                                             | What I use instead                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| Generic names: `handle`, `process`, `manage`                 | A verb that says what the function does: `calculateTotal`, `issueInvoice` |
+| A function with more than one clear responsibility           | One responsibility per function, and the name fits without an "and" in it |
+| The same structure duplicated across layers                  | Rule of three: extract on the third occurrence, not the first |
+| Cache mixed with the business rule                           | Cache at the edge, around the rule. The rule is written without naming the cache. |
+| Abstraction built for a case that doesn't exist yet          | Write it when the second case arrives                      |
 
 #### Flow and control
 
-- Exceptions as normal flow
-- Chaotic conditional logic
-- Lack of early return
-- Dead / unreachable code
-
-#### Consistency and clarity
-
-- Names without intention
-- Mixed languages
-- Internal structures exposed (high coupling)
-- Side effects mixed with business rules
+| The bad pattern                                             | What I use instead                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| Exception as normal flow, for example throwing to signal "not found" | Explicit `null` or `Result`. Exception stays for a real error. |
+| Nesting where a guard clause would fit                       | A guard clause at the entry                                |
+| Dead code and unreachable branches                           | Delete it                                                  |
 
 ---
 
-### ✅ Patterns: Clean Code
+### ✅ The same code, rewritten
 
-Conventions, patterns, and principles are always better in the long run. If they were invented, it's because they make sense and solve real problems.
+The choices are the ones in the right column: orchestrator at the top, small helpers extracted right below in call order (Step-down Rule), visual density, and names that state the intent.
 
 ```js
-// ✅ Narrative Code
-// Orchestrator at the top, details below (Step-down Rule), visual density, and expressive names.
+// ✅ Narrative code
+// Orchestrator at the top, helpers extracted below in call order
+// (Step-down Rule), visual density, and expressive names.
 
-await completeSale(123);
+const SALE_APPROVED = "APPROVED";
+const SALE_REJECTED = "REJECTED";
+
+const sale = await completeSale(123);
 
 async function completeSale(orderId) {
-  const orderDetails = findOrder(orderId);
-  if (invalidOrder(orderDetails)) return;
+  const orderDetails = await findOrder(orderId);
 
-  const invoiceIssued = issueInvoice(orderDetails);
-  return invoiceIssued;
+  if (!hasBillableItems(orderDetails)) {
+    const saleWithoutItems = rejectSale("ORDER_WITHOUT_ITEMS");
+    return saleWithoutItems;
+  }
+
+  if (orderDetails.customer.overdue) {
+    notifyOverdue(orderDetails);
+
+    const blockedSale = rejectSale("CUSTOMER_OVERDUE");
+    return blockedSale;
+  }
+
+  const invoice = await issueInvoice(orderDetails);
+  const completedSale = approveSale(invoice);
+  return completedSale;
 }
 
-function findOrder(orderId) {
-  const orderDetails = database.findByCode(orderId);
+async function findOrder(orderId) {
+  const orderDetails = await database.findByCode(orderId);
   return orderDetails;
 }
 
-function invalidOrder(orderDetails) {
-  if (orderDetails === null || orderDetails.items.length === 0) return true;
-  if (orderDetails.customer.overdue) return notifyOverdue(orderDetails);
+function hasBillableItems(order) {
+  const items = order?.items ?? [];
+  const hasAnyItem = items.length > 0;
 
-  return false;
+  return hasAnyItem;
 }
 
-function issueInvoice(orderDetails) {
-  applyDiscounts(orderDetails);
+function rejectSale(reason) {
+  const sale = { status: SALE_REJECTED, reason, invoice: null };
+  return sale;
+}
 
-  const invoice = saveOrder(orderDetails);
+async function issueInvoice(order) {
+  const discountedOrder = applyDiscounts(order);
+  const invoice = await saveOrder(discountedOrder);
+
   return invoice;
+}
+
+function approveSale(invoice) {
+  const sale = { status: SALE_APPROVED, reason: null, invoice };
+  return sale;
 }
 ```
 
-Practically the same code, easier to understand and maintain. Following methodologies and "alphabet soup" like DDD, TDD, BDD, SOLID, SRP, SOLID, YAGNI, etc... is important, but it's not the main focus. The main focus is writing clean and legible code.
+The main flow is four steps, read top to bottom: find the order, reject if it has no item, reject if the customer is overdue, invoice. Each `return` has a named `const` right above it, so the name says which of the three outcomes it is.
 
-### ☑️ Patterns
+The negation in the `if` inverts the logic on purpose. `hasBillableItems` is named in the positive (it asks whether the order has an item), and the check uses `if (!hasBillableItems(...))`: if it has none, reject and leave. Handling the invalid case first and returning there keeps the success path unindented, at the base level. It's a common guard pattern, and the line reads like a sentence: if the order has no billable items, reject the sale.
 
-Key points:
+The contract is now a single one. In all three paths, the function returns an object with `status`, `reason`, and `invoice`. The caller reads `sale.status` and knows what happened, and on rejection the `reason` says which rule blocked the sale. The helpers sit right below the orchestrator, at module level and in call order. Extracted this way, each one grows and gets its own test as the flow expands. `applyDiscounts` returns the order with the discount applied instead of changing what it received, so no function changes an object that came from outside.
 
-1. Simple and predictable flow
-2. Separation of responsibilities
-3. Clear and consistent contracts
+`async` stays only on the functions that wait on I/O (data access outside the program, like a database or disk). `findOrder` reads the database and `issueInvoice` saves the invoice; both return a promise, so the orchestrator `await`s them. The ones that only compute in memory (`hasBillableItems`, `rejectSale`, `approveSale`) stay synchronous. Marking everything `async` out of habit erases the cue for which functions wait.
 
-#### Naming and readability
+Following alphabet soup like DDD, TDD, SOLID, and YAGNI helps, but it's not the starting point. The starting point is writing code the next person can read. The acronyms give proper names to habits you'll already be practicing by the time you reach them.
 
-- Descriptive names with clear intention (`order`, `customer`, `calculateDiscount`)
-- Consistency of language in the code
-- Self-explanatory functions and variables
-
-#### Flow control
-
-- Use of early return to simplify reading
-- Reduced nesting (flat code)
-- Explicit and predictable conditions (`===`, `!==`)
-- Linear and easy-to-follow flow
-
-#### Return and contract
-
-- Consistent return (always the same format)
-- Use of well-defined Result/DTO
-- Avoid `null`/`undefined` as flow control
-- Explicit contracts between functions
-
-#### Structure and design
-
-- Functions with single responsibility (SRP)
-- Clear separation of responsibilities (domain, persistence, side effects)
-- Small, reusable, and testable functions
-- Removal of dead code
-- Function declaration at the appropriate level (outside when possible)
-
-#### State and mutability
-
-- Preference for immutability
-- Avoid direct mutation of shared objects
-- Variables with minimum scope and preferably `const`
-- Access through clear interfaces (low coupling)
-
-#### Side effects and unpredictability
-
-- Isolated side effects (logs, IO, etc.)
-- Pure functions whenever possible
-- Deterministic behavior (no randomness in the core)
-
-#### Data modeling and contract
-
-- Structured and typed Result
-- Consistent and predictable return
-- Separation between domain and transport (ex: DTO ≠ HTTP)
-- Clear contracts between layers
-- Lean structures (no empty fields)
-- Meaningful data (no generic `meta`)
-
-#### Well-structured UI / Frontend
-
-- Use of centralized `apiClient`
-- Fetch outside the component (services/hooks)
-- `useEffect` only for real effects (not business rules)
-- UI focused on rendering
-- Centralized error handling
-- State with a single source of truth
-- Small and composite components
-
-#### Code design
-
-- Specific functions named by intention
-- Clear separation of layers
-- Simplicity before abstraction
-- Reuse without coupling
-- Consistent structure between layers
-- Cache decoupled from core
-
-#### Flow and control
-
-- Use of guard clauses (early return)
-- Predictable and linear flow
-- Explicit error handling
-- Elimination of dead code
-
-#### Consistency and clarity
-
-- Defined naming pattern
-- Cohesive and legible code
-- Low coupling between structures
-- Isolated and explicit side effects
+> 👨🏻‍💻 The full walkthrough, with the concepts and the step by step, is in [Anti-Patterns: avoid known problems](https://thiagocaja.dev/blog/anti-patterns-evite-problemas-conhecidos/).
 
 That's it! Now with a broader perspective and a focus on project and people management, let's talk about governance in the next topic.
 
@@ -515,13 +461,13 @@ If I have the vision that something has started to degrade and needs more resour
 
 To have governance, we apply laws. The ones I consider fundamental and strive to apply:
 
-<p align="left"><img src="https://img.shields.io/badge/%F0%9F%94%92_Hardening-Deny--by--Default-9c4a3f?style=for-the-badge" alt="Hardening - Deny-by-Default" /> <img src="https://img.shields.io/badge/%F0%9F%9A%A6_Resilience-Failure_as_Value-4a6b8c?style=for-the-badge" alt="Resilience - Failure as value" /> <img src="https://img.shields.io/badge/%F0%9F%8C%8A_The_Cascade-Narrative_Code-5b8c6a?style=for-the-badge" alt="The Cascade - Narrative Code" /> <img src="https://img.shields.io/badge/%F0%9F%92%8E_Visual_Excellence-Design_as_Code-6d5d83?style=for-the-badge" alt="Visual Excellence - Design as Code" /></p>
+<p align="left"><img src="https://img.shields.io/badge/%F0%9F%94%92_Hardening-Deny--by--Default-9c4a3f?style=for-the-badge" alt="Hardening - Deny-by-Default" /> <img src="https://img.shields.io/badge/%F0%9F%9A%A6_Resilience-Failure_as_Value-4a6b8c?style=for-the-badge" alt="Resilience - Failure as value" /> <img src="https://img.shields.io/badge/%F0%9F%93%96_Narrative-Documentative_Code-5b8c6a?style=for-the-badge" alt="Narrative - Documentative Code" /> <img src="https://img.shields.io/badge/%F0%9F%92%8E_Visual_Excellence-Design_as_Code-6d5d83?style=for-the-badge" alt="Visual Excellence - Design as Code" /></p>
 
 | Law                   | Strategic Commentary                                                 |
 | :-------------------- | :------------------------------------------------------------------- |
 | **Hardening**         | **Deep Security**: Data shielding and a _Deny-by-Default_ posture.   |
 | **Resilience**        | **Failure Management**: Centralizes and standardizes error handling. |
-| **The Cascade**       | **Narrative Code**: Code executes the process step-by-step linearly. |
+| **Narrative**         | **Documentative Code**: Code executes the process step-by-step, linearly. |
 | **Visual Excellence** | **Intuitive Design**: Beautiful and easy-to-use interfaces.          |
 
 **Going deeper into philosophy, convictions, and standards (RFC/ISO) that underpin decision-making**: [Governance Details](GOVERNANCE-DETAILS.md)

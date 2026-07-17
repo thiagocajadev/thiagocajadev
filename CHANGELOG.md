@@ -15,6 +15,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Fixed
 
+- Rewrote the Anti-Patterns and Patterns section in both READMEs (pt-br and en) as paired problem/fix tables aligned with the blog post "Anti-Patterns: evite problemas conhecidos", replacing the separate anti-pattern and pattern bullet lists; the rewritten example now uses a structured `Result` contract, and each table row matches the shown code.
+- Renamed the "Cascade / Narrative Code" governance law to "Narrative / Documentative Code" (badge and table) in both READMEs.
+- Fixed "Código Narrativor" typo in `docs/md/pt-br/SDD-DETALHES.md`.
 - Fixed Mermaid diagram syntax in `docs/md/pt-br/SDD-DETALHES.md` and `docs/md/en/SDD-DETAILS.md` by quoting labels with parentheses.
 - Refactored UI/UX Design Thinking section with a focus on scannability and "Writing Soul" tone.
 - Synchronized English README with all Portuguese version improvements.

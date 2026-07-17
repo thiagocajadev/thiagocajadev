@@ -190,9 +190,11 @@ O foco do código acima não é aplicação em si, mas sim demonstrar o código 
 <details>
 <summary><b>⚠️ Anti-Padrões e Padrões</b></summary>
 
-### Anti-Padrão: Código Espaguete
+### Anti-padrões: evite problemas conhecidos
 
-Acredito que ninguem saiba ou conheça tudo. Somos seres humanos e isso é uma caracteristica normal. Porém, uma coisa que certa é evitar aquilo que pode dar problema.
+**Anti-padrões** são soluções que parecem razoáveis na hora de escrever e criam trabalho depois, na hora de ler, mudar ou confiar no que está lá. Muitos nascem das limitações de solução e ferramentas de cada época, e quando o mesmo problema reaparece em times e linguagens diferentes, alguém dá um nome a ele.
+
+Abaixo um exemplo do espaguete, seguido das trocas que faço para resolver cada ponto.
 
 ```js
 // ❌ Versão espaguete do exemplo anterior, com o código todo misturado e sem conceitos.
@@ -269,238 +271,186 @@ function realizaVenda(x) {
 }
 ```
 
-Bom, sem condições de ver essa tortura. Por isso é bom evitar ao máximo esse tipo de código. Sei que em épocas passadas todos nós já escrevemos códigos ruins, mas hoje com o conhecimento disponível, é possível fazer melhor.
+### 🚫 Anti-padrões do exemplo, por categoria
 
-### 🚫 ANTI-PATTERNS
-
-Os principais pontos:
-
-1. Controle de fluxo caótico
-2. Mistura de responsabilidades
-3. Falta de contrato claro de dados e retorno
+No exemplo acima, pra chegar na regra de desconto você desce quatro níveis de `if`. Pra saber o que a função devolve, rastreia as cinco atribuições de `resultado`. A função `salva` no rodapé ninguém chama, e o `Math.random()` troca o log a cada execução. Abaixo, cada linha liga o que está nesse código ao que uso no lugar.
 
 #### Nomes e legibilidade
 
-- Nomes sem significado (`x`, `p`, `c`, `apply`)
-- Mistura de idiomas (português + inglês)
-- Falta de intenção explícita nos identificadores
+| No exemplo acima                                             | O que uso no lugar                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| `x`, `p`, `c`, `apply`: uma letra não diz o que guarda       | `codigoDoPedido`, `detalhesDoPedido`: o nome carrega a intenção |
+| `realizaVenda` e `notify` no mesmo arquivo: português e inglês misturados | Um idioma do início ao fim                                 |
+| O nome não explica, então sobra um comentário pra explicar   | Nome expressivo, e o comentário some por não ter mais função |
 
 #### Controle de fluxo
 
-- Aninhamento excessivo (`if` dentro de `if`)
-- Falta de early return
-- Lógica condicional espalhada e difícil de seguir
-- Uso de `!=` (coerção implícita)
+| No exemplo acima                                             | O que uso no lugar                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| Três `if` aninhados escondem a regra no quarto nível         | Cláusula de proteção na entrada, com o sucesso no primeiro nível |
+| `p != null` compara com coerção, tratando `null` e `undefined` como iguais | `pedido?.itens ?? []` normaliza o ausente, sem comparação frágil com `null` |
+| A decisão da venda repartida entre blocos distantes          | Uma guarda por decisão, na ordem em que acontecem          |
 
 #### Retorno e contrato
 
-- Múltiplos tipos de retorno (`null`, `undefined`, `false`, objeto)
-- Falta de contrato claro de retorno
-- Fluxo baseado em `null`/`undefined`
+| No exemplo acima                                             | O que uso no lugar                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| Devolve `null`, `undefined`, `false` ou objeto, conforme o caminho | Um formato só, igual em todos os caminhos                  |
+| Quem chama testa nulo passo a passo pra deduzir o que houve   | Um `Result` com `status` e `motivo` já responde            |
+| `false` não conta por que a venda não saiu                   | O motivo acompanha o desfecho: `CLIENTE_INADIMPLENTE`      |
 
 #### Estrutura e design
 
-- Função com múltiplas responsabilidades
-- Regra de negócio misturada com persistência e log
-- Funções declaradas dentro de outras sem necessidade (`apply`, `notify`, `salva`)
-- Função não utilizada (dead code)
-- Código inalcançável (`if (false)`)
+| No exemplo acima                                             | O que uso no lugar                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| Uma função busca, valida, calcula desconto, grava e loga     | Uma responsabilidade por função, um nível de abstração por vez |
+| Regra, persistência e log no mesmo bloco                     | Domínio separado da gravação e do efeito colateral         |
+| `apply`, `notify`, `salva` soltas no meio do fluxo           | Auxiliares logo abaixo de quem chama, na ordem de uso      |
+| `salva` sem chamador e `if (false)` inalcançável             | Apago no commit em que encontro. O git guarda o histórico. |
 
 #### Estado e mutabilidade
 
-- Variável mutável compartilhada (`resultado`)
-- Mutação direta de objeto (`p.total`, `p.desconto`)
-- Acoplamento estrutural forte (`p.c.inadimplente`)
+| No exemplo acima                                             | O que uso no lugar                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| `let resultado` reatribuído em cinco pontos                  | `const` por padrão: um valor, atribuído uma vez            |
+| `p.total` e `p.desconto` alterados num `p` que veio de fora  | A função devolve o pedido com desconto, sem mexer no original |
+| `p.c.inadimplente`: pra saber o que é `c`, abro `buscaPedido` | `detalhesDoPedido.cliente.inadimplente` se lê sem sair do arquivo |
 
-#### Side effects e imprevisibilidade
+#### Efeitos colaterais e previsibilidade
 
-- Side effects no meio da lógica (`console.log`, `console.warn`)
-- Comportamento não determinístico (`Math.random()`)
+| No exemplo acima                                             | O que uso no lugar                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| `console.log` e `console.warn` no meio do cálculo            | Efeito com nome e lugar próprios: `notificaInadimplencia`  |
+| `Math.random()` decide o log: mesma venda, saídas diferentes | Regra determinística: mesma entrada, mesma saída           |
+| Testar exige rodar o que a função grava e imprime            | Cálculo isolado do efeito, e o teste chama só o cálculo    |
 
----
+### 🚫 Outros anti-patterns comuns
 
-Abaixo mais alguns anti padrões comuns em projetos reais:
+Fora do espaguete, estes aparecem com frequência. Cada um, sozinho, parece inofensivo, e é por isso que passam na revisão.
 
 #### Modelagem e contrato de dados
 
-- Boolean puro (`true/false`) em vez de Result estruturado
-- Múltiplos tipos de retorno (null / undefined / false / objeto)
-- “MegaResult” inflado com meta/status
-- Campos vazios no envelope (`meta: {}`, `data: {}`)
-- Misturar domínio com transporte (ex: Result + statusCode)
-- `meta` como dump genérico
-- Retorno com objeto anônimo sem contrato claro
+| O padrão ruim                                               | O que uso no lugar                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| `true`/`false` puro como resposta de uma operação de negócio | `Result` estruturado: o desfecho mais o motivo             |
+| Tipos de retorno diferentes na mesma função                 | Um formato só                                              |
+| Objeto de resultado com campos vazios pra manter a forma (`meta: {}`, `data: {}`) | Só os campos que aquele desfecho preenche                  |
+| `Result` carregando `statusCode` de HTTP                    | A regra devolve o desfecho, e a borda traduz em status HTTP |
+| Retorno de objeto anônimo, montado diferente em cada chamada | Um formato nomeado, igual em todas                         |
 
-#### UI / Frontend acoplado errado
+#### UI fazendo o que não é dela
 
-- Fetch direto no componente
-- API espalhada (sem `apiClient`)
-- Lógica dentro de `useEffect`
-- Transformação de dados dentro da UI
-- `try/catch` espalhado na UI
-- Result no state da UI
-- Retorno inline complexo (JSX direto sem composição)
-- Múltiplas fontes de verdade no state
+| O padrão ruim                                               | O que uso no lugar                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| `fetch` escrito dentro do componente                        | A chamada fica em um `apiClient`, o ponto único que conversa com o servidor |
+| Chamadas à API espalhadas, cada uma com sua configuração    | Um `apiClient` só, com URL base, cabeçalhos e tratamento de erro |
+| Regra de negócio dentro de `useEffect`                      | A regra fica no servidor ou em módulo próprio. O componente exibe. |
+| Dados brutos chegando na tela e sendo transformados ali     | Os dados chegam no formato que a tela desenha              |
+| `try/catch` repetido em toda tela                           | Erro tratado na borda, uma vez                            |
+| Várias fontes de verdade pro mesmo dado no state            | Uma fonte de verdade, e o resto deriva dela               |
 
 #### Design de código
 
-- Funções genéricas demais (`handle`, `process`, etc.)
-- Funções com múltiplas responsabilidades
-- ViewModel pesado / camada desnecessária
-- Action redundante (CRUD simples sem valor)
-- Duplicação de estrutura entre camadas
-- Cache acoplado ao core
-- Overengineering (abstração sem necessidade)
+| O padrão ruim                                               | O que uso no lugar                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| Nomes genéricos: `handle`, `process`, `manage`              | Verbo que diz o que a função faz: `calculaTotal`, `emiteNotaFiscal` |
+| Função com mais de uma responsabilidade clara               | Uma responsabilidade por função, e o nome cabe sem “e” no meio |
+| A mesma estrutura duplicada entre camadas                   | Regra de três: extraia na terceira ocorrência, não na primeira |
+| Cache misturado com a regra de negócio                      | Cache na borda, em volta da regra. A regra é escrita sem citar o cache. |
+| Abstração criada pra um caso que ainda não existe           | Escreva quando o segundo caso chegar                      |
 
 #### Fluxo e controle
 
-- Exceptions como fluxo normal
-- Lógica condicional caótica
-- Falta de early return
-- Código morto / inalcançável
-
-#### Consistência e clareza
-
-- Nomes sem intenção
-- Mistura de idiomas
-- Estruturas internas expostas (alto acoplamento)
-- Side effects misturados com regra de negócio
+| O padrão ruim                                               | O que uso no lugar                                         |
+| :---------------------------------------------------------- | :--------------------------------------------------------- |
+| Exception como fluxo normal, por exemplo lançar erro pra sinalizar “não encontrei” | `null` explícito ou `Result`. Exception fica pro que é erro de verdade. |
+| Aninhamento onde caberia um retorno antecipado              | Cláusula de proteção na entrada                           |
+| Código morto e trechos inalcançáveis                        | Apague                                                    |
 
 ---
 
-### ✅ Padrões: Código limpo
+### ✅ O mesmo código, reescrito
 
-As convenções, padrões e princípios são sempre melhores a longo prazo. Se foram inventados é porque faz sentido e resolvem problemas reais.
+As escolhas são as da coluna da direita: orquestrador no topo, auxiliares pequenas extraídas logo abaixo na ordem de chamada (regra do degrau, Step-down Rule), densidade visual e nomes que dizem a intenção.
 
 ```js
-// ✅ Código Narrativo
-// Orquestrador no topo, detalhes abaixo (Step-down Rule), densidade visual e nomes expressivos.
+// ✅ Código narrativo
+// Orquestrador no topo, auxiliares extraídas abaixo na ordem de chamada
+// (Step-down Rule), densidade visual e nomes expressivos.
 
-await realizaVenda(123);
+const VENDA_APROVADA = "APROVADA";
+const VENDA_RECUSADA = "RECUSADA";
+
+const venda = await realizaVenda(123);
 
 async function realizaVenda(codigoDoPedido) {
-  const detalhesDoPedido = buscaPedido(codigoDoPedido);
-  if (pedidoInvalido(detalhesDoPedido)) return;
+  const detalhesDoPedido = await buscaPedido(codigoDoPedido);
 
-  const notaFiscalEmitida = emiteNotaFiscal(detalhesDoPedido);
-  return notaFiscalEmitida;
+  if (!temItensParaFaturar(detalhesDoPedido)) {
+    const vendaSemItens = recusaVenda("PEDIDO_SEM_ITENS");
+    return vendaSemItens;
+  }
+
+  if (detalhesDoPedido.cliente.inadimplente) {
+    notificaInadimplencia(detalhesDoPedido);
+
+    const vendaBloqueada = recusaVenda("CLIENTE_INADIMPLENTE");
+    return vendaBloqueada;
+  }
+
+  const notaFiscal = await emiteNotaFiscal(detalhesDoPedido);
+  const vendaConcluida = aprovaVenda(notaFiscal);
+  return vendaConcluida;
 }
 
-function buscaPedido(codigoDoPedido) {
-  const detalhesDoPedido = bancoDeDados.procuraPorCodigo(codigoDoPedido);
+async function buscaPedido(codigoDoPedido) {
+  const detalhesDoPedido = await bancoDeDados.procuraPorCodigo(codigoDoPedido);
   return detalhesDoPedido;
 }
 
-function pedidoInvalido(detalhesDoPedido) {
-  if (detalhesDoPedido === null || detalhesDoPedido.itens.length === 0)
-    return true;
+function temItensParaFaturar(pedido) {
+  const itens = pedido?.itens ?? [];
+  const temAlgumItem = itens.length > 0;
 
-  if (detalhesDoPedido.cliente.inadimplente)
-    return notificaInadimplencia(detalhesDoPedido);
-
-  return false;
+  return temAlgumItem;
 }
 
-function emiteNotaFiscal(detalhesDoPedido) {
-  aplicaDescontos(detalhesDoPedido);
+function recusaVenda(motivo) {
+  const venda = { status: VENDA_RECUSADA, motivo, notaFiscal: null };
+  return venda;
+}
 
-  const notaFiscal = salvaPedido(detalhesDoPedido);
+async function emiteNotaFiscal(pedido) {
+  const pedidoComDesconto = aplicaDescontos(pedido);
+  const notaFiscal = await salvaPedido(pedidoComDesconto);
+
   return notaFiscal;
+}
+
+function aprovaVenda(notaFiscal) {
+  const venda = { status: VENDA_APROVADA, motivo: null, notaFiscal };
+  return venda;
 }
 ```
 
-O mesmo código praticamente, mais facil de entender e manter. Seguir metodologias e sopa de letrinhas como DDD, TDD, BDD, SOLID, SRP, SOLID, YAGNI, etc... é importante, mas não é o foco principal. O foco principal é escrever código limpo e legível.
+O fluxo principal são quatro passos, lidos de cima pra baixo:
 
-### ☑️ Patterns
+1. busca o pedido,
+2. recusa se não tem item,
+3. recusa se o cliente está inadimplente,
+4. fatura.
 
-Os principais pontos:
+Cada `return` tem uma `const` nomeada logo acima, então o nome diz qual dos três desfechos é aquele.
 
-1. Fluxo simples e previsível
-2. Separação de responsabilidades
-3. Contratos claros e consistentes
+A negação no `if` inverte a lógica de propósito. `temItensParaFaturar` é nomeada no positivo (pergunta se o pedido tem item), e a checagem é feita com `if (!temItensParaFaturar(...))`: se não tem item, recusa e sai. Tratar o caso inválido primeiro e retornar ali deixa o caminho de sucesso sem indentação, no nível de base. É um padrão comum de guarda, e a linha se lê como frase: se não tem item para faturar, recusa a venda.
 
-#### Nomes e legibilidade
+O contrato agora é um só. Nos três caminhos, a função devolve um objeto com `status`, `motivo` e `notaFiscal`. Quem chama lê `venda.status` e sabe o que aconteceu, e no caso da recusa o `motivo` diz qual regra barrou a venda. As auxiliares ficam logo abaixo do orquestrador, no nível do módulo e na ordem em que são chamadas. Extraídas assim, cada uma cresce e ganha teste próprio quando o fluxo aumentar. `aplicaDescontos` devolve o pedido com desconto em vez de alterar o que recebeu, então nenhuma função altera objeto que veio de fora.
 
-- Nomes descritivos e com intenção clara (`pedido`, `cliente`, `calcularDesconto`)
-- Consistência de idioma no código
-- Funções e variáveis autoexplicativas
+O `async` fica só nas funções que esperam I/O (acesso a dados fora do programa, como banco e disco). `buscaPedido` lê o banco e `emiteNotaFiscal` grava a nota fiscal; as duas devolvem promessa, então o orquestrador usa `await` nelas. As que só calculam em memória (`temItensParaFaturar`, `recusaVenda`, `aprovaVenda`) ficam síncronas. Marcar tudo de `async` por hábito apaga a pista de quais funções esperam.
 
-#### Controle de fluxo
+Seguir sopa de letrinhas como DDD, TDD, SOLID e YAGNI ajuda, mas não é o ponto de partida. O ponto de partida é escrever código que a próxima pessoa consiga ler. As siglas dão nome próprio a hábitos que você já vai estar praticando quando chegar nelas.
 
-- Uso de early return para simplificar leitura
-- Redução de aninhamento (flat code)
-- Condições explícitas e previsíveis (`===`, `!==`)
-- Fluxo linear e fácil de seguir
-
-#### Retorno e contrato
-
-- Retorno consistente (sempre o mesmo formato)
-- Uso de Result/DTO bem definido
-- Evitar `null`/`undefined` como controle de fluxo
-- Contratos explícitos entre funções
-
-#### Estrutura e design
-
-- Funções com responsabilidade única (SRP)
-- Separação clara de responsabilidades (domínio, persistência, side effects)
-- Funções pequenas, reutilizáveis e testáveis
-- Remoção de código morto
-- Declaração de funções no nível adequado (fora quando possível)
-
-#### Estado e mutabilidade
-
-- Preferência por imutabilidade
-- Evitar mutação direta de objetos compartilhados
-- Variáveis com escopo mínimo e preferencialmente `const`
-- Acesso via interfaces claras (baixo acoplamento)
-
-#### Side effects e previsibilidade
-
-- Side effects isolados (log, IO, etc.)
-- Funções puras sempre que possível
-- Comportamento determinístico (sem aleatoriedade no core)
-
-#### Modelagem e contrato de dados
-
-- Result estruturado e tipado
-- Retorno consistente e previsível
-- Separação entre domínio e transporte (ex: DTO ≠ HTTP)
-- Contratos claros entre camadas
-- Estruturas enxutas (sem campos vazios)
-- Dados com significado (sem `meta` genérico)
-
-#### UI / Frontend bem estruturado
-
-- Uso de `apiClient` centralizado
-- Fetch fora do componente (services/hooks)
-- `useEffect` apenas para efeitos reais (não regra de negócio)
-- UI focada em renderização
-- Tratamento de erro centralizado
-- State com única fonte de verdade
-- Componentes pequenos e compostos
-
-#### Design de código
-
-- Funções específicas e nomeadas por intenção
-- Separação clara de camadas
-- Simplicidade antes de abstração
-- Reutilização sem acoplamento
-- Estrutura consistente entre camadas
-- Cache desacoplado do core
-
-#### Fluxo e controle
-
-- Uso de guard clauses (early return)
-- Fluxo previsível e linear
-- Tratamento explícito de erros
-- Eliminação de código morto
-
-#### Consistência e clareza
-
-- Padrão de nomenclatura definido
-- Código coeso e legível
-- Baixo acoplamento entre estruturas
-- Side effects isolados e explícitos
+> 👨🏻‍💻 O passo a passo completo, com os conceitos e a versão em inglês, está em [Anti-Patterns: evite problemas conhecidos](https://thiagocaja.dev/blog/anti-patterns-evite-problemas-conhecidos/).
 
 Bom é isso! Agora com uma visão maior e com o foco em gestão de projetos e pessoas, vamos falar de governança no próximo tópico.
 
@@ -519,7 +469,7 @@ Se eu tenho a visão de que algo começou a degradar e precisa de mais recursos,
 
 Pra ter governança, aplicamos leis. As leis que considero fundamentais e procuro aplicar:
 
-<p align="left"><img src="https://img.shields.io/badge/%F0%9F%94%92_Blindagem-Bloqueio_por_Padrão-9c4a3f?style=for-the-badge" alt="Blindagem - Bloqueio por padrão" /> <img src="https://img.shields.io/badge/%F0%9F%9A%A6_Resiliência-Falha_como_Valor-4a6b8c?style=for-the-badge" alt="Resiliência - Falha como valor" /> <img src="https://img.shields.io/badge/%F0%9F%8C%8A_A_Cascata-Código_Narrativo-5b8c6a?style=for-the-badge" alt="A Cascata - Código Narrativo" /> <img src="https://img.shields.io/badge/%F0%9F%92%8E_Excelência_Visual-Design_como_Código-6d5d83?style=for-the-badge" alt="Excelência Visual - Design como Código" /></p>
+<p align="left"><img src="https://img.shields.io/badge/%F0%9F%94%92_Blindagem-Bloqueio_por_Padrão-9c4a3f?style=for-the-badge" alt="Blindagem - Bloqueio por padrão" /> <img src="https://img.shields.io/badge/%F0%9F%9A%A6_Resiliência-Falha_como_Valor-4a6b8c?style=for-the-badge" alt="Resiliência - Falha como valor" /> <img src="https://img.shields.io/badge/%F0%9F%93%96_Narrativa-Código_Documentativo-5b8c6a?style=for-the-badge" alt="Narrativa - Código Documentativo" /> <img src="https://img.shields.io/badge/%F0%9F%92%8E_Excelência_Visual-Design_como_Código-6d5d83?style=for-the-badge" alt="Excelência Visual - Design como Código" /></p>
 
 | Lei                   | Comentário Estratégico                                                          |
 | :-------------------- | :------------------------------------------------------------------------------ |

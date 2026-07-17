@@ -109,7 +109,7 @@ O agente transforma a spec em tarefas menores, com estimativas de esforço.
 
 É a hora de colocar a mão no código, seguindo boas práticas de organização.
 
-- **Código Narrativor**: Seguimos regras de escrita que tornam o código fácil de ler, como a **Regra de escrita linear (Stepdown Rule)**.
+- **Código Narrativo**: Seguimos regras de escrita que tornam o código fácil de ler, como a **Regra de escrita linear (Stepdown Rule)**.
 - **Foco no Plano**: Não criamos nada que não tenha sido planejado (seguindo o princípio YAGNI: "você não vai precisar disso agora").
 - **Sinalização de Problemas**: Se algo travar, o agente avisa na hora em vez de tentar "dar um jeitinho".
 - **Disjuntor de Segurança (Circuit Breaker)**: Se o mesmo erro acontecer 3 vezes seguidas ou se não houver progresso real, o agente **para e pede ajuda** para não gastar recursos à toa.
