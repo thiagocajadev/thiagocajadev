@@ -6,13 +6,13 @@
 
 Olá **Dev**, **Tech Recruiter** e **entusiasta do código**!
 
-Sou o **Thiago Cajá**. Comecei na Tecnologia em **2007**, passando pelo suporte técnico e administração de servidores. Foi criando meus primeiros scripts `.bat` para automatizar tarefas repetitivas que entendi o valor de ganhar tempo e eficiência. Desde então, busco sempre por melhoria continua.
+Sou o **Thiago Cajá**. Comecei na Tecnologia em **2007**, passando pelo suporte técnico e administração de servidores. Foi criando meus primeiros scripts `.bat` para automatizar tarefas repetitivas que entendi o valor de ganhar tempo e eficiência. Desde então, busco sempre por melhoria contínua.
 
 Explorei diferentes linguagens, como Java, VB e PHP, até me encontrar no ecossistema **.NET (C#)**. Liderar um time de suporte (**Helpdesk**) me ensinou algo para a vida: nunca é só o computador ou o sistema que está com problema. O código é apenas uma ferramenta para resolver dores de pessoas reais e garantir que os processos fluam com tranquilidade.
 
 Hoje, utilizo uma **stack moderna** (**.NET**, **React**, **Docker**, **Postgres**) unindo a solidez da engenharia de software com a agilidade do mundo **AI-Native**. Minha meta é construir sistemas robustos e seguros, sempre buscando simplificar e facilitar a rotina de desenvolvedores e usuários.
 
-Eu nunca vou saber todas as respostas, mas sei pesquisar e buscar alternativas. Dificilmente me consideraria Senior ou Especialista. Prefiro ser um **Resolvedor de Problemas**.
+Eu nunca vou saber todas as respostas, mas sei pesquisar e buscar alternativas. Meu propósito é **Resolver Problemas**.
 
 > [!IMPORTANT]
 > **"Evite o complexo, prefira o simples e sofisticado"**
@@ -111,7 +111,7 @@ Experiência ruim é custo de suporte e churn. Alguns pontos que trato como red 
 - <b>Tabelas densas</b>: Listas longas sem paginação, filtros ou busca.
 - <b>Poluição visual</b>: Cores vibrantes em excesso ou falta de contraste.
 - <b>Animações decorativas</b>: Movimentos que não comunicam estado ou feedback.
-- <b>Rigidez</b>: Uso de pixels fixos onde o layout deveria ser fluído.
+- <b>Rigidez</b>: Uso de pixels fixos onde o layout deveria ser fluido.
 - <b>Viés de plataforma</b>: Projetar pensando apenas em um ecossistema (Apple/Android).
 
 Esses são alguns detalhes que considero importantes, não vou estender muito para não ficar cansativo. Se quiser falar de código, só continuar para o próximo tópico.
@@ -521,62 +521,134 @@ O Spec-Driven é um tipo de **Harness** (Aproveitamento de conhecimento), que ut
 <details>
 <summary><b>💻 Minha Stack</b></summary>
 
-### Backend & Core
+### Linguagens
+
+![C#](https://img.shields.io/badge/C%23-68217A?style=for-the-badge&logo=dotnet&logoColor=white)
+![VB.NET](https://img.shields.io/badge/VB.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=databricks&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+### Backend
 
 ![.NET](https://img.shields.io/badge/.NET-7e2bb3?style=for-the-badge&logo=dotnet&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-68217A?style=for-the-badge&logo=csharp&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Hono](https://img.shields.io/badge/Hono-E36002?style=for-the-badge&logo=hono&logoColor=white)
 ![Minimal APIs](https://img.shields.io/badge/Minimal_APIs-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![Entity Framework](https://img.shields.io/badge/Entity_Framework-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 ![Dapper](https://img.shields.io/badge/Dapper-4B32C3?style=for-the-badge&logo=dotnet&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Hono](https://img.shields.io/badge/Hono-E36002?style=for-the-badge&logo=hono&logoColor=white)
 
-### Frontend & UI
+### Frontend
 
+![Blazor](https://img.shields.io/badge/Blazor-5C2D91?style=for-the-badge&logo=blazor&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![Blazor](https://img.shields.io/badge/Blazor-5C2D91?style=for-the-badge&logo=blazor&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Bulma](https://img.shields.io/badge/Bulma-00D1B2?style=for-the-badge&logo=bulma&logoColor=white)
 
-### Database & Cloud
+### Banco de dados
 
-![Postgres](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2ZmZiI+PGVsbGlwc2UgY3g9IjEyIiBjeT0iNSIgcng9IjgiIHJ5PSIzIi8+PHBhdGggZD0iTTQgOC41djNjMCAxLjcgMy42IDMgOCAzczgtMS4zIDgtM3YtM2MtMS42IDEuMi00LjYgMS44LTggMS44UzUuNiA5LjcgNCA4LjV6Ii8+PHBhdGggZD0iTTQgMTV2M2MwIDEuNyAzLjYgMyA4IDNzOC0xLjMgOC0zdi0zYy0xLjYgMS4yLTQuNiAxLjgtOCAxLjhTNS42IDE2LjIgNCAxNXoiLz48L3N2Zz4=)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2ZmZiI+PGVsbGlwc2UgY3g9IjEyIiBjeT0iNSIgcng9IjgiIHJ5PSIzIi8+PHBhdGggZD0iTTQgOC41djNjMCAxLjcgMy42IDMgOCAzczgtMS4zIDgtM3YtM2MtMS42IDEuMi00LjYgMS44LTggMS44UzUuNiA5LjcgNCA4LjV6Ii8+PHBhdGggZD0iTTQgMTV2M2MwIDEuNyAzLjYgMyA4IDNzOC0xLjMgOC0zdi0zYy0xLjYgMS4yLTQuNiAxLjgtOCAxLjhTNS42IDE2LjIgNCAxNXoiLz48L3N2Zz4=)
+![Firebird](https://img.shields.io/badge/Firebird-E4610F?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2ZmZiI+PGVsbGlwc2UgY3g9IjEyIiBjeT0iNSIgcng9IjgiIHJ5PSIzIi8+PHBhdGggZD0iTTQgOC41djNjMCAxLjcgMy42IDMgOCAzczgtMS4zIDgtM3YtM2MtMS42IDEuMi00LjYgMS44LTggMS44UzUuNiA5LjcgNCA4LjV6Ii8+PHBhdGggZD0iTTQgMTV2M2MwIDEuNyAzLjYgMyA4IDNzOC0xLjMgOC0zdi0zYy0xLjYgMS4yLTQuNiAxLjgtOCAxLjhTNS42IDE2LjIgNCAxNXoiLz48L3N2Zz4=)
 
-### Padrões & Qualidade
+### Cloud & containers
+
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2ZmZiI+PHBhdGggZD0iTTE5LjM1IDEwLjA0QTcuNDkgNy40OSAwIDAgMCAxMiA0QzkuMTEgNCA2LjYgNS42NCA1LjM1IDguMDRBNS45OTQgNS45OTQgMCAwIDAgMCAxNGMwIDMuMzEgMi42OSA2IDYgNmgxM2MyLjc2IDAgNS0yLjI0IDUtNSAwLTIuNjQtMi4wNS00Ljc4LTQuNjUtNC45NnoiLz48L3N2Zz4=)
+![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2ZmZiI+PHBhdGggZD0iTTE5LjM1IDEwLjA0QTcuNDkgNy40OSAwIDAgMCAxMiA0QzkuMTEgNCA2LjYgNS42NCA1LjM1IDguMDRBNS45OTQgNS45OTQgMCAwIDAgMCAxNGMwIDMuMzEgMi42OSA2IDYgNmgxM2MyLjc2IDAgNS0yLjI0IDUtNSAwLTIuNjQtMi4wNS00Ljc4LTQuNjUtNC45NnoiLz48L3N2Zz4=)
+![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+### Segurança
+
+![OWASP](https://img.shields.io/badge/OWASP-000000?style=for-the-badge&logo=owasp&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-D63AFF?style=for-the-badge&logo=jsonwebtokens&logoColor=white)
+![JOSE](https://img.shields.io/badge/JOSE-6C3483?style=for-the-badge&logo=letsencrypt&logoColor=white)
+![OAuth 2.0](https://img.shields.io/badge/OAuth_2.0-2F7BBF?style=for-the-badge&logo=auth0&logoColor=white)
+![OpenID Connect](https://img.shields.io/badge/OpenID_Connect-F78C40?style=for-the-badge&logo=openid&logoColor=white)
+![HTTPS/TLS](https://img.shields.io/badge/HTTPS%2FTLS-006400?style=for-the-badge&logo=letsencrypt&logoColor=white)
+
+### Qualidade de código
+
+![EditorConfig](https://img.shields.io/badge/EditorConfig-E0EFEF?style=for-the-badge&logo=editorconfig&logoColor=black)
+![dotnet format](https://img.shields.io/badge/dotnet_format-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![Zod](https://img.shields.io/badge/Zod-3E67B1?style=for-the-badge&logo=zod&logoColor=white)
+![Biome](https://img.shields.io/badge/Biome-60A5FA?style=for-the-badge&logo=biome&logoColor=white)
+![Prettier](https://img.shields.io/badge/Prettier-F7B93E?style=for-the-badge&logo=prettier&logoColor=black)
+![ESLint](https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white)
+
+### Princípios
 
 ![Clean Code](https://img.shields.io/badge/Clean_Code-051937?style=for-the-badge&logo=readthedocs&logoColor=61DAFB)
+![Clean Architecture](https://img.shields.io/badge/Clean_Architecture-072a52?style=for-the-badge&logo=readthedocs&logoColor=61DAFB)
+![KISS](https://img.shields.io/badge/KISS-2a7fa8?style=for-the-badge&logo=readthedocs&logoColor=white)
+![YAGNI](https://img.shields.io/badge/YAGNI-1e6c92?style=for-the-badge&logo=readthedocs&logoColor=white)
+![DRY](https://img.shields.io/badge/DRY-00587a?style=for-the-badge&logo=readthedocs&logoColor=white)
 ![SOLID](https://img.shields.io/badge/SOLID-008793?style=for-the-badge&logo=codefactor&logoColor=white)
-![TDD](https://img.shields.io/badge/TDD-E34F26?style=for-the-badge&logo=testinglibrary&logoColor=white)
+![SRP](https://img.shields.io/badge/SRP-Single_Responsibility-007782?style=for-the-badge&logo=codefactor&logoColor=white)
+![OCP](https://img.shields.io/badge/OCP-Open_Closed-006972?style=for-the-badge&logo=codefactor&logoColor=white)
+![LSP](https://img.shields.io/badge/LSP-Liskov_Substitution-005c64?style=for-the-badge&logo=codefactor&logoColor=white)
+![ISP](https://img.shields.io/badge/ISP-Interface_Segregation-004f56?style=for-the-badge&logo=codefactor&logoColor=white)
+![DIP](https://img.shields.io/badge/DIP-Dependency_Inversion-004349?style=for-the-badge&logo=codefactor&logoColor=white)
+
+### Padrões
+
 ![Result Pattern](https://img.shields.io/badge/Result_Pattern-e94560?style=for-the-badge&logo=codefactor&logoColor=white)
-![DDD](https://img.shields.io/badge/DDD-f5a623?style=for-the-badge&logo=diagram&logoColor=black)
+![Strategy](https://img.shields.io/badge/Strategy-d13c56?style=for-the-badge&logo=codefactor&logoColor=white)
+![Repository](https://img.shields.io/badge/Repository-b8344c?style=for-the-badge&logo=codefactor&logoColor=white)
+![Unit of Work](https://img.shields.io/badge/Unit_of_Work-a02c41?style=for-the-badge&logo=codefactor&logoColor=white)
+![Specification](https://img.shields.io/badge/Specification-872537?style=for-the-badge&logo=codefactor&logoColor=white)
+![CQRS](https://img.shields.io/badge/CQRS-6f1d2d?style=for-the-badge&logo=codefactor&logoColor=white)
+
+### Processos
+
+![SDD](https://img.shields.io/badge/SDD-7952B3?style=for-the-badge&logo=readthedocs&logoColor=white)
+![BPM](https://img.shields.io/badge/BPM-1B5E20?style=for-the-badge&logo=diagramsdotnet&logoColor=white)
+![DDD](https://img.shields.io/badge/DDD-f5a623?style=for-the-badge&logo=diagramsdotnet&logoColor=black)
+![BDD](https://img.shields.io/badge/BDD-4CAF50?style=for-the-badge&logo=cucumber&logoColor=white)
+![TDD](https://img.shields.io/badge/TDD-E34F26?style=for-the-badge&logo=testinglibrary&logoColor=white)
+![Conventional Commits](https://img.shields.io/badge/Conventional_Commits-FE5196?style=for-the-badge&logo=conventionalcommits&logoColor=white)
+![Semantic Versioning](https://img.shields.io/badge/SemVer-3F4551?style=for-the-badge&logo=semver&logoColor=white)
+![RFC](https://img.shields.io/badge/RFC-424242?style=for-the-badge&logo=readthedocs&logoColor=white)
 
 ---
 
 </details>
 
 <details>
-<summary><b>🤖 IAs & Ferramentas</b></summary>
+<summary><b>🤖 IA & Ferramentas</b></summary>
 
-### Generative AI
+### IA generativa
 
-[![AntiGravity](https://img.shields.io/badge/AntiGravity-000000?style=for-the-badge&logo=google&logoColor=white)](https://deepmind.google/technologies/gemini/)
 [![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=for-the-badge&logo=anthropic&logoColor=white)](https://anthropic.com/claude)
-[![ChatGPT Plus](https://img.shields.io/badge/ChatGPT_Plus-10a37f?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com/chatgpt)
-[![DeepSeek](https://img.shields.io/badge/DeepSeek-000000?style=for-the-badge&logo=deepnote&logoColor=white)](https://www.deepseek.com/)
+[![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)](https://gemini.google.com/)
+[![Kimi](https://img.shields.io/badge/Kimi-000000?style=for-the-badge&logo=moonrepo&logoColor=white)](https://www.kimi.com/)
+[![ChatGPT Plus](https://img.shields.io/badge/ChatGPT_Plus-10a37f?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2ZmZiI+PHBhdGggZD0ibTEyIDIgMi40IDYuNkwyMSAxMWwtNi42IDIuNEwxMiAyMGwtMi40LTYuNkwzIDExbDYuNi0yLjR6Ii8+PC9zdmc+)](https://openai.com/chatgpt)
+[![DeepSeek](https://img.shields.io/badge/DeepSeek-4D6BFE?style=for-the-badge&logo=deepnote&logoColor=white)](https://www.deepseek.com/)
 
-### Dev Tools & Terminal
+### IDEs & editores
 
-[![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
+[![Antigravity](https://img.shields.io/badge/Antigravity-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://antigravity.google/)
+[![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2ZmZiI+PHBhdGggZD0iTTkuNCAxNi42IDQuOCAxMmw0LjYtNC42TDggNmwtNiA2IDYgNnptNS4yIDAgNC42LTQuNi00LjYtNC42TDE2IDZsNiA2LTYgNnoiLz48L3N2Zz4=)](https://code.visualstudio.com/)
+[![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2ZmZiI+PHBhdGggZD0iTTkuNCAxNi42IDQuOCAxMmw0LjYtNC42TDggNmwtNiA2IDYgNnptNS4yIDAgNC42LTQuNi00LjYtNC42TDE2IDZsNiA2LTYgNnoiLz48L3N2Zz4=)](https://visualstudio.microsoft.com/)
 [![JetBrains Rider](https://img.shields.io/badge/JetBrains_Rider-000000?style=for-the-badge&logo=jetbrains&logoColor=white)](https://www.jetbrains.com/rider/)
+
+### Ferramentas de banco
+
+[![SQL Server Management Studio](https://img.shields.io/badge/SSMS-CC2927?style=for-the-badge&logo=data:image/svg%2Bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI2ZmZiI+PGVsbGlwc2UgY3g9IjEyIiBjeT0iNSIgcng9IjgiIHJ5PSIzIi8+PHBhdGggZD0iTTQgOC41djNjMCAxLjcgMy42IDMgOCAzczgtMS4zIDgtM3YtM2MtMS42IDEuMi00LjYgMS44LTggMS44UzUuNiA5LjcgNCA4LjV6Ii8+PHBhdGggZD0iTTQgMTV2M2MwIDEuNyAzLjYgMyA4IDNzOC0xLjMgOC0zdi0zYy0xLjYgMS4yLTQuNiAxLjgtOCAxLjhTNS42IDE2LjIgNCAxNXoiLz48L3N2Zz4=)](https://learn.microsoft.com/sql/ssms/)
+[![DBeaver](https://img.shields.io/badge/DBeaver-382923?style=for-the-badge&logo=dbeaver&logoColor=white)](https://dbeaver.io/)
+[![pgAdmin](https://img.shields.io/badge/pgAdmin-336791?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.pgadmin.org/)
+
+### Terminal & runtime
+
 [![Starship](https://img.shields.io/badge/Starship-FF4081?style=for-the-badge&logo=starship&logoColor=white)](https://starship.rs/)
 [![Docker Desktop](https://img.shields.io/badge/Docker_Desktop-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://www.docker.com/products/docker-desktop/)
 
@@ -585,7 +657,25 @@ O Spec-Driven é um tipo de **Harness** (Aproveitamento de conhecimento), que ut
 </details>
 
 <details>
-<summary><b>📚 Aprendizado & Dicas</b></summary>
+<summary><b>📋 Gestão de projetos</b></summary>
+
+### Planejamento & acompanhamento
+
+[![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)](https://www.atlassian.com/software/jira)
+[![Confluence](https://img.shields.io/badge/Confluence-172B4D?style=for-the-badge&logo=confluence&logoColor=white)](https://www.atlassian.com/software/confluence)
+[![Google Keep](https://img.shields.io/badge/Google_Keep-FFBB00?style=for-the-badge&logo=googlekeep&logoColor=black)](https://keep.google.com/)
+
+### Documentação
+
+[![Markdown](https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white)](https://commonmark.org/)
+[![MDX](https://img.shields.io/badge/MDX-1B1F24?style=for-the-badge&logo=mdx&logoColor=white)](https://mdxjs.com/)
+
+---
+
+</details>
+
+<details>
+<summary><b>📚 Aprendizado & Comunidade</b></summary>
 
 ### Aprendizado Contínuo
 
@@ -616,7 +706,7 @@ O Spec-Driven é um tipo de **Harness** (Aproveitamento de conhecimento), que ut
 - [Andrey Knabbenn](https://www.youtube.com/@andreyknabbenn) → Tutoriais práticos de UI/UX, Figma e design de produto
 - [Kole Jain](https://www.youtube.com/@KoleJain) → Dicas avançadas de UI/UX e web design com foco em SaaS e freelancing
 
-#### Raíz e ácidos
+#### Raiz e ácidos
 
 - [Fábio Akita](https://www.youtube.com/@Akitando) → Fala e prova por A + B, direto e sem filtro
 - [Mano Deyvin](https://www.youtube.com/@manodeyvin) → Dicas, comentários ácidos e cotidiano de programação
