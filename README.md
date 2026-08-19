@@ -8,7 +8,7 @@ Olá **Dev**, **Tech Recruiter** e **entusiasta do código**!
 
 Sou o **Thiago Cajá**. Comecei na Tecnologia em **2007**, passando pelo suporte técnico e administração de servidores. Foi criando meus primeiros scripts `.bat` para automatizar tarefas repetitivas que entendi o valor de ganhar tempo e eficiência. Desde então, busco sempre por melhoria contínua.
 
-Explorei diferentes linguagens, como Java, VB e PHP, até me encontrar no ecossistema **.NET (C#)**. Liderar um time de suporte (**Helpdesk**) me ensinou algo para a vida: nunca é só o computador ou o sistema que está com problema. O código é apenas uma ferramenta para resolver dores de pessoas reais e garantir que os processos fluam com tranquilidade.
+Explorei diferentes linguagens, como Java, VB e PHP, até me firmar no ecossistema **.NET (C#)**. Liderar um time de suporte (**Helpdesk**) me ensinou algo que levo até hoje: raramente o computador ou o sistema é todo o problema. O código é uma ferramenta para resolver dores de pessoas reais e manter os processos funcionando.
 
 Hoje, utilizo uma **stack moderna** (**.NET**, **React**, **Docker**, **Postgres**) unindo a solidez da engenharia de software com a agilidade do mundo **AI-Native**. Minha meta é construir sistemas robustos e seguros, sempre buscando simplificar e facilitar a rotina de desenvolvedores e usuários.
 
@@ -96,7 +96,7 @@ A alternância de temas exige controle rigoroso de contraste para evitar fadiga 
 
 ### Estilização
 
-O cuidado com os detalhes define a retenção. Uso ferramentas modernas (Tailwind CSS, Shadcn UI, Lucide) para criar interfaces que pareçam atuais e profissionais. Estética atualizada não é apenas "perfumaria"; ela facilita a adoção do sistema.
+O cuidado com os detalhes define a retenção. Uso Tailwind CSS, Shadcn UI e Lucide para criar interfaces que pareçam atuais e profissionais. Estética atualizada aumenta a adoção do sistema.
 
 - Fluxos que guiam o usuário de forma intuitiva até o objetivo.
 - Equilíbrio entre densidade visual e respiro (whitespace).
@@ -114,7 +114,7 @@ Experiência ruim é custo de suporte e churn. Alguns pontos que trato como red 
 - <b>Rigidez</b>: Uso de pixels fixos onde o layout deveria ser fluido.
 - <b>Viés de plataforma</b>: Projetar pensando apenas em um ecossistema (Apple/Android).
 
-Esses são alguns detalhes que considero importantes, não vou estender muito para não ficar cansativo. Se quiser falar de código, só continuar para o próximo tópico.
+Esses são alguns dos detalhes com que me importo, mantidos curtos para a seção seguir legível. Se quiser falar de código, siga para o próximo tópico.
 
 ---
 
@@ -753,10 +753,10 @@ O Spec-Driven é um tipo de **Harness** (Aproveitamento de conhecimento), que ut
 # 📌 Projetos em Destaque
 
 [![Code Style](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=code-style&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/code-style)
-[![SDG Agents CLI](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=sdg-agents-cli&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/sdg-agents-cli)
-[![Match Themes](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=match-themes&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/match-themes)
+[![DoDocs](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=do-docs&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/do-docs)
+[![Spec-Driven Guide](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=spec-driven-guide&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/spec-driven-guide)
+[![Spec-Driven Guide Prompts](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=spec-driven-guide-prompts&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/spec-driven-guide-prompts)
 [![PayCheck BR](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=PayCheckBR&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/PayCheckBR)
-[![Clone Tabnews](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=clone-tabnews&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/clone-tabnews)
-[![Starship Bash](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=terminal-bash-one-dark-starship-profile&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/terminal-bash-one-dark-starship-profile)
-[![Balta IO - BlazorIBGE](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=BlazorChallengeIBGEv2&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/BlazorChallengeIBGEv2)
-[![Fleet MGMT](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=FleetMGMT&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/FleetMGMT)
+[![League Teamfight Mode](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=league-of-legends-teamfight-mode&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/league-of-legends-teamfight-mode)
+[![Clone TabNews](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=clone-tabnews&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/clone-tabnews)
+[![Balta Projects Archive](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=balta-projects-archive&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/balta-projects-archive)
