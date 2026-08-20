@@ -760,4 +760,3 @@ O Spec-Driven é um tipo de **Harness** (Aproveitamento de conhecimento), que ut
 [![League Teamfight Mode](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=league-of-legends-teamfight-mode&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/league-of-legends-teamfight-mode)
 [![Clone TabNews](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=clone-tabnews&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/clone-tabnews)
 [![Balta Projects Archive](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=balta-projects-archive&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/balta-projects-archive)
-
