@@ -30,6 +30,8 @@ Confira como desenvolvo aplicações completas, aplicando **checklists de segura
 
 - [Backend Showcase](https://bs.thiagocaja.dev) → Melhores práticas em APIs, servindo dados de forma segura para o frontend e mobile.
 
+- [Cola na eleição](https://colanaeleicao.com.br) → Simula votação e gera colinha eleitoral com dados reais do TSE.
+
 - [Meu time joga](https://meutimejoga.org) → Chat IA especialista em futebol, além de dados e estatísticas de clubes e seleções.
 
 - [Spec-Driven Guide](https://specdrivenguide.org) → Guia de Desenvolvimento Orientado por Especificações para trabalhar com IA.
