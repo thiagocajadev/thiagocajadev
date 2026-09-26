@@ -17,7 +17,7 @@ I will never know all the answers, but I know how to research and search for alt
 > [!IMPORTANT]
 > **"Avoid the complex, prefer the simple and sophisticated"**
 
-[![Status](https://img.shields.io/badge/Status-Available%20for%20Projects-success?style=for-the-badge&logo=github)](mailto:contato@thiagocaja.dev)
+[![Status](https://img.shields.io/badge/Status-Working-blue?style=for-the-badge&logo=github)](mailto:contato@thiagocaja.dev)
 
 <details>
 <summary><b>💼 Get to know my work</b></summary>
@@ -29,6 +29,8 @@ See how I build complete applications, applying **security and compliance checkl
 - [Frontend Showcase](https://fs.thiagocaja.dev) → Modern, clean, and responsive screens, aiming for the best possible user experience.
 
 - [Backend Showcase](https://bs.thiagocaja.dev) → Best practices in APIs, serving data securely to both frontend and mobile.
+
+- [Cola na eleição](https://colanaeleicao.com.br) → Simulates the vote and builds a voter's cheat sheet from real data published by the TSE, Brazil's electoral court.
 
 - [Meu time joga](https://meutimejoga.org) → AI Chat specialized in football, as well as data and statistics of clubs and national teams.
 
@@ -60,8 +62,7 @@ My life purpose is to help. I follow this path through IT, fixing and building t
 >
 > Artificial Intelligence is an incredible tool and amplifies you, but decisions should be made based on data, not guesswork.
 
-Are you starting to use the SDD (Spec-Driven Development) methodology in your projects?
-This guide can help you [specdrivenguide.org](https://specdrivenguide.org). Come join us!
+Are you starting to use the SDD (Spec-Driven Development) methodology in your projects? This guide can help you [specdrivenguide.org](https://specdrivenguide.org). Come join us!
 <br>
 
 Lately, I've been doing a "thought dump" on my [blog](https://thiagocaja.dev).
@@ -432,7 +433,14 @@ function approveSale(invoice) {
 }
 ```
 
-The main flow is four steps, read top to bottom: find the order, reject if it has no item, reject if the customer is overdue, invoice. Each `return` has a named `const` right above it, so the name says which of the three outcomes it is.
+The main flow is four steps, read top to bottom:
+
+1. find the order,
+2. reject if it has no item,
+3. reject if the customer is overdue,
+4. invoice.
+
+Each `return` has a named `const` right above it, so the name says which of the three outcomes it is.
 
 The negation in the `if` inverts the logic on purpose. `hasBillableItems` is named in the positive (it asks whether the order has an item), and the check uses `if (!hasBillableItems(...))`: if it has none, reject and leave. Handling the invalid case first and returning there keeps the success path unindented, at the base level. It's a common guard pattern, and the line reads like a sentence: if the order has no billable items, reject the sale.
 
@@ -717,7 +725,7 @@ Spec-Driven is a type of **Harnessing**, which uses specification concepts for A
 # 📫 Contact
 
 <p align="left">
-  <a href="mailto:contato@thiagocaja.dev"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMiA2YzAtMS4xLS45LTItMi0ySDRDMi45IDQgMiA0LjkgMiA2djEyYzAgMS4xLjkgMiAyIDJoMTZjMS4xIDAgMi0uOSAyLTJWNnptLTIgMC04IDUtOC01hDE2em0wIDEySDRWOGw4IDUgOC01djEweiIvPjwvc3ZnPg==&logoColor=white" alt="Email" /></a>
+  <a href="mailto:contato@thiagocaja.dev"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMiA2YzAtMS4xLS45LTItMi0ySDRDMi45IDQgMiA0LjkgMiA2djEyYzAgMS4xLjkgMiAyIDJoMTZjMS4xIDAgMi0uOSAyLTJWNnptLTIgMC04IDUtOC01aDE2em0wIDEySDRWOGw4IDUgOC01djEweiIvPjwvc3ZnPg==&logoColor=white" alt="Email" /></a>
   <a href="https://linkedin.com/in/thiagocajadev"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMC40NDcgMjAuNDUySDE2Ljg5di01LjU2OWMwLTEuMzI4LS4wMjctMy4wMzktMS44NTItMy4wMzktMS44NTMgMC0yLjEzNiAxLjQ0NS0yLjEzNiAyLjkzOXY1LjY2OUgxMC4zNTRWOUgxMi4zNTRWMTBhLjA0OS4wNDkgMCAwIDAgLjA0OSAwYy40NzctLjkgMS42MzctMS44NTIgMy4zNy0xLjg1MiAzLjYwMSAwIDQuMjY4IDIuMzcgNC4yNjggNS40NTV2Ni4yODh6TTUuMzM3IDcuNDMzYy0xLjE0NCAwLTIuMDYzLS45MjYtMi4wNjMtMi4wNjUgMC0xLjEzOC45Mi0yLjA2MyAyLjA2My0yLjA2MyAxLjE0IDAgMi4wNjMuOTI1IDIuMDYzIDIuMDYzIDAgMS4xMzktLjkyMyAyLjA2NS0yLjA2MyAyLjA2NXpNNy4xMTkgMjAuNDUySDMuNTU0VjloMy41NjV2MTEuNDUyWiIvPjwvc3ZnPg==&logoColor=white" alt="LinkedIn" /></a>
 </p>
 

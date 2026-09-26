@@ -17,7 +17,7 @@ Eu nunca vou saber todas as respostas, mas sei pesquisar e buscar alternativas. 
 > [!IMPORTANT]
 > **"Evite o complexo, prefira o simples e sofisticado"**
 
-[![Status](https://img.shields.io/badge/Status-Dispon%C3%ADvel%20para%20Projetos-success?style=for-the-badge&logo=github)](mailto:contato@thiagocaja.dev)
+[![Status](https://img.shields.io/badge/Status-Trabalhando-blue?style=for-the-badge&logo=github)](mailto:contato@thiagocaja.dev)
 
 <details>
 <summary><b>💼 Conheça meu trabalho</b></summary>
@@ -762,4 +762,3 @@ O Spec-Driven é um tipo de **Harness** (Aproveitamento de conhecimento), que ut
 [![League Teamfight Mode](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=league-of-legends-teamfight-mode&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/league-of-legends-teamfight-mode)
 [![Clone TabNews](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=clone-tabnews&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/clone-tabnews)
 [![Balta Projects Archive](https://github-readme-stats-v1-thiagocajadev.vercel.app/api/pin/?username=thiagocajadev&repo=balta-projects-archive&description_lines_count=2&hide_border=true&theme=discord_old_blurple&cache_seconds=604800)](https://github.com/thiagocajadev/balta-projects-archive)
-
