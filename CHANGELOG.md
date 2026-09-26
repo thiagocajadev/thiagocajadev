@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Fixed
 
+- Added an Azure DevOps badge to `Planejamento & acompanhamento` / `Planning & tracking` in both READMEs, between Confluence and Google Keep. The `azuredevops` slug is gone from simple-icons, so the icon ships as an inline base64 SVG in the Azure blue `0078D4`, the same way the Azure and Visual Studio badges do.
 - Swapped the status badge in both READMEs from `Disponível para Projetos` / `Available for Projects` to `Trabalhando` / `Working`, and its color from green to blue. The developer is employed; the old label read as out of work. The badge still links to the contact email.
 - Brought the English README back in line with the Portuguese one: added the `Cola na eleição` portfolio link that had landed only in the Portuguese file, restored the Email badge icon whose base64 SVG carried a corrupted byte in the envelope path, and split the four-step main flow of the code example into a numbered list, as the Portuguese text already does.
 - Passed the writing soul over three prose blocks in both READMEs: the intro, the interface-detail paragraph, and the closing line of the personal-details section. Dropped two banned adverbs from the English file, softened an absolute stated without data into a frequency claim, and stated the point directly where the text had used a binary contrast about interface aesthetics. `writing-lint.mjs` reports no hits on README.md, README.en.md and CHANGELOG.md.
