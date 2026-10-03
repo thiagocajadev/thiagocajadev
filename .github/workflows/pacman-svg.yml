@@ -1,14 +1,10 @@
 name: Generate pacman animation
 
 on:
-  schedule: # executa uma vez por dia, 03:00 UTC (00:00 BRT)
-    - cron: "0 3 * * *"
+  schedule: # executa uma vez por semana, domingo 03:00 UTC (00:00 BRT)
+    - cron: "0 3 * * 0"
 
   workflow_dispatch:
-
-  push:
-    branches:
-    - main
 
 jobs:
   generate:

@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- Changed the pacman workflow schedule from daily to weekly (Sunday 03:00 UTC) and removed its `push` trigger. A README commit no longer regenerates the SVG or starts the Pages build that follows it.
 - Set the `Projetos em Destaque` / `Featured Projects` block to eight pinned cards in both READMEs, in the order the developer chose: Code Style, DoDocs, Spec-Driven Guide, Spec-Driven Guide Prompts, PayCheck BR, League Teamfight Mode, Clone TabNews and Balta Projects Archive. Clone TabNews and Balta sit at positions seven and eight so they land on the same row of the two-column grid.
 - Indexed fifteen public repositories with description, homepage and topics through `gh repo edit`, raising the topic count from zero to 191. Six repositories had an empty homepage field while their production site was live, and `do-docs` pointed at the upstream pmndrs site instead of its own.
 - Added governance philosophy document (`docs/md/pt-br/GOVERNANCA-DETALHES.md` and `docs/md/en/GOVERNANCE-DETAILS.md`) covering convictions, staff engineer mindset, landing/onboarding, ADRs, auditable process, and standards (RFC/ISO/OWASP/SemVer/Conventional Commits) as a basis for decision-making.
