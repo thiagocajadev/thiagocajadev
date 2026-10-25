@@ -30,6 +30,8 @@ Confira como desenvolvo aplicações completas, aplicando **checklists de segura
 
 - [Backend Showcase](https://bs.thiagocaja.dev) → Melhores práticas em APIs, servindo dados de forma segura para o frontend e mobile.
 
+- [Banda Rastros Apagados](https://bandarastrosapagados.com.br) → Projeto musical autoral, com letras próprias e músicas produzidas com IA.
+
 - [Cola na eleição](https://colanaeleicao.com.br) → Simula votação e gera colinha eleitoral com dados reais do TSE.
 
 - [Meu time joga](https://meutimejoga.org) → Chat IA especialista em futebol, além de dados e estatísticas de clubes e seleções.

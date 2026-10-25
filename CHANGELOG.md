@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ### Added
 
+- Added the `Banda Rastros Apagados` link (`bandarastrosapagados.com.br`) below the Backend Showcase in the "Conheça meu trabalho" / "Get to know my work" section of both READMEs, describing the original music project made with AI.
 - Changed the pacman workflow schedule from daily to weekly (Sunday 03:00 UTC) and removed its `push` trigger. A README commit no longer regenerates the SVG or starts the Pages build that follows it.
 - Set the `Projetos em Destaque` / `Featured Projects` block to eight pinned cards in both READMEs, in the order the developer chose: Code Style, DoDocs, Spec-Driven Guide, Spec-Driven Guide Prompts, PayCheck BR, League Teamfight Mode, Clone TabNews and Balta Projects Archive. Clone TabNews and Balta sit at positions seven and eight so they land on the same row of the two-column grid.
 - Indexed fifteen public repositories with description, homepage and topics through `gh repo edit`, raising the topic count from zero to 191. Six repositories had an empty homepage field while their production site was live, and `do-docs` pointed at the upstream pmndrs site instead of its own.

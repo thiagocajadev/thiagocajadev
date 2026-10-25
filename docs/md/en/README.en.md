@@ -30,6 +30,8 @@ See how I build complete applications, applying **security and compliance checkl
 
 - [Backend Showcase](https://bs.thiagocaja.dev) → Best practices in APIs, serving data securely to both frontend and mobile.
 
+- [Banda Rastros Apagados](https://bandarastrosapagados.com.br) → Original music project, with my own lyrics and songs produced with AI.
+
 - [Cola na eleição](https://colanaeleicao.com.br) → Simulates the vote and builds a voter's cheat sheet from real data published by the TSE, Brazil's electoral court.
 
 - [Meu time joga](https://meutimejoga.org) → AI Chat specialized in football, as well as data and statistics of clubs and national teams.
